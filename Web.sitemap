@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="Mainboard.aspx" title="Home" description="Home Page" />
+    <siteMapNode url="javascript:;" title="Membership" description="Membership Page">
+      <siteMapNode url ="Membership\member.aspx" title="Add Member" description="Membership Page"></siteMapNode>
+      <siteMapNode url ="Membership\Attendance\ViewAttendance.aspx" title="Attendance" description="Attendance Page"></siteMapNode>
+	 <siteMapNode url ="Membership\Death.aspx" title="Death" description="Death Page"></siteMapNode>
+	<siteMapNode url ="Visitors\AddVisitor.aspx" title="Add Visitors" description="Add Visitors"></siteMapNode>
+    </siteMapNode>
+      <siteMapNode url="Location\Location.aspx" title="Branch / Location" description="Branch / Location Page">
+        <siteMapNode url ="Location\BranchDetails.aspx" title="New Church" description="Branch / Location Page"></siteMapNode>
+        <siteMapNode url ="Location\ChurchHierarch.aspx" title="New Hierachy" description="Branch / Location Page"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Groups\Group Board\GroupBoard.aspx" title="Group" description="Group Page">
+		  <siteMapNode url ="Groups\Homecell\HomeCellZones.aspx" title="Cell Zones" description="Home cell Zones"></siteMapNode>
+        <siteMapNode url ="Groups\Homecell\ViewHomecell.aspx" title="Home Fellowship" description="Home cell Page"></siteMapNode>
+        <siteMapNode url ="Groups\Functional Group\ViewFunGroup.aspx" title="Functional Group" description="Functional Group Page"></siteMapNode>
+		  <siteMapNode url ="Groups\Group\MembersGroup.aspx" title="Members Group" description="Members Group Page"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="javascript:" title="Pastor" description="Services Page">
+        <siteMapNode url ="Minister\AddMinisters.aspx" title="Assign Minister" description="Assign Minister"></siteMapNode>
+        <siteMapNode url ="Minister\duty.aspx" title="Add Minister Duty" description="Add Minister Duty"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Register\Register Board\RegisterBoard.aspx" title="Register" description="Register Page">
+        <siteMapNode url ="Register\Water Baptiism\ViewBaptism.aspx" title="Baptism" description="Water Baptism Page"></siteMapNode>
+        <siteMapNode url ="Register\Church Dedication\ViewDedication.aspx" title="Dedication" description="Dedication Page"></siteMapNode>
+        <siteMapNode url ="Register\Marriage\ViewMarriage.aspx" title="Marriage" description="Marriage Page"></siteMapNode>
+        <siteMapNode url ="Register\Bible School\ViewSchool.aspx" title="School of the Bible" description="School Page"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Event\Event Board\EventBoard.aspx" title="Schedule" description="Event Page">
+        <siteMapNode url ="Event\Event\ViewEvent.aspx" title="Event" description="Event Page"></siteMapNode>
+        <siteMapNode url ="Event\Worship\ViewServices.aspx" title="Worship Schedule" description="Services Page"></siteMapNode>
+        <siteMapNode url ="Event\Visitation\ViewVisitation.aspx" title="Visitation" description="Visitation Page"></siteMapNode>
+        <siteMapNode url ="\Event\Reminder\Reminder.aspx" title="Reminder" description="Reminder Page"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="Giving\Giving Board\GivingBoard.aspx" title="Giving" description="Giving Page">
+        <siteMapNode url ="Giving\Tithe\ViewTithe.aspx" title="Tithe" description="Tithe Page"></siteMapNode>
+		  <siteMapNode url ="Giving\Pastors Tithe\ViewPastorsTithe.aspx" title="Pastor Tithe" description="Pastors Tithe"></siteMapNode>
+		  <siteMapNode url ="Giving\Hierarchy Tithe\ViewHierarchyTithe.aspx" title="Hierarchy Tithe" description="Hierarchy Tithe"></siteMapNode>
+        <siteMapNode url ="Giving\Offering\OfferingView.aspx" title="Offering" description="Offering Page"></siteMapNode>
+        <siteMapNode url ="Giving\Pledge\Pledgeview.aspx" title="Pledge" description="Pledge Page"></siteMapNode>
+        <siteMapNode url ="Giving\Welfare\ViewWelfare.aspx" title="Welfare" description="Welfare Page"></siteMapNode>
+		 
+      </siteMapNode>
+      <siteMapNode url="Account Info\Dash Board\AccountBoard.aspx" title="Accounts" description="Accounts" />
+      <siteMapNode url="Services\OtherService.aspx" title="Services" description="Other Services" />
+    <siteMapNode url="Login.aspx" title="Logout" description="Log out Page" />
+    </siteMapNode>
+</siteMap>

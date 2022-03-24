@@ -1,0 +1,44 @@
+ body
+    {
+       
+    }
+    .main_menu
+    {
+        width: 65px;
+        background-color: #145309;
+        color: #ffffff;
+        text-align: left;
+        height: 28px;
+        line-height: 25px;
+        margin-right: 5px;
+         border-radius:5px 5px 5px 5px;
+   
+        font-size: 10pt;
+        text-decoration-style:solid;
+    }
+    .main_menu:hover, .level_menu:hover{
+        background-color: #fcfad6;
+        color: #000;
+    }
+    .level_menu
+    {
+        width: 100px;
+        background-color: #145309;
+        color: #fff;
+        text-align: center;
+        height: 28px;
+        line-height: 25px;
+        margin-top: 5px;
+         border-radius:5px 5px 5px 5px;
+     
+        font-size: 10pt;
+        text-decoration-style:solid;
+    }
+    .selected.hover
+    {
+        background-color: #fffee9;
+        color: #fff;
+    }
+    .hover{
+         background-color: #fffee9;
+    }

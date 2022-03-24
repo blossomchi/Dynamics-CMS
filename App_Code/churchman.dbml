@@ -1,0 +1,1740 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Churchdb" Class="churchmanDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=R;Initial Catalog=Churchdb;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ChurchdbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.UnitTable" Member="UnitTables">
+    <Type Name="UnitTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Enterby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SeviceDescrip" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="UnitTable_PendingSavingUnit" Member="PendingSavingUnits" ThisKey="ServiceId" OtherKey="ServiceID" Type="PendingSavingUnit" />
+      <Association Name="UnitTable_MembersUnit" Member="MembersUnits" ThisKey="ServiceId" OtherKey="ServiceUnitID" Type="MembersUnit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParishTable" Member="ParishTables">
+    <Type Name="ParishTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Parishid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Parish" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PastorName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stateid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DistrictId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChurchvaluesTable" Member="ChurchvaluesTables">
+    <Type Name="ChurchvaluesTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChurchDesgID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDetailTable_ChurchvaluesTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="ChurchDesignationTable_ChurchvaluesTable" Member="ChurchDesignationTable" ThisKey="ChurchDesgID" OtherKey="ChurchDesgID" Type="ChurchDesignationTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StateTable" Member="StateTables">
+    <Type Name="StateTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Stateid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="StateTable_ChurchDetailTable" Member="ChurchDetailTables" ThisKey="Stateid" OtherKey="Stateid" Type="ChurchDetailTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChurchHierachy" Member="ChurchHierachies">
+    <Type Name="ChurchHierachy">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChurchParent" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchChildren" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDetailTable_ChurchHierachy" Member="ChurchDetailTable" ThisKey="ChurchParent" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CommTable" Member="CommTables">
+    <Type Name="CommTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ComId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ComName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ComDescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CommTable_FunctionalGroupTable" Member="FunctionalGroupTables" ThisKey="ComId" OtherKey="ComId" Type="FunctionalGroupTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClassTable" Member="ClassTables">
+    <Type Name="ClassTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClassId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Classname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Details" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datefrom" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dateto" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Session" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RoleTable" Member="RoleTables">
+    <Type Name="RoleTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Roleid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Role" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Descrp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="RoleTable_UserTable" Member="UserTables" ThisKey="Roleid" OtherKey="RoleID" Type="UserTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserTable" Member="UserTables">
+    <Type Name="UserTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Memberid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Stateid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Locationid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="RoleTable_UserTable" Member="RoleTable" ThisKey="RoleID" OtherKey="Roleid" Type="RoleTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_UserTable" Member="MembershipTable" ThisKey="Memberid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AddvisitorTable" Member="AddvisitorTables">
+    <Type Name="AddvisitorTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Vistorid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Visitor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nationality" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Respond" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDetailTable_AddvisitorTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AreaTable" Member="AreaTables">
+    <Type Name="AreaTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Areaid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AreaName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Locationid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="AreaTable_HomecellTable" Member="HomecellTables" ThisKey="Areaid" OtherKey="AreaId" Type="HomecellTable" />
+      <Association Name="AreaTable_HomecellTable1" Member="HomecellTables1" ThisKey="Areaid" OtherKey="AreaId" Type="HomecellTable" />
+      <Association Name="AreaTable_MembershipTable" Member="MembershipTables" ThisKey="Areaid" OtherKey="Area" Type="MembershipTable" />
+      <Association Name="Location_AreaTable" Member="Location" ThisKey="Locationid" OtherKey="Locationid" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DutyTable" Member="DutyTables">
+    <Type Name="DutyTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Dutyid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DutyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DutyDescp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="DutyTable_MinisterTable" Member="MinisterTables" ThisKey="Dutyid" OtherKey="Post" Type="MinisterTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProjectTable" Member="ProjectTables">
+    <Type Name="ProjectTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Projectid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Projectname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProjectDescrip" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaxTable" Member="TaxTables">
+    <Type Name="TaxTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Taxname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateUpdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SupplierTable" Member="SupplierTables">
+    <Type Name="SupplierTable">
+      <Column Name="Supplerid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bankname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accounttype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Supply" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updateddated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="SupplierTable_RaiseExpensesHdTable" Member="RaiseExpensesHdTables" ThisKey="Supplerid" OtherKey="Supplerid" Type="RaiseExpensesHdTable" />
+      <Association Name="SupplierTable_AccountPayableTable" Member="AccountPayableTables" ThisKey="Supplerid" OtherKey="Supplierid" Type="AccountPayableTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncomeTable" Member="IncomeTables">
+    <Type Name="IncomeTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Income" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="IncomeTable_TitheTable" Member="TitheTables" ThisKey="ID" OtherKey="Incomeid" Type="TitheTable" />
+      <Association Name="IncomeTable_TithePaymentTable" Member="TithePaymentTables" ThisKey="ID" OtherKey="Incomeid" Type="TithePaymentTable" />
+      <Association Name="IncomeTable_TitheAccountTable" Member="TitheAccountTables" ThisKey="ID" OtherKey="incomeid" Type="TitheAccountTable" />
+      <Association Name="IncomeTable_PledgeAccountTable" Member="PledgeAccountTables" ThisKey="ID" OtherKey="Incomeid" Type="PledgeAccountTable" />
+      <Association Name="IncomeTable_PledgeTable" Member="PledgeTables" ThisKey="ID" OtherKey="incomeid" Type="PledgeTable" />
+      <Association Name="IncomeTable_IncomeAccountTable" Member="IncomeAccountTables" ThisKey="ID" OtherKey="incomeid" Type="IncomeAccountTable" />
+      <Association Name="IncomeTable_Other_incomeAccountTable" Member="Other_incomeAccountTables" ThisKey="ID" OtherKey="Other_incomeid" Type="Other_incomeAccountTable" />
+      <Association Name="IncomeTable_IncomeOffTable" Member="IncomeOffTables" ThisKey="ID" OtherKey="incomeid" Type="IncomeOffTable" />
+      <Association Name="IncomeTable_PastorsTitheAcountTable" Member="PastorsTitheAcountTables" ThisKey="ID" OtherKey="incomeid" Type="PastorsTitheAcountTable" />
+      <Association Name="IncomeTable_PastorsTithePaymentTable" Member="PastorsTithePaymentTables" ThisKey="ID" OtherKey="Incomeid" Type="PastorsTithePaymentTable" />
+      <Association Name="IncomeTable_PastorsTitheTable" Member="PastorsTitheTables" ThisKey="ID" OtherKey="Incomeid" Type="PastorsTitheTable" />
+      <Association Name="IncomeTable_HierarchyTable" Member="HierarchyTables" ThisKey="ID" OtherKey="Incomeid" Type="HierarchyTable" />
+      <Association Name="IncomeTable_HierarcyAccountTable" Member="HierarcyAccountTables" ThisKey="ID" OtherKey="incomeid" Type="HierarcyAccountTable" />
+      <Association Name="IncomeTable_PensionTable" Member="PensionTables" ThisKey="ID" OtherKey="Incomeid" Type="PensionTable" />
+      <Association Name="IncomeTable_PensionPaymentTable" Member="PensionPaymentTables" ThisKey="ID" OtherKey="Incomeid" Type="PensionPaymentTable" />
+      <Association Name="IncomeTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="ID" OtherKey="incomeid" Type="PensionAccountTable" />
+      <Association Name="IncomeTable_IncomePaymentTable" Member="IncomePaymentTables" ThisKey="ID" OtherKey="Incomeid" Type="IncomePaymentTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentMethodTable" Member="PaymentMethodTables">
+    <Type Name="PaymentMethodTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PaymentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="PaymentMethodTable_TithePaymentTable" Member="TithePaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="TithePaymentTable" />
+      <Association Name="PaymentMethodTable_TitheBankPaymentTable" Member="TitheBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="TitheBankPaymentTable" />
+      <Association Name="PaymentMethodTable_PledgeBankPaymentTable" Member="PledgeBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="PledgeBankPaymentTable" />
+      <Association Name="PaymentMethodTable_PledgePaymentTable" Member="PledgePaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="PledgePaymentTable" />
+      <Association Name="PaymentMethodTable_IncomeBankPaymentTable" Member="IncomeBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="IncomeBankPaymentTable" />
+      <Association Name="PaymentMethodTable_WelfareBankPaymentTable" Member="WelfareBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="WelfareBankPaymentTable" />
+      <Association Name="PaymentMethodTable_WarefarePaymentTable" Member="WarefarePaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="WarefarePaymentTable" />
+      <Association Name="PaymentMethodTable_RaiseExpenPaymentTable" Member="RaiseExpenPaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="RaiseExpenPaymentTable" />
+      <Association Name="PaymentMethodTable_RaiseBankPaymentTable" Member="RaiseBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="RaiseBankPaymentTable" />
+      <Association Name="PaymentMethodTable_pastorsTitheBankPaymentTable" Member="pastorsTitheBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="pastorsTitheBankPaymentTable" />
+      <Association Name="PaymentMethodTable_PastorsTithePaymentTable" Member="PastorsTithePaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="PastorsTithePaymentTable" />
+      <Association Name="PaymentMethodTable_HierarcyBankPaymentTable" Member="HierarcyBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="HierarcyBankPaymentTable" />
+      <Association Name="PaymentMethodTable_PensionPaymentTable" Member="PensionPaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="PensionPaymentTable" />
+      <Association Name="PaymentMethodTable_PensionBankPaymentTable" Member="PensionBankPaymentTables" ThisKey="Id" OtherKey="Paymentid" Type="PensionBankPaymentTable" />
+      <Association Name="PaymentMethodTable_HierarchyPaymentTable" Member="HierarchyPaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="HierarchyPaymentTable" />
+      <Association Name="PaymentMethodTable_IncomePaymentTable" Member="IncomePaymentTables" ThisKey="Id" OtherKey="PaymentMethodid" Type="IncomePaymentTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cash_bankrelationshipTable" Member="Cash_bankrelationshipTables">
+    <Type Name="Cash_bankrelationshipTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Cash_bankrelationship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Cash_bankrelationshipTable_ChartAccountTable" Member="ChartAccountTables" ThisKey="Id" OtherKey="cash_bank_relationshipid" Type="ChartAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Income_ExpenditureTable" Member="Income_ExpenditureTables">
+    <Type Name="Income_ExpenditureTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Income_Expenditure" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Income_ExpenditureTable_ChartAccountTable" Member="ChartAccountTables" ThisKey="id" OtherKey="Income_expenditureid" Type="ChartAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Report_typeTable" Member="Report_typeTables">
+    <Type Name="Report_typeTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Report_type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Report_typeTable_ChartAccountTable" Member="ChartAccountTables" ThisKey="Id" OtherKey="Reportid" Type="ChartAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asset_liabilityTable" Member="Asset_liabilityTables">
+    <Type Name="Asset_liabilityTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Asset_liabilityTable_ChartAccountTable" Member="ChartAccountTables" ThisKey="id" OtherKey="Asset_Liabilityid" Type="ChartAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Current_nonCurrentTable" Member="Current_nonCurrentTables">
+    <Type Name="Current_nonCurrentTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Current_nonCurrent" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Current_nonCurrentTable_ChartAccountTable" Member="ChartAccountTables" ThisKey="Id" OtherKey="Current_noncurrentid" Type="ChartAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TitheTable" Member="TitheTables">
+    <Type Name="TitheTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Membername" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TitheNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TitheTable_TitheBankPaymentTable" Member="TitheBankPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="TitheBankPaymentTable" />
+      <Association Name="IncomeTable_TitheTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TithePaymentTable" Member="TithePaymentTables">
+    <Type Name="TithePaymentTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="IncomeTable_TithePaymentTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_TithePaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountRecivableTable" Member="AccountRecivableTables">
+    <Type Name="AccountRecivableTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Memberid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_AccountRecivableTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_AccountRecivableTable" Member="MembershipTable" ThisKey="Memberid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TitheAccountTable" Member="TitheAccountTables">
+    <Type Name="TitheAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="IncomeTable_TitheAccountTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="ChartAccountTable_TitheAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChartAccountTable" Member="ChartAccountTables">
+    <Type Name="ChartAccountTable">
+      <Column Name="Accountid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Accountname" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Asset_Liabilityid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Current_noncurrentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Income_expenditureid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cash_bank_relationshipid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Reportid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_AccountRecivableTable" Member="AccountRecivableTables" ThisKey="Accountname" OtherKey="AccountName" Type="AccountRecivableTable" />
+      <Association Name="ChartAccountTable_TitheAccountTable" Member="TitheAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="TitheAccountTable" />
+      <Association Name="ChartAccountTable_PledgeAccountTable" Member="PledgeAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="PledgeAccountTable" />
+      <Association Name="ChartAccountTable_IncomeAccountTable" Member="IncomeAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="IncomeAccountTable" />
+      <Association Name="ChartAccountTable_Other_incomeAccountTable" Member="Other_incomeAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="Other_incomeAccountTable" />
+      <Association Name="ChartAccountTable_Cash_BookTable" Member="Cash_BookTables" ThisKey="Accountname" OtherKey="AccountName" Type="Cash_BookTable" />
+      <Association Name="ChartAccountTable_ExpensesAccountTable" Member="ExpensesAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="ExpensesAccountTable" />
+      <Association Name="ChartAccountTable_AccountPayableTable" Member="AccountPayableTables" ThisKey="Accountname" OtherKey="AccountName" Type="AccountPayableTable" />
+      <Association Name="ChartAccountTable_VowAccountTable" Member="VowAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="VowAccountTable" />
+      <Association Name="ChartAccountTable_SeedfaithaaccountTable" Member="SeedfaithaaccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="SeedfaithaaccountTable" />
+      <Association Name="ChartAccountTable_FirstfruitaccTable" Member="FirstfruitaccTables" ThisKey="Accountname" OtherKey="AccountidName" Type="FirstfruitaccTable" />
+      <Association Name="ChartAccountTable_PastorsTitheAcountTable" Member="PastorsTitheAcountTables" ThisKey="Accountname" OtherKey="AccountName" Type="PastorsTitheAcountTable" />
+      <Association Name="ChartAccountTable_PastorsAccountTable" Member="PastorsAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="PastorsAccountTable" />
+      <Association Name="ChartAccountTable_HierarcyAccountTable" Member="HierarcyAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="HierarcyAccountTable" />
+      <Association Name="ChartAccountTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="PensionAccountTable" />
+      <Association Name="ChartAccountTable_WelfareAccountTable" Member="WelfareAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="WelfareAccountTable" />
+      <Association Name="ChartAccountTable_LoanAccountTable" Member="LoanAccountTables" ThisKey="Accountname" OtherKey="AccountName" Type="LoanAccountTable" />
+      <Association Name="Asset_liabilityTable_ChartAccountTable" Member="Asset_liabilityTable" ThisKey="Asset_Liabilityid" OtherKey="id" Type="Asset_liabilityTable" IsForeignKey="true" />
+      <Association Name="Cash_bankrelationshipTable_ChartAccountTable" Member="Cash_bankrelationshipTable" ThisKey="cash_bank_relationshipid" OtherKey="Id" Type="Cash_bankrelationshipTable" IsForeignKey="true" />
+      <Association Name="Current_nonCurrentTable_ChartAccountTable" Member="Current_nonCurrentTable" ThisKey="Current_noncurrentid" OtherKey="Id" Type="Current_nonCurrentTable" IsForeignKey="true" />
+      <Association Name="Income_ExpenditureTable_ChartAccountTable" Member="Income_ExpenditureTable" ThisKey="Income_expenditureid" OtherKey="id" Type="Income_ExpenditureTable" IsForeignKey="true" />
+      <Association Name="Report_typeTable_ChartAccountTable" Member="Report_typeTable" ThisKey="Reportid" OtherKey="Id" Type="Report_typeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PledgeAccountTable" Member="PledgeAccountTables">
+    <Type Name="PledgeAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_PledgeAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_PledgeAccountTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CountryName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Country_Currency_CodeTable" Member="Currency_CodeTables" ThisKey="ID" OtherKey="Countr_Name" Type="Currency_CodeTable" />
+      <Association Name="Country_ChurchDetailTable" Member="ChurchDetailTables" ThisKey="ID" OtherKey="Country" Type="ChurchDetailTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Exchange_RateTable" Member="Exchange_RateTables">
+    <Type Name="Exchange_RateTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Currency_Code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Exchange_Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateUpdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Currency_CodeTable_Exchange_RateTable" Member="Currency_CodeTable" ThisKey="Currency_Code" OtherKey="Currency_Code" Type="Currency_CodeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Currency_CodeTable" Member="Currency_CodeTables">
+    <Type Name="Currency_CodeTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Currency_Code" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sysmbol" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Countr_Name" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Currency_CodeTable_Exchange_RateTable" Member="Exchange_RateTables" ThisKey="Currency_Code" OtherKey="Currency_Code" Type="Exchange_RateTable" />
+      <Association Name="Country_Currency_CodeTable" Member="Country" ThisKey="Countr_Name" OtherKey="ID" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TitheBankPaymentTable" Member="TitheBankPaymentTables">
+    <Type Name="TitheBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="TitheTable_TitheBankPaymentTable" Member="TitheTable" ThisKey="Titheid" OtherKey="Titheid" Type="TitheTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_TitheBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="BankTable_TitheBankPaymentTable" Member="BankTable" ThisKey="Bankid" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PledgeTable" Member="PledgeTables">
+    <Type Name="PledgeTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pledgeid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MemberName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Project" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="frequency" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="PledgeTable_PledgeBankPaymentTable" Member="PledgeBankPaymentTables" ThisKey="Pledgeid" OtherKey="PledgeId" Type="PledgeBankPaymentTable" />
+      <Association Name="PledgeTable_PledgePaymentTable" Member="PledgePaymentTables" ThisKey="Pledgeid" OtherKey="PledgeId" Type="PledgePaymentTable" />
+      <Association Name="IncomeTable_PledgeTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PledgeBankPaymentTable" Member="PledgeBankPaymentTables">
+    <Type Name="PledgeBankPaymentTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PledgeId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BankId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="PaymentMethodTable_PledgeBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PledgeTable_PledgeBankPaymentTable" Member="PledgeTable" ThisKey="PledgeId" OtherKey="Pledgeid" Type="PledgeTable" IsForeignKey="true" />
+      <Association Name="BankTable_PledgeBankPaymentTable" Member="BankTable" ThisKey="BankId" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PledgePaymentTable" Member="PledgePaymentTables">
+    <Type Name="PledgePaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PledgeId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="PaymentMethodTable_PledgePaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PledgeTable_PledgePaymentTable" Member="PledgeTable" ThisKey="PledgeId" OtherKey="Pledgeid" Type="PledgeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncomeAccountTable" Member="IncomeAccountTables">
+    <Type Name="IncomeAccountTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_IncomeAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_IncomeAccountTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncomeBankPaymentTable" Member="IncomeBankPaymentTables">
+    <Type Name="IncomeBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Offeringid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="PaymentMethodTable_IncomeBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="IncomeOffTable_IncomeBankPaymentTable" Member="IncomeOffTable" ThisKey="Offeringid" OtherKey="Offeringid" Type="IncomeOffTable" IsForeignKey="true" />
+      <Association Name="BankTable_IncomeBankPaymentTable" Member="BankTable" ThisKey="Bankid" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Other_incomeAccountTable" Member="Other_incomeAccountTables">
+    <Type Name="Other_incomeAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransactionDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Other_incomeid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_Other_incomeAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_Other_incomeAccountTable" Member="IncomeTable" ThisKey="Other_incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_Other_incomeAccountTable" Member="MembershipTable" ThisKey="StaffId" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncomeOffTable" Member="IncomeOffTables">
+    <Type Name="IncomeOffTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Offeringid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Topic" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Minister" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Period" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="IncomeOffTable_IncomeBankPaymentTable" Member="IncomeBankPaymentTables" ThisKey="Offeringid" OtherKey="Offeringid" Type="IncomeBankPaymentTable" />
+      <Association Name="IncomeOffTable_IncomePaymentTable" Member="IncomePaymentTables" ThisKey="Offeringid" OtherKey="Offeringid" Type="IncomePaymentTable" />
+      <Association Name="IncomeTable_IncomeOffTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cash_BookTable" Member="Cash_BookTables">
+    <Type Name="Cash_BookTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Transactiondate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Cash_Bank" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TransactionType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updateby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_Cash_BookTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChurchDetailTable" Member="ChurchDetailTables">
+    <Type Name="ChurchDetailTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ChurchDesgID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Country" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Assign" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Stateid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Locationid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDetailTable_ChurchvaluesTable" Member="ChurchvaluesTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchvaluesTable" />
+      <Association Name="ChurchDetailTable_ChurchHierachy" Member="ChurchHierachies" ThisKey="ChurchDetailID" OtherKey="ChurchParent" Type="ChurchHierachy" />
+      <Association Name="ChurchDetailTable_AddvisitorTable" Member="AddvisitorTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="AddvisitorTable" />
+      <Association Name="ChurchDetailTable_BaptismTable" Member="BaptismTables" ThisKey="ChurchDetailID" OtherKey="Churchid" Type="BaptismTable" />
+      <Association Name="ChurchDetailTable_EventTable" Member="EventTables" ThisKey="ChurchDetailID" OtherKey="ChurchID" Type="EventTable" />
+      <Association Name="ChurchDetailTable_MinisterTable" Member="MinisterTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="MinisterTable" />
+      <Association Name="ChurchDetailTable_FunctionalGroupTable" Member="FunctionalGroupTables" ThisKey="ChurchDetailID" OtherKey="Churchid" Type="FunctionalGroupTable" />
+      <Association Name="ChurchDetailTable_OrderServiceTable" Member="OrderServiceTables" ThisKey="ChurchDetailID" OtherKey="churchid" Type="OrderServiceTable" />
+      <Association Name="ChurchDetailTable_HierarchyTable" Member="HierarchyTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="HierarchyTable" />
+      <Association Name="ChurchDetailTable_HierarcyAccountTable" Member="HierarcyAccountTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailsID" Type="HierarcyAccountTable" />
+      <Association Name="ChurchDetailTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailsID" Type="PensionAccountTable" />
+      <Association Name="ChurchDetailTable_HomecellTable" Member="HomecellTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="HomecellTable" />
+      <Association Name="ChurchDetailTable_DedicationTable" Member="DedicationTables" ThisKey="ChurchDetailID" OtherKey="Churchid" Type="DedicationTable" />
+      <Association Name="ChurchDetailTable_MembershipTable" Member="MembershipTables" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="MembershipTable" />
+      <Association Name="Country_ChurchDetailTable" Member="Country1" ThisKey="Country" OtherKey="ID" Type="Country" IsForeignKey="true" />
+      <Association Name="StateTable_ChurchDetailTable" Member="StateTable" ThisKey="Stateid" OtherKey="Stateid" Type="StateTable" IsForeignKey="true" />
+      <Association Name="ChurchDesignationTable_ChurchDetailTable" Member="ChurchDesignationTable" ThisKey="ChurchDesgID" OtherKey="ChurchDesgID" Type="ChurchDesignationTable" IsForeignKey="true" />
+      <Association Name="Location_ChurchDetailTable" Member="Location" ThisKey="Locationid" OtherKey="Locationid" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MemberImageTable" Member="MemberImageTables">
+    <Type Name="MemberImageTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ScanName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ScanType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SourceDocumentScan" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="MembershipTable_MemberImageTable" Member="MembershipTable" ThisKey="MemberID" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpensesdetailsTable" Member="ExpensesdetailsTables">
+    <Type Name="ExpensesdetailsTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Expensesid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ExpensesdetailsTable_WelfareMainTable" Member="WelfareMainTables" ThisKey="ID" OtherKey="ExpensesDetails" Type="WelfareMainTable" />
+      <Association Name="ExpensesHeadTable_ExpensesdetailsTable" Member="ExpensesHeadTable" ThisKey="Expensesid" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpensesHeadTable" Member="ExpensesHeadTables">
+    <Type Name="ExpensesHeadTable">
+      <Column Name="Expensesid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="ExpensesHeadTable_ExpensesdetailsTable" Member="ExpensesdetailsTables" ThisKey="Expensesid" OtherKey="Expensesid" Type="ExpensesdetailsTable" />
+      <Association Name="ExpensesHeadTable_WarefarePaymentTable" Member="WarefarePaymentTables" ThisKey="Expensesid" OtherKey="Expensesid" Type="WarefarePaymentTable" />
+      <Association Name="ExpensesHeadTable_WelfareMainTable" Member="WelfareMainTables" ThisKey="Expensesid" OtherKey="ExpenseHeadid" Type="WelfareMainTable" />
+      <Association Name="ExpensesHeadTable_RaiseExpensesHdTable" Member="RaiseExpensesHdTables" ThisKey="Expensesid" OtherKey="ExpenseHead" Type="RaiseExpensesHdTable" />
+      <Association Name="ExpensesHeadTable_RaiseExpenPaymentTable" Member="RaiseExpenPaymentTables" ThisKey="Expensesid" OtherKey="Expenseid" Type="RaiseExpenPaymentTable" />
+      <Association Name="ExpensesHeadTable_ExpensesAccountTable" Member="ExpensesAccountTables" ThisKey="Expensesid" OtherKey="ExpensesHeadid" Type="ExpensesAccountTable" />
+      <Association Name="ExpensesHeadTable_PaymentVoucherTable" Member="PaymentVoucherTables" ThisKey="Expensesid" OtherKey="ExpensesHeadiD" Type="PaymentVoucherTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WelfareBankPaymentTable" Member="WelfareBankPaymentTables">
+    <Type Name="WelfareBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="PaymentMethodTable_WelfareBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="WelfareMainTable_WelfareBankPaymentTable" Member="WelfareMainTable" ThisKey="id" OtherKey="id" Type="WelfareMainTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WarefarePaymentTable" Member="WarefarePaymentTables">
+    <Type Name="WarefarePaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Expensesid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ExpensesHeadTable_WarefarePaymentTable" Member="ExpensesHeadTable" ThisKey="Expensesid" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_WarefarePaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="WelfareMainTable_WarefarePaymentTable" Member="WelfareMainTable" ThisKey="id" OtherKey="id" Type="WelfareMainTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WelfareMainTable" Member="WelfareMainTables">
+    <Type Name="WelfareMainTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ExpensesDetails" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpenseHeadid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateRaised" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="year" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="WelfareMainTable_WelfareBankPaymentTable" Member="WelfareBankPaymentTables" ThisKey="id" OtherKey="id" Type="WelfareBankPaymentTable" />
+      <Association Name="WelfareMainTable_WarefarePaymentTable" Member="WarefarePaymentTables" ThisKey="id" OtherKey="id" Type="WarefarePaymentTable" />
+      <Association Name="ExpensesdetailsTable_WelfareMainTable" Member="ExpensesdetailsTable" ThisKey="ExpensesDetails" OtherKey="ID" Type="ExpensesdetailsTable" IsForeignKey="true" />
+      <Association Name="ExpensesHeadTable_WelfareMainTable" Member="ExpensesHeadTable" ThisKey="ExpenseHeadid" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MarriageTable" Member="MarriageTables">
+    <Type Name="MarriageTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marriageid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Hfirstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hlastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hphone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hdob" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Hparents" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HparentsNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HparentsAd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Wfirstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wlastnamae" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wphone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wdob" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Wparents" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Wparentsno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wparentsad" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Witness1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Witness2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sponsor" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MarriageDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ResidentAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="venue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DedicationImageTable" Member="DedicationImageTables">
+    <Type Name="DedicationImageTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DedicationID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ScanName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ScanType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SourceDocumentScan" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DedicationTable_DedicationImageTable" Member="DedicationTable" ThisKey="DedicationID" OtherKey="DedicationId" Type="DedicationTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VisitationTable" Member="VisitationTables">
+    <Type Name="VisitationTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Visitorid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Visitedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Others" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateUpdated" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BaptismTable" Member="BaptismTables">
+    <Type Name="BaptismTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Baptismid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Parents" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BaptismDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ResidentAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="POB" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCreation" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="BaptismTable_BaptismImageTable" Member="BaptismImageTables" ThisKey="Baptismid" OtherKey="BaptismID" Type="BaptismImageTable" />
+      <Association Name="ChurchDetailTable_BaptismTable" Member="ChurchDetailTable" ThisKey="Churchid" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BaptismImageTable" Member="BaptismImageTables">
+    <Type Name="BaptismImageTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BaptismID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ScanName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ScanType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SourceDocumentScan" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="BaptismTable_BaptismImageTable" Member="BaptismTable" ThisKey="BaptismID" OtherKey="Baptismid" Type="BaptismTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventTable" Member="EventTables">
+    <Type Name="EventTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Eventid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NewEvent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Period" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Descrip" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ChurchID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ChurchDetailTable_EventTable" Member="ChurchDetailTable" ThisKey="ChurchID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaiseExpensesHdTable" Member="RaiseExpensesHdTables">
+    <Type Name="RaiseExpensesHdTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpenseHead" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Supplerid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="RaiseExpensesHdTable_RaiseExpensedDetailTable" Member="RaiseExpensedDetailTables" ThisKey="ID" OtherKey="RasieHeadid" Type="RaiseExpensedDetailTable" />
+      <Association Name="RaiseExpensesHdTable_PaymentVoucherTable" Member="PaymentVoucherTables" ThisKey="ID" OtherKey="RaiseExpenseId" Type="PaymentVoucherTable" />
+      <Association Name="ExpensesHeadTable_RaiseExpensesHdTable" Member="ExpensesHeadTable" ThisKey="ExpenseHead" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+      <Association Name="SupplierTable_RaiseExpensesHdTable" Member="SupplierTable" ThisKey="Supplerid" OtherKey="Supplerid" Type="SupplierTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaiseExpensedDetailTable" Member="RaiseExpensedDetailTables">
+    <Type Name="RaiseExpensedDetailTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RasieHeadid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExpensesDetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UnitPrice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="RaiseExpensesHdTable_RaiseExpensedDetailTable" Member="RaiseExpensesHdTable" ThisKey="RasieHeadid" OtherKey="ID" Type="RaiseExpensesHdTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaiseExpenPaymentTable" Member="RaiseExpenPaymentTables">
+    <Type Name="RaiseExpenPaymentTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Expenseid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RaiseexpHdid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AmountW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ExpensesHeadTable_RaiseExpenPaymentTable" Member="ExpensesHeadTable" ThisKey="Expenseid" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_RaiseExpenPaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaiseBankPaymentTable" Member="RaiseBankPaymentTables">
+    <Type Name="RaiseBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RaiseExpenHdid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="PaymentMethodTable_RaiseBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpensesAccountTable" Member="ExpensesAccountTables">
+    <Type Name="ExpensesAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpensesHeadid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpensesName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_ExpensesAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="ExpensesHeadTable_ExpensesAccountTable" Member="ExpensesHeadTable" ThisKey="ExpensesHeadid" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentVoucherTable" Member="PaymentVoucherTables">
+    <Type Name="PaymentVoucherTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pvid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ExpensesHeadiD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RaiseExpenseId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ExpensesHeadTable_PaymentVoucherTable" Member="ExpensesHeadTable" ThisKey="ExpensesHeadiD" OtherKey="Expensesid" Type="ExpensesHeadTable" IsForeignKey="true" />
+      <Association Name="RaiseExpensesHdTable_PaymentVoucherTable" Member="RaiseExpensesHdTable" ThisKey="RaiseExpenseId" OtherKey="ID" Type="RaiseExpensesHdTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountPayableTable" Member="AccountPayableTables">
+    <Type Name="AccountPayableTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Supplierid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_AccountPayableTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="SupplierTable_AccountPayableTable" Member="SupplierTable" ThisKey="Supplierid" OtherKey="Supplerid" Type="SupplierTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AuthenticalTable" Member="AuthenticalTables">
+    <Type Name="AuthenticalTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Memberid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Question1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Answer" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Question2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Answer2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="QuestionTable_AuthenticalTable" Member="QuestionTable" ThisKey="Question1" OtherKey="Question" Type="QuestionTable" IsForeignKey="true" />
+      <Association Name="QuestionTable_AuthenticalTable1" Member="QuestionTable1" ThisKey="Question2" OtherKey="Question" Type="QuestionTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_AuthenticalTable" Member="MembershipTable" ThisKey="Memberid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuestionTable" Member="QuestionTables">
+    <Type Name="QuestionTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="QuestionTable_AuthenticalTable" Member="AuthenticalTables" ThisKey="Question" OtherKey="Question1" Type="AuthenticalTable" />
+      <Association Name="QuestionTable_AuthenticalTable1" Member="AuthenticalTables1" ThisKey="Question" OtherKey="Question2" Type="AuthenticalTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Roles" Member="aspnet_Roles">
+    <Type Name="aspnet_Role">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Applications" Member="aspnet_Applications">
+    <Type Name="aspnet_Application">
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Roles" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Role" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Users" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_UsersInRoles" Member="aspnet_UsersInRoles">
+    <Type Name="aspnet_UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VowAccountTable" Member="VowAccountTables">
+    <Type Name="VowAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Vowid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_VowAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SeedfaithaaccountTable" Member="SeedfaithaaccountTables">
+    <Type Name="SeedfaithaaccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Seedfaithid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_SeedfaithaaccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FirstfruitaccTable" Member="FirstfruitaccTables">
+    <Type Name="FirstfruitaccTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Firstfruitid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AccountidName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_FirstfruitaccTable" Member="ChartAccountTable" ThisKey="AccountidName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MembersGroup" Member="MembersGroups">
+    <Type Name="MembersGroup">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EnterBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="MembersGroup_FunctionalGroupTable" Member="FunctionalGroupTables" ThisKey="ID" OtherKey="MemberGroupID" Type="FunctionalGroupTable" />
+      <Association Name="MembersGroup_ChildrenTable" Member="ChildrenTables" ThisKey="ID" OtherKey="FunctiongroupID" Type="ChildrenTable" />
+      <Association Name="MembersGroup_MembershipTable" Member="MembershipTables" ThisKey="ID" OtherKey="MemberssGroup" Type="MembershipTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PendingSavingUnit" Member="PendingSavingUnits">
+    <Type Name="PendingSavingUnit">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UnitTable_PendingSavingUnit" Member="UnitTable" ThisKey="ServiceID" OtherKey="ServiceId" Type="UnitTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MembersUnit" Member="MembersUnits">
+    <Type Name="MembersUnit">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Memberid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceUnitID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="UnitTable_MembersUnit" Member="UnitTable" ThisKey="ServiceUnitID" OtherKey="ServiceId" Type="UnitTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_MembersUnit" Member="MembershipTable" ThisKey="Memberid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MemberDeath" Member="MemberDeaths">
+    <Type Name="MemberDeath">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MemeberName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumer" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DeathDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChurchDesignationTable" Member="ChurchDesignationTables">
+    <Type Name="ChurchDesignationTable">
+      <Column Name="Sn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChurchDesgID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Branch" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Desicription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EnteredBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDesignationTable_ChurchvaluesTable" Member="ChurchvaluesTables" ThisKey="ChurchDesgID" OtherKey="ChurchDesgID" Type="ChurchvaluesTable" />
+      <Association Name="ChurchDesignationTable_ChurchDetailTable" Member="ChurchDetailTables" ThisKey="ChurchDesgID" OtherKey="ChurchDesgID" Type="ChurchDetailTable" />
+      <Association Name="ChurchDesignationTable_HierarchyTable" Member="HierarchyTables" ThisKey="ChurchDesgID" OtherKey="HierachyID" Type="HierarchyTable" />
+      <Association Name="ChurchDesignationTable_HierarcyAccountTable" Member="HierarcyAccountTables" ThisKey="ChurchDesgID" OtherKey="HirerchyID" Type="HierarcyAccountTable" />
+      <Association Name="ChurchDesignationTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="ChurchDesgID" OtherKey="HirerchyID" Type="PensionAccountTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BankTable" Member="BankTables">
+    <Type Name="BankTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Bankname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updateddate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BankTable_TitheBankPaymentTable" Member="TitheBankPaymentTables" ThisKey="id" OtherKey="Bankid" Type="TitheBankPaymentTable" />
+      <Association Name="BankTable_PledgeBankPaymentTable" Member="PledgeBankPaymentTables" ThisKey="id" OtherKey="BankId" Type="PledgeBankPaymentTable" />
+      <Association Name="BankTable_IncomeBankPaymentTable" Member="IncomeBankPaymentTables" ThisKey="id" OtherKey="Bankid" Type="IncomeBankPaymentTable" />
+      <Association Name="BankTable_pastorsTitheBankPaymentTable" Member="pastorsTitheBankPaymentTables" ThisKey="id" OtherKey="Bankid" Type="pastorsTitheBankPaymentTable" />
+      <Association Name="BankTable_HierarcyBankPaymentTable" Member="HierarcyBankPaymentTables" ThisKey="id" OtherKey="Bankid" Type="HierarcyBankPaymentTable" />
+      <Association Name="BankTable_PensionBankPaymentTable" Member="PensionBankPaymentTables" ThisKey="id" OtherKey="Bankid" Type="PensionBankPaymentTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MinisterTable" Member="MinisterTables">
+    <Type Name="MinisterTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PastorsTypes" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ministerid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ChurchDesigID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Post" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Services" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="MinisterTable_PastorsAccountTable" Member="PastorsAccountTables" ThisKey="Ministerid" OtherKey="MinsterID" Type="PastorsAccountTable" />
+      <Association Name="ChurchDetailTable_MinisterTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="DutyTable_MinisterTable" Member="DutyTable" ThisKey="Post" OtherKey="Dutyid" Type="DutyTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FunctionalGroupTable" Member="FunctionalGroupTables">
+    <Type Name="FunctionalGroupTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FuctionGid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MemberGroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ComId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updateby" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ChurchDetailTable_FunctionalGroupTable" Member="ChurchDetailTable" ThisKey="Churchid" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="CommTable_FunctionalGroupTable" Member="CommTable" ThisKey="ComId" OtherKey="ComId" Type="CommTable" IsForeignKey="true" />
+      <Association Name="MembersGroup_FunctionalGroupTable" Member="MembersGroup" ThisKey="MemberGroupID" OtherKey="ID" Type="MembersGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChildrenTable" Member="ChildrenTables">
+    <Type Name="ChildrenTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Childrenid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Familyname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FunctiongroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ParentNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Parents" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ChildrenTable_ChildrenImageTable" Member="ChildrenImageTables" ThisKey="Childrenid" OtherKey="Childrenid" Type="ChildrenImageTable" />
+      <Association Name="MembersGroup_ChildrenTable" Member="MembersGroup" ThisKey="FunctiongroupID" OtherKey="ID" Type="MembersGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderServiceTable" Member="OrderServiceTables">
+    <Type Name="OrderServiceTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Orderid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ServicesName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Period" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Timefrom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TimeTo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Min" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Program" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Moderator" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChurchDetailTable_OrderServiceTable" Member="ChurchDetailTable" ThisKey="churchid" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastorsTitheAcountTable" Member="PastorsTitheAcountTables">
+    <Type Name="PastorsTitheAcountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_PastorsTitheAcountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_PastorsTitheAcountTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pastorsTitheBankPaymentTable" Member="pastorsTitheBankPaymentTables">
+    <Type Name="pastorsTitheBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="BankTable_pastorsTitheBankPaymentTable" Member="BankTable" ThisKey="Bankid" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_pastorsTitheBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PastorsTitheTable_pastorsTitheBankPaymentTable" Member="PastorsTitheTable" ThisKey="Titheid" OtherKey="Titheid" Type="PastorsTitheTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastorsTithePaymentTable" Member="PastorsTithePaymentTables">
+    <Type Name="PastorsTithePaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="IncomeTable_PastorsTithePaymentTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_PastorsTithePaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PastorsTitheTable_PastorsTithePaymentTable" Member="PastorsTitheTable" ThisKey="Titheid" OtherKey="Titheid" Type="PastorsTitheTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastorsTitheTable" Member="PastorsTitheTables">
+    <Type Name="PastorsTitheTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pastorsname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TitheNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="PastorsTitheTable_pastorsTitheBankPaymentTable" Member="pastorsTitheBankPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="pastorsTitheBankPaymentTable" />
+      <Association Name="PastorsTitheTable_PastorsTithePaymentTable" Member="PastorsTithePaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="PastorsTithePaymentTable" />
+      <Association Name="IncomeTable_PastorsTitheTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_PastorsTitheTable" Member="MembershipTable" ThisKey="Staffid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastorsAccountTable" Member="PastorsAccountTables">
+    <Type Name="PastorsAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MinsterID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Dateupdated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_PastorsAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="MinisterTable_PastorsAccountTable" Member="MinisterTable" ThisKey="MinsterID" OtherKey="Ministerid" Type="MinisterTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_PastorsAccountTable" Member="MembershipTable" ThisKey="StaffId" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HierarchyTable" Member="HierarchyTables">
+    <Type Name="HierarchyTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HierachyID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TitheNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="HierarchyTable_HierarcyBankPaymentTable" Member="HierarcyBankPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="HierarcyBankPaymentTable" />
+      <Association Name="HierarchyTable_HierarchyPaymentTable" Member="HierarchyPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="HierarchyPaymentTable" />
+      <Association Name="ChurchDesignationTable_HierarchyTable" Member="ChurchDesignationTable" ThisKey="HierachyID" OtherKey="ChurchDesgID" Type="ChurchDesignationTable" IsForeignKey="true" />
+      <Association Name="ChurchDetailTable_HierarchyTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_HierarchyTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_HierarchyTable" Member="MembershipTable" ThisKey="Staffid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HierarcyBankPaymentTable" Member="HierarcyBankPaymentTables">
+    <Type Name="HierarcyBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BankTable_HierarcyBankPaymentTable" Member="BankTable" ThisKey="Bankid" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+      <Association Name="HierarchyTable_HierarcyBankPaymentTable" Member="HierarchyTable" ThisKey="Titheid" OtherKey="Titheid" Type="HierarchyTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_HierarcyBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HierarcyAccountTable" Member="HierarcyAccountTables">
+    <Type Name="HierarcyAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="HirerchyID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailsID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_HierarcyAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="ChurchDesignationTable_HierarcyAccountTable" Member="ChurchDesignationTable" ThisKey="HirerchyID" OtherKey="ChurchDesgID" Type="ChurchDesignationTable" IsForeignKey="true" />
+      <Association Name="ChurchDetailTable_HierarcyAccountTable" Member="ChurchDetailTable" ThisKey="ChurchDetailsID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_HierarcyAccountTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_HierarcyAccountTable" Member="MembershipTable" ThisKey="StaffId" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PensionTable" Member="PensionTables">
+    <Type Name="PensionTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HierachyID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PensionNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amountword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Staffid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PensionTable_PensionPaymentTable" Member="PensionPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="PensionPaymentTable" />
+      <Association Name="PensionTable_PensionBankPaymentTable" Member="PensionBankPaymentTables" ThisKey="Titheid" OtherKey="Titheid" Type="PensionBankPaymentTable" />
+      <Association Name="PensionTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="Titheid" OtherKey="Titheid" Type="PensionAccountTable" />
+      <Association Name="IncomeTable_PensionTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_PensionTable" Member="MembershipTable" ThisKey="Staffid" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PensionPaymentTable" Member="PensionPaymentTables">
+    <Type Name="PensionPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="IncomeTable_PensionPaymentTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_PensionPaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PensionTable_PensionPaymentTable" Member="PensionTable" ThisKey="Titheid" OtherKey="Titheid" Type="PensionTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PensionBankPaymentTable" Member="PensionBankPaymentTables">
+    <Type Name="PensionBankPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Paymentid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Bankid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChequeNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateissu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CardNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="BankTable_PensionBankPaymentTable" Member="BankTable" ThisKey="Bankid" OtherKey="id" Type="BankTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_PensionBankPaymentTable" Member="PaymentMethodTable" ThisKey="Paymentid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+      <Association Name="PensionTable_PensionBankPaymentTable" Member="PensionTable" ThisKey="Titheid" OtherKey="Titheid" Type="PensionTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PensionAccountTable" Member="PensionAccountTables">
+    <Type Name="PensionAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HirerchyID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailsID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="ChartAccountTable_PensionAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="ChurchDesignationTable_PensionAccountTable" Member="ChurchDesignationTable" ThisKey="HirerchyID" OtherKey="ChurchDesgID" Type="ChurchDesignationTable" IsForeignKey="true" />
+      <Association Name="ChurchDetailTable_PensionAccountTable" Member="ChurchDetailTable" ThisKey="ChurchDetailsID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="IncomeTable_PensionAccountTable" Member="IncomeTable" ThisKey="incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="PensionTable_PensionAccountTable" Member="PensionTable" ThisKey="Titheid" OtherKey="Titheid" Type="PensionTable" IsForeignKey="true" />
+      <Association Name="MembershipTable_PensionAccountTable" Member="MembershipTable" ThisKey="StaffId" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HierarchyPaymentTable" Member="HierarchyPaymentTables">
+    <Type Name="HierarchyPaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titheid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="HierarchyTable_HierarchyPaymentTable" Member="HierarchyTable" ThisKey="Titheid" OtherKey="Titheid" Type="HierarchyTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_HierarchyPaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WelfareAccountTable" Member="WelfareAccountTables">
+    <Type Name="WelfareAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ExpensesHeadid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dateupdated" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_WelfareAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HomeCellZonesTable" Member="HomeCellZonesTables">
+    <Type Name="HomeCellZonesTable">
+      <Column Name="ZoneSN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Zones" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnterBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="HomeCellZonesTable_HomeCellZonesPastorsTable" Member="HomeCellZonesPastorsTables" ThisKey="ZoneSN" OtherKey="ZoneSN" Type="HomeCellZonesPastorsTable" />
+      <Association Name="HomeCellZonesTable_HomecellTable" Member="HomecellTables" ThisKey="ZoneSN" OtherKey="ZoneSN" Type="HomecellTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HomeCellZonesPastorsTable" Member="HomeCellZonesPastorsTables">
+    <Type Name="HomeCellZonesPastorsTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ZoneSN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PastorType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PastorsNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnterBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="HomeCellZonesTable_HomeCellZonesPastorsTable" Member="HomeCellZonesTable" ThisKey="ZoneSN" OtherKey="ZoneSN" Type="HomeCellZonesTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HomecellTable" Member="HomecellTables">
+    <Type Name="HomecellTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ZoneSN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Adress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CellMinister" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MinsterAdd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="locationid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Celldescription" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AreaId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updateby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="AreaTable_HomecellTable" Member="AreaTable" ThisKey="AreaId" OtherKey="Areaid" Type="AreaTable" IsForeignKey="true" />
+      <Association Name="AreaTable_HomecellTable1" Member="AreaTable1" ThisKey="AreaId" OtherKey="Areaid" Type="AreaTable" IsForeignKey="true" />
+      <Association Name="ChurchDetailTable_HomecellTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="HomeCellZonesTable_HomecellTable" Member="HomeCellZonesTable" ThisKey="ZoneSN" OtherKey="ZoneSN" Type="HomeCellZonesTable" IsForeignKey="true" />
+      <Association Name="Location_HomecellTable" Member="Location" ThisKey="locationid" OtherKey="Locationid" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FamilyTable" Member="FamilyTables">
+    <Type Name="FamilyTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Familyid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FamilyName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FamilyMiddleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FamilyFirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="FamilyTable_FamilyImageTable" Member="FamilyImageTables" ThisKey="Familyid" OtherKey="FamilyID" Type="FamilyImageTable" />
+      <Association Name="FamilyTable_MembershipTable" Member="MembershipTables" ThisKey="Familyid" OtherKey="FamilyID" Type="MembershipTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SermonTable" Member="SermonTables">
+    <Type Name="SermonTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sermonid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SermonIdentifier" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SermonTitle" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Scripture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Duration" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SermonDvD" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SermonAudio" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SermonVideo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SermonMp3" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Keyword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Location" Member="Locations">
+    <Type Name="Location">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Locationid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Location_AreaTable" Member="AreaTables" ThisKey="Locationid" OtherKey="Locationid" Type="AreaTable" />
+      <Association Name="Location_ChurchDetailTable" Member="ChurchDetailTables" ThisKey="Locationid" OtherKey="Locationid" Type="ChurchDetailTable" />
+      <Association Name="Location_HomecellTable" Member="HomecellTables" ThisKey="Locationid" OtherKey="locationid" Type="HomecellTable" />
+      <Association Name="Location_MembershipTable" Member="MembershipTables" ThisKey="Locationid" OtherKey="Locationid" Type="MembershipTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DedicationTable" Member="DedicationTables">
+    <Type Name="DedicationTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DedicationId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FFirstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Flastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fphone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MFirstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mlastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BFirstname" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BOtherNames" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BLastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ParentAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateDedication" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Placeofbirth" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pastor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="DedicationTable_DedicationImageTable" Member="DedicationImageTables" ThisKey="DedicationId" OtherKey="DedicationID" Type="DedicationImageTable" />
+      <Association Name="ChurchDetailTable_DedicationTable" Member="ChurchDetailTable" ThisKey="Churchid" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MonthTable" Member="MonthTables">
+    <Type Name="MonthTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Monthvalue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChildrenImageTable" Member="ChildrenImageTables">
+    <Type Name="ChildrenImageTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Childrenid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ScanName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ScanType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SourceDocumentScan" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="ChildrenTable_ChildrenImageTable" Member="ChildrenTable" ThisKey="Childrenid" OtherKey="Childrenid" Type="ChildrenTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FamilyImageTable" Member="FamilyImageTables">
+    <Type Name="FamilyImageTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FamilyID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MemberChildID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceDocumentScan" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="FamilyTable_FamilyImageTable" Member="FamilyTable" ThisKey="FamilyID" OtherKey="Familyid" Type="FamilyTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MembershipTable" Member="MembershipTables">
+    <Type Name="MembershipTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FamilyID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Memberid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="StateofOrgin" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Authority" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Occupation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MartialStatus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MarriageAniversity" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nationality" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Language1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Language2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Languag3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TitheId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateBaptism" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateConverted" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Locationid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChurchDetailID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MemberssGroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Updatedby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Town" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HomeCellAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="MembershipTable_UserTable" Member="UserTables" ThisKey="Memberid" OtherKey="Memberid" Type="UserTable" />
+      <Association Name="MembershipTable_AccountRecivableTable" Member="AccountRecivableTables" ThisKey="Memberid" OtherKey="Memberid" Type="AccountRecivableTable" />
+      <Association Name="MembershipTable_Other_incomeAccountTable" Member="Other_incomeAccountTables" ThisKey="Memberid" OtherKey="StaffId" Type="Other_incomeAccountTable" />
+      <Association Name="MembershipTable_MemberImageTable" Member="MemberImageTables" ThisKey="Memberid" OtherKey="MemberID" Type="MemberImageTable" />
+      <Association Name="MembershipTable_AuthenticalTable" Member="AuthenticalTables" ThisKey="Memberid" OtherKey="Memberid" Type="AuthenticalTable" />
+      <Association Name="MembershipTable_MembersUnit" Member="MembersUnits" ThisKey="Memberid" OtherKey="Memberid" Type="MembersUnit" />
+      <Association Name="MembershipTable_PastorsTitheTable" Member="PastorsTitheTables" ThisKey="Memberid" OtherKey="Staffid" Type="PastorsTitheTable" />
+      <Association Name="MembershipTable_PastorsAccountTable" Member="PastorsAccountTables" ThisKey="Memberid" OtherKey="StaffId" Type="PastorsAccountTable" />
+      <Association Name="MembershipTable_HierarchyTable" Member="HierarchyTables" ThisKey="Memberid" OtherKey="Staffid" Type="HierarchyTable" />
+      <Association Name="MembershipTable_HierarcyAccountTable" Member="HierarcyAccountTables" ThisKey="Memberid" OtherKey="StaffId" Type="HierarcyAccountTable" />
+      <Association Name="MembershipTable_PensionTable" Member="PensionTables" ThisKey="Memberid" OtherKey="Staffid" Type="PensionTable" />
+      <Association Name="MembershipTable_PensionAccountTable" Member="PensionAccountTables" ThisKey="Memberid" OtherKey="StaffId" Type="PensionAccountTable" />
+      <Association Name="MembershipTable_LoanHeadTable" Member="LoanHeadTables" ThisKey="Memberid" OtherKey="MembershipID" Type="LoanHeadTable" />
+      <Association Name="AreaTable_MembershipTable" Member="AreaTable" ThisKey="Area" OtherKey="Areaid" Type="AreaTable" IsForeignKey="true" />
+      <Association Name="ChurchDetailTable_MembershipTable" Member="ChurchDetailTable" ThisKey="ChurchDetailID" OtherKey="ChurchDetailID" Type="ChurchDetailTable" IsForeignKey="true" />
+      <Association Name="FamilyTable_MembershipTable" Member="FamilyTable" ThisKey="FamilyID" OtherKey="Familyid" Type="FamilyTable" IsForeignKey="true" />
+      <Association Name="Location_MembershipTable" Member="Location" ThisKey="Locationid" OtherKey="Locationid" Type="Location" IsForeignKey="true" />
+      <Association Name="MembersGroup_MembershipTable" Member="MembersGroup" ThisKey="MemberssGroup" OtherKey="ID" Type="MembersGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IncomePaymentTable" Member="IncomePaymentTables">
+    <Type Name="IncomePaymentTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Offeringid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Incomeid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentMethodid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AmountReducedPerTitheEntry" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="IncomeTable_IncomePaymentTable" Member="IncomeTable" ThisKey="Incomeid" OtherKey="ID" Type="IncomeTable" IsForeignKey="true" />
+      <Association Name="IncomeOffTable_IncomePaymentTable" Member="IncomeOffTable" ThisKey="Offeringid" OtherKey="Offeringid" Type="IncomeOffTable" IsForeignKey="true" />
+      <Association Name="PaymentMethodTable_IncomePaymentTable" Member="PaymentMethodTable" ThisKey="PaymentMethodid" OtherKey="Id" Type="PaymentMethodTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttendanceTotalTable" Member="AttendanceTotalTables">
+    <Type Name="AttendanceTotalTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Attendanceid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalAdult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalTeen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalChildren" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalVisitors" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="AttendanceTable_AttendanceTotalTable" Member="AttendanceTable" ThisKey="Attendanceid" OtherKey="Attendanceid" Type="AttendanceTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AttendanceTable" Member="AttendanceTables">
+    <Type Name="AttendanceTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Attendanceid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Day" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Week" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MainSacAdultMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MainSacAdultFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MainSacTeenMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MainSacTeenFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MainSacChildrenMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MainSacChildrenFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VisitorMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VisitorFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenAdultMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenAdultFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenChidMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeenChildFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildAdultMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildAdultFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildTeenMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildTeenFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildMale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildFemale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Churchid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="AttendanceTable_AttendanceTotalTable" Member="AttendanceTotalTables" ThisKey="Attendanceid" OtherKey="Attendanceid" Type="AttendanceTotalTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoanAccountTable" Member="LoanAccountTables">
+    <Type Name="LoanAccountTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoanID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TranscationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Accountdetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Transcationtype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Datecreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChartAccountTable_LoanAccountTable" Member="ChartAccountTable" ThisKey="AccountName" OtherKey="Accountname" Type="ChartAccountTable" IsForeignKey="true" />
+      <Association Name="LoanHeadTable_LoanAccountTable" Member="LoanHeadTable" ThisKey="LoanID" OtherKey="Loanid" Type="LoanHeadTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoanPVTable" Member="LoanPVTables">
+    <Type Name="LoanPVTable">
+      <Column Name="Pvid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Loanid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="LoanHeadTable_LoanPVTable" Member="LoanHeadTable" ThisKey="Loanid" OtherKey="Loanid" Type="LoanHeadTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoanHeadTable" Member="LoanHeadTables">
+    <Type Name="LoanHeadTable">
+      <Column Name="SN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Loanid" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MembershipID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MaritaStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GuarantorName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="GAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PlaceOfWork" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GPhone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GEmail" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoanAmount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Purpose" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateCollected" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="RepaymentDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoanHeadTable_LoanAccountTable" Member="LoanAccountTables" ThisKey="Loanid" OtherKey="LoanID" Type="LoanAccountTable" />
+      <Association Name="LoanHeadTable_LoanPVTable" Member="LoanPVTables" ThisKey="Loanid" OtherKey="Loanid" Type="LoanPVTable" />
+      <Association Name="MembershipTable_LoanHeadTable" Member="MembershipTable" ThisKey="MembershipID" OtherKey="Memberid" Type="MembershipTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

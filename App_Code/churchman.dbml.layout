@@ -1,0 +1,1751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 25, 43.875" name="churchman">
+  <DataContextMoniker Name="/churchmanDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7101b37d-487f-4ca1-a443-92153c5ec11e" isExpanded="false" absoluteBounds="3.5, 11.5, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/UnitTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="067f889d-615b-4317-8445-f690f3c0e794" absoluteBounds="3.5150000000000006, 11.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af362e69-93f0-48b4-b37e-cb3d298af483" isExpanded="false" absoluteBounds="0.75, 3.125, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/churchmanDataContext/ParishTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02eff24f-445f-4948-b018-3d1d39cca9a4" absoluteBounds="0.76500000000000057, 3.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc9a0805-91f8-4b6a-8a11-de007bcaebeb" isExpanded="false" absoluteBounds="6.25, 16.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/ChurchvaluesTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15e6e554-b0c0-4f91-af93-ff24d2ce2aba" absoluteBounds="6.2650000000000006, 16.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ee19fe4-2642-4119-a38f-43c8d9280e50" isExpanded="false" absoluteBounds="0.75, 11.875, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/StateTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3894c2e9-632e-4cf5-b397-d439c6071978" absoluteBounds="0.76499999999999968, 12.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5c1e03c-f41d-4bfe-952a-6e673b0e6616" isExpanded="false" absoluteBounds="6.25, 11.375, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/ChurchHierachy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e37ee6e8-f3ed-467e-b6c8-7661fea3bc33" absoluteBounds="6.2650000000000006, 11.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e7aa2495-16c9-4dba-811b-4b68df706450" isExpanded="false" absoluteBounds="6.5, 6.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/CommTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fffc4377-b48e-49c4-bf8c-3ca3ac2dc529" absoluteBounds="6.515, 6.5850000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b71a6dd0-8f88-4fc5-9f1f-76e4b1997f37" isExpanded="false" absoluteBounds="0.75, 5.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/ClassTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd4488f5-d894-4efe-adac-b878367d875b" absoluteBounds="0.76500000000000057, 5.5850000000000009, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c50e4d3-c252-4f6e-bc82-50b0f817a051" isExpanded="false" absoluteBounds="9.25, 9.125, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/RoleTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a655567-25a2-4390-84b5-067e816f2722" absoluteBounds="9.265, 9.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa6ab2ee-03a9-4243-a49c-79b279f096b5" isExpanded="false" absoluteBounds="12, 13.125, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/UserTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0837c5a1-a353-4a75-9264-0726ac8f44e1" absoluteBounds="12.015, 13.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.46426923076923 : 9.575); (9.46426923076923 : 13.32265590625); (9.68111701822917 : 13.32265590625 : JumpStart); (9.84778368489583 : 13.32265590625 : JumpEnd); (10.0085402291667 : 13.32265590625 : JumpStart); (10.1752068958333 : 13.32265590625 : JumpEnd); (10.6763056125801 : 13.32265590625 : JumpStart); (11.1458333333333 : 13.32265590625 : JumpEnd); (11.4479166666667 : 13.32265590625 : JumpStart); (11.6145833333333 : 13.32265590625 : JumpEnd); (12 : 13.32265590625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/RoleTable/RoleTable_UserTable" />
+      <nodes>
+        <classShapeMoniker Id="6c50e4d3-c252-4f6e-bc82-50b0f817a051" />
+        <classShapeMoniker Id="aa6ab2ee-03a9-4243-a49c-79b279f096b5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fff271a0-9f87-42ce-bffa-e76d2b8893c1" isExpanded="false" absoluteBounds="6.25, 14.875, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/AddvisitorTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74f6b30d-c10e-4a91-8e94-8f59fca8f9c0" absoluteBounds="6.2650000000000006, 15.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43ec0c77-2b41-48f0-a575-54c9bb68f4e4" isExpanded="false" absoluteBounds="6.5, 8.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/AreaTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b8e3db9-343f-4343-883b-273775691aaf" absoluteBounds="6.515, 8.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="739aa394-018a-42ec-9791-4a38110e4107" isExpanded="false" absoluteBounds="0.75, 7.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/DutyTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c6c71f4-5260-4a21-b63d-e064b18f335c" absoluteBounds="0.76500000000000057, 7.5850000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cd9458c-f6e8-41f1-8072-226824c5a82d" isExpanded="false" absoluteBounds="0.75, 9.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/ProjectTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bf40b6f-ec76-41b0-8fc4-2e9640224c79" absoluteBounds="0.76500000000000057, 9.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61b56692-2152-430e-8547-c6bf3ceb1306" isExpanded="false" absoluteBounds="11.75, 17.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/TaxTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e988a303-345f-4ca0-8882-fd55d2c86686" absoluteBounds="11.765, 17.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b46dc7a7-f74e-440e-a6e3-ca09c89b8a71" isExpanded="false" absoluteBounds="15, 18.25, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/SupplierTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c6b291e-955f-41e5-8851-e5b98fd3d3de" absoluteBounds="15.015, 18.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68db3b12-d92f-4fb2-8850-6f36ab676129" isExpanded="false" absoluteBounds="9.25, 20.125, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/IncomeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6948b3d7-2004-43d2-8c63-b1c43a4a2423" absoluteBounds="9.265, 20.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90ba0f07-56d9-44a8-a4ad-68725567b095" isExpanded="false" absoluteBounds="14.75, 9.25, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/PaymentMethodTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19d7d1d5-4c09-492e-8c3d-7653985cef43" absoluteBounds="14.765, 9.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed473d0f-addf-4150-a89b-52c027accc39" isExpanded="false" absoluteBounds="6.5, 23.75, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Cash_bankrelationshipTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67d7854b-4a69-4ba2-96e4-7dce6e7c8f73" absoluteBounds="6.5150000000000006, 24.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9282248-d438-4ff8-8ef8-c3b3ff7cc89d" isExpanded="false" absoluteBounds="6.5, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/Income_ExpenditureTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9c8fd26-24c4-4ccd-a7fd-7faa21c0558a" absoluteBounds="6.5150000000000006, 1.2100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82024c89-83d7-47f5-a927-7430e34d04c5" isExpanded="false" absoluteBounds="6.5, 4.875, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Report_typeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29dc64b2-843c-4ecb-af42-db005eab9976" absoluteBounds="6.5150000000000006, 5.3350000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82f59e7a-2ab2-4f09-ba2b-294bfa87dfd2" isExpanded="false" absoluteBounds="6.5, 30.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Asset_liabilityTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7de09a6f-6519-4db4-83c4-a370262e4d09" absoluteBounds="6.5150000000000006, 30.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e631596-f93b-4c82-8ef6-2d7ea1f347c7" isExpanded="false" absoluteBounds="6.5, 3.5, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Current_nonCurrentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da82d247-ae1f-4a66-8fcc-1f92bb13f46e" absoluteBounds="6.5150000000000006, 3.9600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0783728b-474d-4997-a30f-19104b433e68" isExpanded="false" absoluteBounds="14.75, 7.25, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/TitheTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12c6cb83-0e61-42f1-9abb-0c0ccc7e88e6" absoluteBounds="14.765000000596046, 7.71000000089407, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 20.493752); (13.9791666666667 : 20.493752 : JumpStart); (14.3958333333333 : 20.493752 : JumpEnd); (14.5 : 20.493752); (14.5 : 8.075); (14.5416666666667 : 8.075 : JumpStart); (14.7083333333333 : 8.075 : JumpEnd); (15.75 : 8.075); (15.75 : 7.7)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_TitheTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="0783728b-474d-4997-a30f-19104b433e68" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e17914ab-e4e7-4b90-af6e-a956ebe0bf78" isExpanded="false" absoluteBounds="17.5, 14.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/TithePaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3740dc94-e988-4e99-bacd-18fcab19c60b" absoluteBounds="17.515, 15.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 20.278124); (11.5416666666667 : 20.278124 : JumpStart); (11.7083333333333 : 20.278124 : JumpEnd); (13.9791666666667 : 20.278124 : JumpStart); (14.5833333333333 : 20.278124 : JumpEnd); (14.6041666666667 : 20.278124 : JumpStart); (14.9895845833333 : 20.278124 : JumpEnd); (17.59375 : 20.278124); (17.59375 : 15.2)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_TithePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="e17914ab-e4e7-4b90-af6e-a956ebe0bf78" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.347659 : 9.7); (16.347659 : 14.975); (16.4967486666667 : 14.975 : JumpStart); (16.6634153333333 : 14.975 : JumpEnd); (16.9791666666667 : 14.975 : JumpStart); (17.1458333333333 : 14.975 : JumpEnd); (17.5 : 14.975)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_TithePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="e17914ab-e4e7-4b90-af6e-a956ebe0bf78" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a26a35b1-4180-426d-9373-3f28f6b8f8e9" isExpanded="false" absoluteBounds="12, 11.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/AccountRecivableTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15566dc3-39cb-4e26-b4fe-a644ea211428" absoluteBounds="12.015, 11.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3139cbb0-443c-4644-a310-c6cc9c2d627b" isExpanded="false" absoluteBounds="12, 7.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/TitheAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1dcd02d-be61-40c0-8b1a-76955da19c09" absoluteBounds="12.015, 7.5850000000000009, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 20.278124); (11.5416666666667 : 20.278124 : JumpStart); (11.7083333333333 : 20.278124 : JumpEnd); (13.9791666666667 : 20.278124 : JumpStart); (14.3333333333333 : 20.278124 : JumpEnd); (14.375 : 20.278124); (14.375 : 7.35); (14.3333333333333 : 7.35 : JumpStart); (14.1041666666667 : 7.35 : JumpEnd); (14 : 7.35)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_TitheAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="3139cbb0-443c-4644-a310-c6cc9c2d627b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" isExpanded="false" absoluteBounds="9.25, 2.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/ChartAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d594e61-a048-44c9-bba2-66117a7c160e" absoluteBounds="9.265, 2.5850000000000009, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.35); (9 : 2.35); (9 : 10.75); (9.10416666666667 : 10.75 : JumpStart); (9.27083333333333 : 10.75 : JumpEnd); (9.3809358974359 : 10.75 : JumpStart); (9.54760256410256 : 10.75 : JumpEnd); (9.68111701822917 : 10.75 : JumpStart); (9.84778368489583 : 10.75 : JumpEnd); (10.0085402291667 : 10.75 : JumpStart); (10.1752068958333 : 10.75 : JumpEnd); (10.6763056125801 : 10.75 : JumpStart); (10.9854232251602 : 10.75 : JumpEnd); (11.3776041666667 : 10.75 : JumpStart); (11.5442708333333 : 10.75 : JumpEnd); (11.6666666666667 : 10.75 : JumpStart); (12.0183333333333 : 10.75 : JumpEnd); (13 : 10.75); (13 : 11.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_AccountRecivableTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="a26a35b1-4180-426d-9373-3f28f6b8f8e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.873591421875 : 2.575); (9.873591421875 : 7.34375); (10.0085402291667 : 7.34375 : JumpStart); (10.1752068958333 : 7.34375 : JumpEnd); (10.6763056125801 : 7.34375 : JumpStart); (10.9854232251602 : 7.34375 : JumpEnd); (12 : 7.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_TitheAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="3139cbb0-443c-4644-a310-c6cc9c2d627b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 30.35); (8.50176666666667 : 30.35 : JumpStart); (9.02083333333333 : 30.35 : JumpEnd); (9.7644503515625 : 30.35); (9.7644503515625 : 2.575)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Asset_liabilityTable/Asset_liabilityTable_ChartAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="82f59e7a-2ab2-4f09-ba2b-294bfa87dfd2" />
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.4062505 : 23.75); (7.4062505 : 20.575); (8.22916666666667 : 20.575 : JumpStart); (8.48958333333333 : 20.575 : JumpEnd); (8.5625 : 20.575); (8.5625 : 18.2); (7.98093333333333 : 18.2 : JumpStart); (7.81426666666667 : 18.2 : JumpEnd); (7.75 : 18.2); (7.75 : 16.7625); (7.75666666666667 : 16.7625 : JumpStart); (7.92333333333333 : 16.7625 : JumpEnd); (8.22916666666667 : 16.7625 : JumpStart); (8.45833333333333 : 16.7625 : JumpEnd); (8.5 : 16.7625); (8.5 : 10.075); (8.60416666666667 : 10.075 : JumpStart); (8.83520833333333 : 10.075 : JumpEnd); (8.875 : 10.075); (8.875 : 2.493752); (8.88229166666667 : 2.493752 : JumpStart); (9.08333333333333 : 2.493752 : JumpEnd); (9.25 : 2.493752)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Cash_bankrelationshipTable/Cash_bankrelationshipTable_ChartAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="ed473d0f-addf-4150-a89b-52c027accc39" />
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.09375 : 3.5); (8.09375 : 2.2062475); (8.27604166666667 : 2.2062475 : JumpStart); (8.44270833333333 : 2.2062475 : JumpEnd); (8.51041666666667 : 2.2062475 : JumpStart); (8.67708333333333 : 2.2062475 : JumpEnd); (8.72916666666667 : 2.2062475 : JumpStart); (9.04895833333333 : 2.2062475 : JumpEnd); (9.25 : 2.2062475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Current_nonCurrentTable/Current_nonCurrentTable_ChartAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="4e631596-f93b-4c82-8ef6-2d7ea1f347c7" />
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.53125 : 1.2); (6.53125 : 2.174995); (8.27604166666667 : 2.174995 : JumpStart); (8.44270833333333 : 2.174995 : JumpEnd); (8.51041666666667 : 2.174995 : JumpStart); (8.67708333333333 : 2.174995 : JumpEnd); (8.72916666666667 : 2.174995 : JumpStart); (9.04895833333333 : 2.174995 : JumpEnd); (9.25 : 2.174995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Income_ExpenditureTable/Income_ExpenditureTable_ChartAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="d9282248-d438-4ff8-8ef8-c3b3ff7cc89d" />
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 5.1); (8.51041666666667 : 5.1 : JumpStart); (8.67708333333333 : 5.1 : JumpEnd); (8.72916666666667 : 5.1 : JumpStart); (9.08333333333333 : 5.1 : JumpEnd); (9.421402140625 : 5.1); (9.421402140625 : 2.575)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Report_typeTable/Report_typeTable_ChartAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="82024c89-83d7-47f5-a927-7430e34d04c5" />
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7af43a7e-2048-4804-853c-c9172665c469" isExpanded="false" absoluteBounds="15, 16.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/PledgeAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87c0f806-cb01-492e-b263-03aec6d10f57" absoluteBounds="15.015, 16.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.7596389459135 : 2.575); (10.7596389459135 : 16.2062475); (10.8187565584936 : 16.2062475 : JumpStart); (11.1458333333333 : 16.2062475 : JumpEnd); (11.5104166666667 : 16.2062475 : JumpStart); (11.6770833333333 : 16.2062475 : JumpEnd); (12.0572916666667 : 16.2062475 : JumpStart); (12.2239583333333 : 16.2062475 : JumpEnd); (13.9791666666667 : 16.2062475 : JumpStart); (14.9895845833333 : 16.2062475 : JumpEnd); (15 : 16.2062475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_PledgeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="7af43a7e-2048-4804-853c-c9172665c469" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.46968069230769 : 20.125); (9.46968069230769 : 19.059375); (9.68111701822917 : 19.059375 : JumpStart); (9.84778368489583 : 19.059375 : JumpEnd); (10.0085402291667 : 19.059375 : JumpStart); (10.1752068958333 : 19.059375 : JumpEnd); (10.8187565584936 : 19.059375 : JumpStart); (10.9854232251602 : 19.059375 : JumpEnd); (11.015625 : 19.059375); (11.015625 : 17.0984375); (12.140625 : 17.0984375); (12.140625 : 16.35); (13.9791666666667 : 16.35 : JumpStart); (14.9895845833333 : 16.35 : JumpEnd); (15 : 16.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PledgeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="7af43a7e-2048-4804-853c-c9172665c469" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8a8e4b7a-5e38-4a0d-9060-08a1652b5644" isExpanded="false" absoluteBounds="0.75, 13.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="595793c8-8db3-49f0-adb6-4e7541edbcfc" absoluteBounds="0.76499999999999968, 13.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="439c4eb9-b445-4f6b-818e-f5285008de1b" isExpanded="false" absoluteBounds="6.25, 25.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Exchange_RateTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bac1cf7-99e9-4578-984d-7b3f0fa167e1" absoluteBounds="6.265, 25.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1089a839-e896-4678-b9f7-7fb18b318e4c" isExpanded="false" absoluteBounds="3.5, 26.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Currency_CodeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="873beca0-5f16-43f1-a00d-04d17893dec4" absoluteBounds="3.5149999999999997, 26.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 26.125); (5.77654958367869 : 25.922196971969 : JumpStart); (5.91095041632131 : 25.8236363613644 : JumpEnd); (5.93279958367869 : 25.8076136386356 : JumpStart); (6.06720041632131 : 25.709053028031 : JumpEnd); (6.08039958367869 : 25.6993736386356 : JumpStart); (6.21480041632131 : 25.600813028031 : JumpEnd); (6.25 : 25.575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Currency_CodeTable/Currency_CodeTable_Exchange_RateTable" />
+      <nodes>
+        <classShapeMoniker Id="1089a839-e896-4678-b9f7-7fb18b318e4c" />
+        <classShapeMoniker Id="439c4eb9-b445-4f6b-818e-f5285008de1b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5000005 : 13.575); (1.5000005 : 19.5); (2.16666666666667 : 19.5 : JumpStart); (2.33333333333333 : 19.5 : JumpEnd); (2.41666666666667 : 19.5 : JumpStart); (2.58333333333333 : 19.5 : JumpEnd); (2.97916666666667 : 19.5 : JumpStart); (3.27083333333333 : 19.5 : JumpEnd); (3.375 : 19.5); (3.375 : 26.35); (3.5 : 26.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Country/Country_Currency_CodeTable" />
+      <nodes>
+        <classShapeMoniker Id="8a8e4b7a-5e38-4a0d-9060-08a1652b5644" />
+        <classShapeMoniker Id="1089a839-e896-4678-b9f7-7fb18b318e4c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5d558e49-1477-461f-b8b3-1621a2397268" isExpanded="false" absoluteBounds="17.5, 11.25, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/TitheBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54546707-8c34-46ca-9a50-feb55b1ae749" absoluteBounds="17.515, 11.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.4341923076923 : 7.7); (15.6706782168815 : 7.77615576433926 : JumpStart); (15.8293217831185 : 7.82724389083998 : JumpEnd); (16.8269277168815 : 8.14850380292351 : JumpStart); (17.2043217831185 : 8.27003634441799 : JumpEnd); (17.375 : 8.325); (17.375 : 11.1322692307692); (17.5 : 11.2572692307692)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/TitheTable/TitheTable_TitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="0783728b-474d-4997-a30f-19104b433e68" />
+        <classShapeMoniker Id="5d558e49-1477-461f-b8b3-1621a2397268" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.882813 : 9.7); (15.882813 : 11.5098871153846); (16.0319026666667 : 11.5098871153846 : JumpStart); (16.1985693333333 : 11.5098871153846 : JumpEnd); (16.2643256666667 : 11.5098871153846 : JumpStart); (16.4309923333333 : 11.5098871153846 : JumpEnd); (16.4967486666667 : 11.5098871153846 : JumpStart); (16.6634153333333 : 11.5098871153846 : JumpEnd); (16.9791666666667 : 11.5098871153846 : JumpStart); (17.1458333333333 : 11.5098871153846 : JumpEnd); (17.5 : 11.5098871153846)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_TitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="5d558e49-1477-461f-b8b3-1621a2397268" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="43573e35-6086-4d1f-8427-94e65768167c" isExpanded="false" absoluteBounds="14.75, 5.875, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/PledgeTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ccf82b6-c9aa-48b5-bc2b-a4f5af2a1077" absoluteBounds="14.765, 6.3350000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 20.17031); (11.5416666666667 : 20.17031 : JumpStart); (11.7083333333333 : 20.17031 : JumpEnd); (13.9791666666667 : 20.17031 : JumpStart); (14.5208333333333 : 20.17031 : JumpEnd); (14.5625 : 20.17031); (14.5625 : 6.7); (15.75 : 6.7); (15.75 : 6.325)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PledgeTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="43573e35-6086-4d1f-8427-94e65768167c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6034591a-63c8-4099-8b03-6259351b52ed" isExpanded="false" absoluteBounds="17.5, 5.25, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/PledgeBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc56598e-aa6a-4878-aa0d-b5ed5a34d97c" absoluteBounds="17.515, 5.7100000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.75 : 9.25); (16.8473239349011 : 9.15267606509888 : JumpStart); (16.9651750650989 : 9.03482493490112 : JumpEnd); (17.0035744349011 : 8.99642556509888 : JumpStart); (17.1214255650989 : 8.87857443490112 : JumpEnd); (17.125 : 8.875); (17.125 : 5.79306923034714); (17.5079605384615 : 5.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_PledgeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="6034591a-63c8-4099-8b03-6259351b52ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 5.875); (16.8250960658549 : 5.85747758463387 : JumpStart); (17.1436534341452 : 5.7831475320328 : JumpEnd); (17.5 : 5.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PledgeTable/PledgeTable_PledgeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="43573e35-6086-4d1f-8427-94e65768167c" />
+        <classShapeMoniker Id="6034591a-63c8-4099-8b03-6259351b52ed" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e027e901-712b-44f8-878f-abb4a3120fbd" isExpanded="false" absoluteBounds="17.5, 7.25, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/PledgePaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee9a6a77-4d71-4fbf-9d9d-97f981f41e90" absoluteBounds="17.515, 7.7100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.75 : 9.6343785); (16.8229161666667 : 9.6343785 : JumpStart); (17.1458333333333 : 9.6343785 : JumpEnd); (17.2916666666667 : 9.6343785 : JumpStart); (17.4583333333333 : 9.6343785 : JumpEnd); (18.5 : 9.6343785); (18.5 : 7.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_PledgePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="e027e901-712b-44f8-878f-abb4a3120fbd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 6.27149983723958); (16.8229161666667 : 6.27149983723958 : JumpStart); (17.2083333333333 : 6.27149983723958 : JumpEnd); (18.5 : 6.27149983723958); (18.5 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PledgeTable/PledgeTable_PledgePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="43573e35-6086-4d1f-8427-94e65768167c" />
+        <classShapeMoniker Id="e027e901-712b-44f8-878f-abb4a3120fbd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c58680c7-1dcb-4747-8d20-60f7d8835d36" isExpanded="false" absoluteBounds="12, 9.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/IncomeAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e5e0582-f0d0-4d63-9a0d-540e580c14a7" absoluteBounds="12.015, 9.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.5250045); (8.9375 : 2.5250045); (8.9375 : 8.625); (9.10416666666667 : 8.625 : JumpStart); (9.27083333333333 : 8.625 : JumpEnd); (9.68111701822917 : 8.625 : JumpStart); (9.84778368489583 : 8.625 : JumpEnd); (10.0085402291667 : 8.625 : JumpStart); (10.1752068958333 : 8.625 : JumpEnd); (10.5338546666667 : 8.625 : JumpStart); (10.9854232251602 : 8.625 : JumpEnd); (11.3776041666667 : 8.625 : JumpStart); (11.5442708333333 : 8.625 : JumpEnd); (11.6666666666667 : 8.625 : JumpStart); (11.8333333333333 : 8.625 : JumpEnd); (13 : 8.625); (13 : 9.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_IncomeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="c58680c7-1dcb-4747-8d20-60f7d8835d36" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.3271055673077 : 20.125); (10.3271055673077 : 18.98125); (10.8187565584936 : 18.98125 : JumpStart); (10.9854232251602 : 18.98125 : JumpEnd); (11.015625 : 18.98125); (11.015625 : 17.10625); (12.140625 : 17.10625); (12.140625 : 15.60625); (11.015625 : 15.60625); (11.015625 : 12.73125); (10.984375 : 12.73125); (10.984375 : 11.465625); (11.890625 : 11.465625); (11.890625 : 9.35); (12 : 9.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_IncomeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="c58680c7-1dcb-4747-8d20-60f7d8835d36" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="522f678f-9f81-4fa4-a1a0-6b41d7122afa" isExpanded="false" absoluteBounds="20.5, 6.25, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/IncomeBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bbc6bd5-cf1d-41ed-b919-b35a66ca3452" absoluteBounds="20.515, 6.7100000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.75 : 9.51179046153846); (16.8229161666667 : 9.51179046153846 : JumpStart); (17.1458333333333 : 9.51179046153846 : JumpEnd); (17.2916666666667 : 9.51179046153846 : JumpStart); (17.4583333333333 : 9.51179046153846 : JumpEnd); (18.4166666666667 : 9.51179046153846 : JumpStart); (18.5833333333333 : 9.51179046153846 : JumpEnd); (20.0416666666667 : 9.51179046153846 : JumpStart); (20.2083333333333 : 9.51179046153846 : JumpEnd); (20.2604166666667 : 9.51179046153846 : JumpStart); (20.4270833333333 : 9.51179046153846 : JumpEnd); (20.7604166666667 : 9.51179046153846 : JumpStart); (20.9270833333333 : 9.51179046153846 : JumpEnd); (21.4375 : 9.51179046153846); (21.4375 : 6.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_IncomeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="522f678f-9f81-4fa4-a1a0-6b41d7122afa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="917b2fb9-e93b-4af5-b921-a438747fe70d" isExpanded="false" absoluteBounds="12, 15.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Other_incomeAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c78ad2cf-d182-409c-ad91-78832d827915" absoluteBounds="12.015, 15.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.25 : 2.125); (10.25 : 1.825); (9.53255098958333 : 1.825 : JumpStart); (9.36588432291667 : 1.825 : JumpEnd); (8.965625 : 1.825); (8.965625 : 14.675); (9.68111701822917 : 14.675 : JumpStart); (9.84778368489583 : 14.675 : JumpEnd); (10.0085402291667 : 14.675 : JumpStart); (10.1752068958333 : 14.675 : JumpEnd); (10.6763056125801 : 14.675 : JumpStart); (11.1458333333333 : 14.675 : JumpEnd); (11.2 : 14.675); (11.2 : 15.206248); (12 : 15.206248)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_Other_incomeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="917b2fb9-e93b-4af5-b921-a438747fe70d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.132812 : 20.125); (11.132812 : 19.2625); (11.015625 : 19.2625); (11.015625 : 17.0828125); (12.140625 : 17.0828125); (12.140625 : 15.5984375); (11.984375 : 15.5984375); (11.984375 : 15.35); (12 : 15.35)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_Other_incomeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="917b2fb9-e93b-4af5-b921-a438747fe70d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f0e689ed-3b89-4f33-8c4f-a135a3d1838d" isExpanded="false" absoluteBounds="17.75, 16.25, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/IncomeOffTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="638a6d9c-f71f-4cd3-9203-a29c8536fca5" absoluteBounds="17.765, 16.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 16.25); (20.125 : 15.875); (20.125 : 7.07534515384615); (20.2848244349011 : 6.91552071894506 : JumpStart); (20.4026755650989 : 6.79766958874731 : JumpEnd); (20.5003451538462 : 6.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeOffTable/IncomeOffTable_IncomeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="f0e689ed-3b89-4f33-8c4f-a135a3d1838d" />
+        <classShapeMoniker Id="522f678f-9f81-4fa4-a1a0-6b41d7122afa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.8198047836538 : 20.125); (10.8198047836538 : 19.028125); (11.015625 : 19.028125); (11.015625 : 17.1140625); (13.9791666666667 : 17.1140625 : JumpStart); (14.9895845833333 : 17.1140625 : JumpEnd); (15.9166666666667 : 17.1140625 : JumpStart); (16.0833333333333 : 17.1140625 : JumpEnd); (17.2916666666667 : 17.1140625 : JumpStart); (17.4583333333333 : 17.1140625 : JumpEnd); (17.5104166666667 : 17.1140625 : JumpStart); (17.6770833333333 : 17.1140625 : JumpEnd); (17.7265625 : 17.1140625); (17.7265625 : 16.475); (17.75 : 16.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_IncomeOffTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="f0e689ed-3b89-4f33-8c4f-a135a3d1838d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3543e922-255e-4c94-8153-dfbe444ca377" isExpanded="false" absoluteBounds="12, 2.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/Cash_BookTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baf6e140-4c49-4a77-ae7e-136448462c36" absoluteBounds="12.015, 2.5850000000000009, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.65530928125 : 2.575); (9.65530928125 : 2.7286); (9.68111701822917 : 2.7286 : JumpStart); (9.95692475520833 : 2.7286 : JumpEnd); (10.0085402291667 : 2.7286 : JumpStart); (10.1752068958333 : 2.7286 : JumpEnd); (10.2726 : 2.7286); (10.2726 : 3.0030982421875); (10.4015336396234 : 3.0030982421875 : JumpStart); (10.5682003062901 : 3.0030982421875 : JumpEnd); (10.6763056125801 : 3.0030982421875 : JumpStart); (10.9854232251602 : 3.0030982421875 : JumpEnd); (11.0239641125801 : 3.0030982421875 : JumpStart); (11.1906307792468 : 3.0030982421875 : JumpEnd); (11.5416666666667 : 3.0030982421875 : JumpStart); (11.8333333333333 : 3.0030982421875 : JumpEnd); (13.2187495 : 3.0030982421875); (13.2187495 : 2.575)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_Cash_BookTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="3543e922-255e-4c94-8153-dfbe444ca377" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" isExpanded="false" absoluteBounds="3.5, 13.125, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/ChurchDetailTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fac59cff-ef93-42a6-a168-efab60c1597c" absoluteBounds="3.5149999999999997, 13.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.69140334375 : 13.575); (3.69140334375 : 16.41875); (3.85416666666667 : 16.41875 : JumpStart); (4.08333333333333 : 16.41875 : JumpEnd); (4.72916666666667 : 16.41875 : JumpStart); (4.98958333333333 : 16.41875 : JumpEnd); (6.25 : 16.41875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_ChurchvaluesTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="cc9a0805-91f8-4b6a-8a11-de007bcaebeb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.42265790625); (7.59375 : 13.42265790625); (7.59375 : 11.825)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_ChurchHierachy" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="b5c1e03c-f41d-4bfe-952a-6e673b0e6616" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.453125375 : 13.575); (4.453125375 : 15.575); (4.82291666666667 : 15.575 : JumpStart); (4.98958333333333 : 15.575 : JumpEnd); (7.6562495 : 15.575); (7.6562495 : 15.325)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_AddvisitorTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="fff271a0-9f87-42ce-bffa-e76d2b8893c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.3185739230769); (2.79166666666667 : 13.3185739230769 : JumpStart); (3.08333333333333 : 13.3185739230769 : JumpEnd); (3.29166666666667 : 13.3185739230769 : JumpStart); (3.45833333333333 : 13.3185739230769 : JumpEnd); (3.5 : 13.3185739230769)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Country/Country_ChurchDetailTable" />
+      <nodes>
+        <classShapeMoniker Id="8a8e4b7a-5e38-4a0d-9060-08a1652b5644" />
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.325); (2.81800490592656 : 12.3975385663217 : JumpStart); (3.18199509407344 : 12.7857947670117 : JumpEnd); (3.31800490592656 : 12.930871899655 : JumpStart); (3.49699509407344 : 13.1217947670117 : JumpEnd); (3.5 : 13.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/StateTable/StateTable_ChurchDetailTable" />
+      <nodes>
+        <classShapeMoniker Id="5ee19fe4-2642-4119-a38f-43c8d9280e50" />
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="057e393d-09c1-4fd8-b33b-684ed7aff632" isExpanded="false" absoluteBounds="9, 14.875, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/MemberImageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2a6ccbd-bc8d-4cee-acd1-6451736ef006" absoluteBounds="9.015, 15.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88cb59a4-c4f8-4893-8fdb-a2f29fbc35ff" isExpanded="false" absoluteBounds="15, 1.25, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/ExpensesdetailsTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24837675-9eb8-46fe-9bab-15eab465ede4" absoluteBounds="15.015, 1.7100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" absoluteBounds="17.75, 3.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/churchmanDataContext/ExpensesHeadTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca445f67-ffae-439f-a37d-3e96240de2f4" absoluteBounds="17.765, 3.7100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.0682555113181 : 3.25); (17.375 : 2.87408254422076); (17.375 : 2.075); (17.1214255650989 : 1.82142556509888 : JumpStart); (17.0035744349011 : 1.70357443490112 : JumpEnd); (17 : 1.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_ExpensesdetailsTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="88cb59a4-c4f8-4893-8fdb-a2f29fbc35ff" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4c4b91e9-0b9a-47de-8a30-8ef2cac72dc4" isExpanded="false" absoluteBounds="20.5, 12.25, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/churchmanDataContext/WelfareBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6211b94-9fd8-46bd-a041-9927f5778098" absoluteBounds="20.515, 12.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.27832075 : 9.7); (15.27832075 : 12.475); (15.5670569166667 : 12.475 : JumpStart); (15.7337235833333 : 12.475 : JumpEnd); (16.0319026666667 : 12.475 : JumpStart); (16.1985693333333 : 12.475 : JumpEnd); (16.2643256666667 : 12.475 : JumpStart); (16.4309923333333 : 12.475 : JumpEnd); (16.4967486666667 : 12.475 : JumpStart); (16.6634153333333 : 12.475 : JumpEnd); (16.9791666666667 : 12.475 : JumpStart); (17.1458333333333 : 12.475 : JumpEnd); (20.0416666666667 : 12.475 : JumpStart); (20.2083333333333 : 12.475 : JumpEnd); (20.5 : 12.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_WelfareBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="4c4b91e9-0b9a-47de-8a30-8ef2cac72dc4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="32a651b1-13bd-468e-bf2e-c08721447c0f" isExpanded="false" absoluteBounds="20.5, 4.25, 2, 0.44999999999999574">
+      <DataClassMoniker Name="/churchmanDataContext/WarefarePaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b457511a-558a-41a4-b77a-59d993572b04" absoluteBounds="20.515, 4.7100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 4.34699625651042); (20.5 : 4.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_WarefarePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="32a651b1-13bd-468e-bf2e-c08721447c0f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.4341923076923 : 9.25); (16.8248930956123 : 8.94155995809422 : JumpStart); (16.9876059043877 : 8.90547229208207 : JumpEnd); (17.125 : 8.875); (17.2916666666667 : 8.875 : JumpStart); (17.4583333333333 : 8.875 : JumpEnd); (18.4166666666667 : 8.875 : JumpStart); (18.5833333333333 : 8.875 : JumpEnd); (20.0416666666667 : 8.875 : JumpStart); (20.2083333333333 : 8.875 : JumpEnd); (20.25 : 8.875); (20.25 : 4.95034515384615); (20.2848244349011 : 4.91552071894504 : JumpStart); (20.4026755650989 : 4.7976695887473 : JumpEnd); (20.5003451538462 : 4.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_WarefarePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="32a651b1-13bd-468e-bf2e-c08721447c0f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f9a61d56-7966-4faa-9caf-93ed8a30bca0" isExpanded="false" absoluteBounds="17.75, 1.25, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/WelfareMainTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13cf9d60-121b-4349-8154-cb457b2107b1" absoluteBounds="17.765, 1.7100000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 1.67784515384616); (20.34375 : 2.27159515384616); (20.34375 : 12.09375); (20.5 : 12.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/WelfareMainTable/WelfareMainTable_WelfareBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="f9a61d56-7966-4faa-9caf-93ed8a30bca0" />
+        <classShapeMoniker Id="4c4b91e9-0b9a-47de-8a30-8ef2cac72dc4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.7427307692308 : 1.7); (20.125 : 2.08226923076924); (20.125 : 3.87465484615385); (20.2848244349011 : 4.03447928105494 : JumpStart); (20.4026755650989 : 4.1523304112527 : JumpEnd); (20.5003451538462 : 4.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/WelfareMainTable/WelfareMainTable_WarefarePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="f9a61d56-7966-4faa-9caf-93ed8a30bca0" />
+        <classShapeMoniker Id="32a651b1-13bd-468e-bf2e-c08721447c0f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 1.475); (17.75 : 1.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesdetailsTable/ExpensesdetailsTable_WelfareMainTable" />
+      <nodes>
+        <classShapeMoniker Id="88cb59a4-c4f8-4893-8fdb-a2f29fbc35ff" />
+        <classShapeMoniker Id="f9a61d56-7966-4faa-9caf-93ed8a30bca0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.7151128846154 : 3.25); (18.7151128846154 : 1.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_WelfareMainTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="f9a61d56-7966-4faa-9caf-93ed8a30bca0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="850382b3-81c0-4a15-9859-f7e4f3cd2644" isExpanded="false" absoluteBounds="11.75, 19.125, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/MarriageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcc9a070-7898-4c5a-b24e-8c4846fe3bfd" absoluteBounds="11.765, 19.585, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="992e08e1-aa8c-44e2-89b0-905991b1af51" isExpanded="false" absoluteBounds="9, 18.5, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/DedicationImageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8b54af7-2277-4df6-9915-7e228ddc0a05" absoluteBounds="9.015, 18.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c343294-decf-4d5b-aa8e-29f40888a2b8" isExpanded="false" absoluteBounds="0.75, 20.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/VisitationTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ecbdb27-2c62-4355-a4a6-45f86fef619f" absoluteBounds="0.76500000000000057, 20.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c39bf499-32f1-4b2e-8df7-cd38c4e76d74" isExpanded="false" absoluteBounds="6.25, 27.875, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/churchmanDataContext/BaptismTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6cfadbf-312e-4afd-bde2-d92e4259c3bd" absoluteBounds="6.265, 28.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.19921803125 : 13.575); (4.19921803125 : 15.6375); (4.82291666666667 : 15.6375 : JumpStart); (4.98958333333333 : 15.6375 : JumpEnd); (8.375 : 15.6375); (8.375 : 17); (7.92333333333333 : 17 : JumpStart); (7.60416666666667 : 17 : JumpEnd); (7.5625 : 17); (7.5625 : 19.5); (7.81426666666667 : 19.5 : JumpStart); (7.98093333333333 : 19.5 : JumpEnd); (8.32291666666667 : 19.5 : JumpStart); (8.77083333333333 : 19.5 : JumpEnd); (8.78125 : 19.5); (8.78125 : 28.7); (8.77083333333333 : 28.7 : JumpStart); (8.50176666666667 : 28.7 : JumpEnd); (6.958008234375 : 28.7); (6.958008234375 : 28.325)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_BaptismTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="c39bf499-32f1-4b2e-8df7-cd38c4e76d74" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="845269c7-5e4a-4e81-bf22-c740364288d2" isExpanded="false" absoluteBounds="9, 27.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/BaptismImageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21f9562e-876c-4b0f-9b8a-8b527dbf4c9b" absoluteBounds="9.015, 27.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 27.875); (8.50394656585485 : 27.8157458013005 : JumpStart); (8.95615343414515 : 27.7102308653661 : JumpEnd); (9.00000000000001 : 27.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/BaptismTable/BaptismTable_BaptismImageTable" />
+      <nodes>
+        <classShapeMoniker Id="c39bf499-32f1-4b2e-8df7-cd38c4e76d74" />
+        <classShapeMoniker Id="845269c7-5e4a-4e81-bf22-c740364288d2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b3125e14-1830-4d0c-9a88-71f90a7a0135" isExpanded="false" absoluteBounds="6.25, 19.75, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/EventTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d77148fe-520c-4ac8-9017-0ef2122122f2" absoluteBounds="6.265, 20.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 13.445315); (3.45833333333333 : 13.445315 : JumpStart); (3.29166666666667 : 13.445315 : JumpEnd); (3.25 : 13.445315); (3.25 : 16.625); (3.79166666666667 : 16.625 : JumpStart); (4.08333333333333 : 16.625 : JumpEnd); (4.875 : 16.625); (4.875 : 17.40625); (5.60416666666667 : 17.40625 : JumpStart); (5.77083333333333 : 17.40625 : JumpEnd); (6.35416666666667 : 17.40625 : JumpStart); (6.52083333333333 : 17.40625 : JumpEnd); (6.79166666666667 : 17.40625 : JumpStart); (6.95833333333333 : 17.40625 : JumpEnd); (7.3125 : 17.40625); (7.3125 : 19.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_EventTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="b3125e14-1830-4d0c-9a88-71f90a7a0135" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="320478ee-7fda-47f6-ac2e-2c542a175e02" isExpanded="false" absoluteBounds="17.75, 17.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/RaiseExpensesHdTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d123742-b3f2-44dd-b5f0-98f4099be334" absoluteBounds="17.765, 17.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 4.41276401652644); (20.2705122140279 : 4.69532778985585 : JumpStart); (20.4957440786794 : 4.81759651638096 : JumpEnd); (20.84375 : 5.00651401652644); (20.84375 : 16.90625); (18.4341923076923 : 17.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_RaiseExpensesHdTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="320478ee-7fda-47f6-ac2e-2c542a175e02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 18.25); (17.2976269424262 : 18.1309492230295 : JumpStart); (17.4523730575738 : 18.0690507769705 : JumpEnd); (17.5163769424262 : 18.0434492230295 : JumpStart); (17.6711230575738 : 17.9815507769705 : JumpEnd); (17.75 : 17.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/SupplierTable/SupplierTable_RaiseExpensesHdTable" />
+      <nodes>
+        <classShapeMoniker Id="b46dc7a7-f74e-440e-a6e3-ca09c89b8a71" />
+        <classShapeMoniker Id="320478ee-7fda-47f6-ac2e-2c542a175e02" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2c4bd6b0-555b-4aac-8d59-6e5dbcf63137" isExpanded="false" absoluteBounds="20.75, 15.75, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/RaiseExpensedDetailTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4dddaf9b-9d3c-41fe-8a1d-10eb6945ef69" absoluteBounds="20.765, 16.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 17.7562525); (21.71875 : 17.7562525); (21.71875 : 16.2)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/RaiseExpensesHdTable/RaiseExpensesHdTable_RaiseExpensedDetailTable" />
+      <nodes>
+        <classShapeMoniker Id="320478ee-7fda-47f6-ac2e-2c542a175e02" />
+        <classShapeMoniker Id="2c4bd6b0-555b-4aac-8d59-6e5dbcf63137" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02438e1b-2866-4ba4-a1e3-96f085650642" isExpanded="false" absoluteBounds="22.75, 15.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/RaiseExpenPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a592fc0c-c9a7-49d5-9fe0-a7559a2ba27f" absoluteBounds="22.765, 15.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(19.75 : 3.71875); (20.0416666666667 : 3.71875 : JumpStart); (20.2083333333333 : 3.71875 : JumpEnd); (20.2604166666667 : 3.71875 : JumpStart); (20.4270833333333 : 3.71875 : JumpEnd); (24.09375 : 3.71875); (24.09375 : 15.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_RaiseExpenPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="02438e1b-2866-4ba4-a1e3-96f085650642" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.580082 : 9.7); (16.580082 : 15.4375); (16.9791666666667 : 15.4375 : JumpStart); (17.1458333333333 : 15.4375 : JumpEnd); (17.5104166666667 : 15.4375 : JumpStart); (17.6770833333333 : 15.4375 : JumpEnd); (19.5104166666667 : 15.4375 : JumpStart); (19.8333333333333 : 15.4375 : JumpEnd); (20.0416666666667 : 15.4375 : JumpStart); (20.2083333333333 : 15.4375 : JumpEnd); (20.7604166666667 : 15.4375 : JumpStart); (20.9270833333333 : 15.4375 : JumpEnd); (22.75 : 15.4375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_RaiseExpenPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="02438e1b-2866-4ba4-a1e3-96f085650642" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d374936e-7da3-44df-82a3-01b7862e4dd5" isExpanded="false" absoluteBounds="21.375, 10.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/RaiseBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e903102f-319f-4db0-afd6-300882c28880" absoluteBounds="21.39, 10.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.75 : 9.38920242307692); (16.8229161666667 : 9.38920242307692 : JumpStart); (17.1458333333333 : 9.38920242307692 : JumpEnd); (17.2916666666667 : 9.38920242307692 : JumpStart); (17.4583333333333 : 9.38920242307692 : JumpEnd); (18.4166666666667 : 9.38920242307692 : JumpStart); (18.5833333333333 : 9.38920242307692 : JumpEnd); (20.0416666666667 : 9.38920242307692 : JumpStart); (20.2083333333333 : 9.38920242307692 : JumpEnd); (20.2604166666667 : 9.38920242307692 : JumpStart); (20.4270833333333 : 9.38920242307692 : JumpEnd); (20.7604166666667 : 9.38920242307692 : JumpStart); (20.9270833333333 : 9.38920242307692 : JumpEnd); (21.3541666666667 : 9.38920242307692 : JumpStart); (21.5208333333333 : 9.38920242307692 : JumpEnd); (22.375 : 9.38920242307692); (22.375 : 10.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_RaiseBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="d374936e-7da3-44df-82a3-01b7862e4dd5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02b99c8b-5b0e-4e47-8ec0-db84cbf49614" isExpanded="false" absoluteBounds="2.5, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/ExpensesAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1f194fd-c45c-4770-b87f-3acfbf5732ab" absoluteBounds="2.5149999999999997, 4.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.1072974459134 : 2.575); (11.1072974459134 : 4.07285161158845); (10.9854232251602 : 4.07285161158845 : JumpStart); (10.6763056125801 : 4.07285161158845 : JumpEnd); (10.5682003062901 : 4.07285161158845 : JumpStart); (10.4015336396234 : 4.07285161158845 : JumpEnd); (10.1752068958333 : 4.07285161158845 : JumpStart); (10.0085402291667 : 4.07285161158845 : JumpEnd); (9.95692475520833 : 4.07285161158845 : JumpStart); (9.57197594791667 : 4.07285161158845 : JumpEnd); (9.50473547395833 : 4.07285161158845 : JumpStart); (9.33806880729167 : 4.07285161158845 : JumpEnd); (9.08333333333333 : 4.07285161158845 : JumpStart); (8.72916666666667 : 4.07285161158845 : JumpEnd); (8.70833333333333 : 4.07285161158845 : JumpStart); (8.51041666666667 : 4.07285161158845 : JumpEnd); (4.89583333333333 : 4.07285161158845 : JumpStart); (4.72916666666667 : 4.07285161158845 : JumpEnd); (4.5 : 4.07285161158845)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_ExpensesAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="02b99c8b-5b0e-4e47-8ec0-db84cbf49614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.75 : 3.79687775); (17.1458333333333 : 3.79687775 : JumpStart); (16.9791666666667 : 3.79687775 : JumpEnd); (11.8333333333333 : 3.79687775 : JumpStart); (11.6666666666667 : 3.79687775 : JumpEnd); (11.1906307792468 : 3.79687775 : JumpStart); (11.0239641125801 : 3.79687775 : JumpEnd); (10.9854232251602 : 3.79687775 : JumpStart); (10.6763056125801 : 3.79687775 : JumpEnd); (10.5682003062901 : 3.79687775 : JumpStart); (10.4015336396234 : 3.79687775 : JumpEnd); (10.1752068958333 : 3.79687775 : JumpStart); (10.0085402291667 : 3.79687775 : JumpEnd); (9.95692475520833 : 3.79687775 : JumpStart); (9.57197594791667 : 3.79687775 : JumpEnd); (9.50473547395833 : 3.79687775 : JumpStart); (9.33806880729167 : 3.79687775 : JumpEnd); (9.08333333333333 : 3.79687775 : JumpStart); (8.72916666666667 : 3.79687775 : JumpEnd); (8.625 : 3.79687775); (8.625 : 4.575); (4.89583333333333 : 4.575 : JumpStart); (4.72916666666667 : 4.575 : JumpEnd); (3.64583333333333 : 4.575 : JumpStart); (3.47916666666667 : 4.575 : JumpEnd); (3.0312505 : 4.575); (3.0312505 : 4.325)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_ExpensesAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="02b99c8b-5b0e-4e47-8ec0-db84cbf49614" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c1aeac12-3ab1-430d-b503-1efb14dd1e46" isExpanded="false" absoluteBounds="10.375, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PaymentVoucherTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdb6afeb-4e3a-49f3-a03f-ceb582a12600" absoluteBounds="10.39, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(17.75 : 3.5937505); (17.1458333333333 : 3.5937505 : JumpStart); (16.9791666666667 : 3.5937505 : JumpEnd); (11.8333333333333 : 3.5937505 : JumpStart); (11.6666666666667 : 3.5937505 : JumpEnd); (11.625 : 3.5937505); (11.625 : 1.575)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ExpensesHeadTable/ExpensesHeadTable_PaymentVoucherTable" />
+      <nodes>
+        <classShapeMoniker Id="a00fefcd-07ed-4e08-af0d-1b991385e99a" />
+        <classShapeMoniker Id="c1aeac12-3ab1-430d-b503-1efb14dd1e46" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.75 : 17.5); (18.75 : 16.7625); (17.8098958333333 : 16.7625 : JumpStart); (17.5104166666667 : 16.7625 : JumpEnd); (17.4583333333333 : 16.7625 : JumpStart); (17.2916666666667 : 16.7625 : JumpEnd); (17.0625 : 16.7625); (17.0625 : 1.1875); (12.9583333333333 : 1.1875 : JumpStart); (12.7916666666667 : 1.1875 : JumpEnd); (12.46875 : 1.1875); (12.46875 : 1.35); (12.375 : 1.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/RaiseExpensesHdTable/RaiseExpensesHdTable_PaymentVoucherTable" />
+      <nodes>
+        <classShapeMoniker Id="320478ee-7fda-47f6-ac2e-2c542a175e02" />
+        <classShapeMoniker Id="c1aeac12-3ab1-430d-b503-1efb14dd1e46" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8348be3e-b06e-4e6a-b007-76f061f5769d" isExpanded="false" absoluteBounds="9.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/AccountPayableTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e54acd3-814c-4ea3-b840-1a4851645ee9" absoluteBounds="9.265, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.44921765625 : 2.125); (9.44921765625 : 0.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_AccountPayableTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="8348be3e-b06e-4e6a-b007-76f061f5769d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16 : 18.25); (16 : 16.825); (14.9895845833333 : 16.825 : JumpStart); (14.6979154166667 : 16.825 : JumpEnd); (14.625 : 16.825); (14.625 : 5.075); (13.7708338333333 : 5.075 : JumpStart); (13.6041671666667 : 5.075 : JumpEnd); (11.75 : 5.075); (11.75 : 1.825); (12.875 : 1.825); (12.875 : 0.725); (11.25 : 0.725)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/SupplierTable/SupplierTable_AccountPayableTable" />
+      <nodes>
+        <classShapeMoniker Id="b46dc7a7-f74e-440e-a6e3-ca09c89b8a71" />
+        <classShapeMoniker Id="8348be3e-b06e-4e6a-b007-76f061f5769d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="059e476f-c9f2-41dc-95ad-bb72d2caf2eb" isExpanded="false" absoluteBounds="10.125, 16.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/AuthenticalTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8edc3682-0b1d-4719-aef6-304d4beb5563" absoluteBounds="10.14, 17.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bae46f67-f770-49a5-8198-1380705bb078" isExpanded="false" absoluteBounds="10, 15.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/QuestionTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aba1a757-3e98-4bc4-bf3b-d6f1a97db2c1" absoluteBounds="10.015, 16.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.0625 : 16.075); (11.0625 : 16.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/QuestionTable/QuestionTable_AuthenticalTable" />
+      <nodes>
+        <classShapeMoniker Id="bae46f67-f770-49a5-8198-1380705bb078" />
+        <classShapeMoniker Id="059e476f-c9f2-41dc-95ad-bb72d2caf2eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.59375 : 16.075); (11.59375 : 16.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/QuestionTable/QuestionTable_AuthenticalTable1" />
+      <nodes>
+        <classShapeMoniker Id="bae46f67-f770-49a5-8198-1380705bb078" />
+        <classShapeMoniker Id="059e476f-c9f2-41dc-95ad-bb72d2caf2eb" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c1dbf031-cec6-45e9-92d9-0d98f0a25b95" isExpanded="false" absoluteBounds="3.625, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/aspnet_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7cd9cd8-3c28-48d7-8311-3211dfe97a7d" absoluteBounds="3.64, 5.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bd60804-6040-4e9d-b8ac-5bd879670a26" isExpanded="false" absoluteBounds="3.5, 7.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/aspnet_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36f0128f-4c8c-4456-a6b2-b7d177b0bc67" absoluteBounds="3.515, 8.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.9375 : 7.625); (4.9375 : 5.825)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/aspnet_Application/aspnet_Application_aspnet_Role" />
+      <nodes>
+        <classShapeMoniker Id="6bd60804-6040-4e9d-b8ac-5bd879670a26" />
+        <classShapeMoniker Id="c1dbf031-cec6-45e9-92d9-0d98f0a25b95" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6c841d23-e0c7-43f2-91d2-e5d02eb9742b" isExpanded="false" absoluteBounds="3.875, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/aspnet_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ad7d012-0a74-4bb2-9ba7-85187ebedccc" absoluteBounds="3.89, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.187498 : 7.625); (4.187498 : 6.7625); (4.6875 : 6.7625); (4.6875 : 5.8875); (3.5625 : 5.8875); (3.5625 : 4.3875); (4.5625 : 4.3875); (4.5625 : 2.0125); (3.5625 : 2.0125); (3.5625 : 0.975); (3.875 : 0.975)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/aspnet_Application/aspnet_Application_aspnet_User" />
+      <nodes>
+        <classShapeMoniker Id="6bd60804-6040-4e9d-b8ac-5bd879670a26" />
+        <classShapeMoniker Id="6c841d23-e0c7-43f2-91d2-e5d02eb9742b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2b4b0143-a26b-4df5-8ad8-708d0a51681c" isExpanded="false" absoluteBounds="3.625, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/aspnet_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46e3c136-10c6-4dba-8b39-f2b9f230cbfd" absoluteBounds="3.64, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.8125 : 5.375); (4.8125 : 1.95)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/aspnet_Role/aspnet_Role_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="c1dbf031-cec6-45e9-92d9-0d98f0a25b95" />
+        <classShapeMoniker Id="2b4b0143-a26b-4df5-8ad8-708d0a51681c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.75 : 1.2); (4.75 : 1.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/aspnet_User/aspnet_User_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="6c841d23-e0c7-43f2-91d2-e5d02eb9742b" />
+        <classShapeMoniker Id="2b4b0143-a26b-4df5-8ad8-708d0a51681c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a9b6cabe-d391-406c-9a51-017a52a3902f" isExpanded="false" absoluteBounds="1.125, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/VowAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7528e23e-d597-4b61-b2e0-fddb0607c6be" absoluteBounds="1.1400000000000001, 2.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.2375); (9.04895833333333 : 2.2375 : JumpStart); (8.72916666666667 : 2.2375 : JumpEnd); (8.67708333333333 : 2.2375 : JumpStart); (8.51041666666667 : 2.2375 : JumpEnd); (8.44270833333333 : 2.2375 : JumpStart); (8.27604166666667 : 2.2375 : JumpEnd); (4.89583333333333 : 2.2375 : JumpStart); (4.72916666666667 : 2.2375 : JumpEnd); (4.64583333333333 : 2.2375 : JumpStart); (4.47916666666667 : 2.2375 : JumpEnd); (3.375 : 2.2375); (3.375 : 2.575); (2.125 : 2.575); (2.125 : 2.325)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_VowAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="a9b6cabe-d391-406c-9a51-017a52a3902f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="aef2e38c-5eb0-44f8-8bba-633c1e0f620a" isExpanded="false" absoluteBounds="5.25, 6.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/SeedfaithaaccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aad35eec-073a-42b2-890f-874e29871791" absoluteBounds="5.265, 6.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.4848669729567 : 2.575); (10.4848669729567 : 6.73125); (10.1752068958333 : 6.73125 : JumpStart); (10.0085402291667 : 6.73125 : JumpEnd); (9.95692475520833 : 6.73125 : JumpStart); (9.57197594791667 : 6.73125 : JumpEnd); (9.08333333333333 : 6.73125 : JumpStart); (8.66854166666666 : 6.73125 : JumpEnd); (7.25 : 6.73125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_SeedfaithaaccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="aef2e38c-5eb0-44f8-8bba-633c1e0f620a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f1f0550a-1a71-47c8-9de4-b5f68bfdfd48" isExpanded="false" absoluteBounds="1.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/FirstfruitaccTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14186764-d9da-4b0a-8b23-d92213972fac" absoluteBounds="1.2650000000000001, 0.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.4624995); (9.08333333333333 : 2.4624995 : JumpStart); (8.72916666666667 : 2.4624995 : JumpEnd); (8.67708333333333 : 2.4624995 : JumpStart); (8.51041666666667 : 2.4624995 : JumpEnd); (8.44270833333333 : 2.4624995 : JumpStart); (8.27604166666667 : 2.4624995 : JumpEnd); (8.17708333333333 : 2.4624995 : JumpStart); (8.01041666666667 : 2.4624995 : JumpEnd); (4.89583333333333 : 2.4624995 : JumpStart); (4.72916666666667 : 2.4624995 : JumpEnd); (4.64583333333333 : 2.4624995 : JumpStart); (4.47916666666667 : 2.4624995 : JumpEnd); (3.45833333333333 : 2.4624995 : JumpStart); (3.29166666666667 : 2.4624995 : JumpEnd); (3.21875 : 2.4624995); (3.21875 : 0.95)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_FirstfruitaccTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="f1f0550a-1a71-47c8-9de4-b5f68bfdfd48" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fb608129-8974-4557-8281-f37d786cee90" isExpanded="false" absoluteBounds="1.5, 10, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MembersGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4ad4ac4-7937-4a0f-87b5-ef6ca4aff8fc" absoluteBounds="1.5150000000000001, 10.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="782f77f7-c671-42d8-b4ff-80c3a35c2482" isExpanded="false" absoluteBounds="2.75, 16.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PendingSavingUnit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bb97b40-e7a9-4dd3-9972-ac0453550b43" absoluteBounds="2.7649999999999997, 17.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 11.725); (3.20833333333333 : 11.725 : JumpStart); (3.04166666666667 : 11.725 : JumpEnd); (3 : 11.725); (3 : 16.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/UnitTable/UnitTable_PendingSavingUnit" />
+      <nodes>
+        <classShapeMoniker Id="7101b37d-487f-4ca1-a443-92153c5ec11e" />
+        <classShapeMoniker Id="782f77f7-c671-42d8-b4ff-80c3a35c2482" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8c4c5f02-be78-4076-9a98-6069ee5b637f" isExpanded="false" absoluteBounds="4.25, 15.75, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MembersUnit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73a7ee62-a46d-42c9-af14-f8e96cd5aa41" absoluteBounds="4.265, 16.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.1874995 : 11.95); (4.1874995 : 12.875); (3.375 : 12.875); (3.375 : 15.975); (3.91666666666667 : 15.975 : JumpStart); (4.08333333333333 : 15.975 : JumpEnd); (4.25 : 15.975)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/UnitTable/UnitTable_MembersUnit" />
+      <nodes>
+        <classShapeMoniker Id="7101b37d-487f-4ca1-a443-92153c5ec11e" />
+        <classShapeMoniker Id="8c4c5f02-be78-4076-9a98-6069ee5b637f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="dd53e437-0c7e-41b9-8aff-d0665d4513c2" isExpanded="false" absoluteBounds="5.625, 2.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MemberDeath" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd3a9481-b712-48db-ab1b-636ec5012458" absoluteBounds="5.64, 3.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="16627704-5742-4a1c-aece-dcff4a5559c7" isExpanded="false" absoluteBounds="4.625, 17.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/ChurchDesignationTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9282a103-1da7-4f0d-b0d6-009bcc4797bb" absoluteBounds="4.64, 18.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.4375 : 17.625); (6.4375 : 16.575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDesignationTable/ChurchDesignationTable_ChurchvaluesTable" />
+      <nodes>
+        <classShapeMoniker Id="16627704-5742-4a1c-aece-dcff4a5559c7" />
+        <classShapeMoniker Id="cc9a0805-91f8-4b6a-8a11-de007bcaebeb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.6875 : 17.625); (5.6875 : 16.2625); (4.98958333333333 : 16.2625 : JumpStart); (4.82291666666667 : 16.2625 : JumpEnd); (4.08333333333333 : 16.2625 : JumpStart); (3.85416666666667 : 16.2625 : JumpEnd); (3.77473667708333 : 16.2625 : JumpStart); (3.60807001041667 : 16.2625 : JumpEnd); (3.1875 : 16.2625); (3.1875 : 13.445315); (3.29166666666667 : 13.445315 : JumpStart); (3.45833333333333 : 13.445315 : JumpEnd); (3.5 : 13.445315)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDesignationTable/ChurchDesignationTable_ChurchDetailTable" />
+      <nodes>
+        <classShapeMoniker Id="16627704-5742-4a1c-aece-dcff4a5559c7" />
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="61db7024-121a-4205-96c9-e90aaf6e7952" isExpanded="false" absoluteBounds="15, 4, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/BankTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="476d7364-2c37-4b6c-9df5-d7aed59c040e" absoluteBounds="15.015, 4.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.9062495 : 4.45); (16.9062495 : 11.3835781730769); (16.9791666666667 : 11.3835781730769 : JumpStart); (17.1458333333333 : 11.3835781730769 : JumpEnd); (17.5 : 11.3835781730769)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_TitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="5d558e49-1477-461f-b8b3-1621a2397268" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 4.45); (17.0183334216664 : 4.47933347466624 : JumpStart); (17.1066665783336 : 4.62066652533375 : JumpEnd); (17.5 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_PledgeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="6034591a-63c8-4099-8b03-6259351b52ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.9062495 : 4.45); (16.9062495 : 6.54375); (16.9791666666667 : 6.54375 : JumpStart); (17.2083333333333 : 6.54375 : JumpEnd); (18.4166666666667 : 6.54375 : JumpStart); (18.5833333333333 : 6.54375 : JumpEnd); (20.1666666666667 : 6.54375 : JumpStart); (20.4270833333333 : 6.54375 : JumpEnd); (20.5 : 6.54375)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_IncomeBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="522f678f-9f81-4fa4-a1a0-6b41d7122afa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="394b1bd6-2f05-4892-b2d8-fadca0c0a81e" isExpanded="false" absoluteBounds="3.875, 19.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MinisterTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9abd53d6-3a59-436c-9879-3a1ed9998b40" absoluteBounds="3.8899999999999997, 20.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.7578141875 : 13.575); (4.7578141875 : 15.25); (4.68880311458333 : 15.25 : JumpStart); (4.36979204166667 : 15.25 : JumpEnd); (4.28255136458333 : 15.25 : JumpStart); (3.91666666666667 : 15.25 : JumpEnd); (3.89778750520833 : 15.25 : JumpStart); (3.48111633854167 : 15.25 : JumpEnd); (3.45833333333333 : 15.25 : JumpStart); (2.79166666666667 : 15.25 : JumpEnd); (2.5 : 15.25); (2.5 : 19.625); (2.97916666666667 : 19.625 : JumpStart); (3.20833333333333 : 19.625 : JumpEnd); (3.25 : 19.625); (3.25 : 20.1); (3.29166666666667 : 20.1 : JumpStart); (3.69270833333333 : 20.1 : JumpEnd); (3.875 : 20.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_MinisterTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="394b1bd6-2f05-4892-b2d8-fadca0c0a81e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 7.575); (1.75 : 8.875); (3.75 : 8.875); (3.75 : 11.25); (3.52333333333333 : 11.25 : JumpStart); (3.35666666666667 : 11.25 : JumpEnd); (3.27083233333333 : 11.25 : JumpStart); (3.04166666666667 : 11.25 : JumpEnd); (2.875 : 11.25); (2.875 : 16.75); (2.58333333333333 : 16.75 : JumpStart); (2.41666666666667 : 16.75 : JumpEnd); (2.25 : 16.75); (2.25 : 19.75); (2.9375 : 19.75); (2.9375 : 19.956248); (2.97916666666667 : 19.956248 : JumpStart); (3.69270833333333 : 19.956248 : JumpEnd); (3.875 : 19.956248)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/DutyTable/DutyTable_MinisterTable" />
+      <nodes>
+        <classShapeMoniker Id="739aa394-018a-42ec-9791-4a38110e4107" />
+        <classShapeMoniker Id="394b1bd6-2f05-4892-b2d8-fadca0c0a81e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1298b964-f114-40a9-9869-dd3ee624a06a" isExpanded="false" absoluteBounds="8, 17.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/FunctionalGroupTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22ea5b91-e2e2-4262-bff1-6fbe56b831c8" absoluteBounds="8.015, 17.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.09765784375 : 13.575); (4.09765784375 : 15.5125); (4.10416666666667 : 15.5125 : JumpStart); (4.28255136458333 : 15.5125 : JumpEnd); (4.82291666666667 : 15.5125 : JumpStart); (4.98958333333333 : 15.5125 : JumpEnd); (8.35416666666667 : 15.5125 : JumpStart); (8.52083333333333 : 15.5125 : JumpEnd); (8.5625 : 15.5125); (8.5625 : 16.9375); (8.39583333333333 : 16.9375 : JumpStart); (8.22916666666667 : 16.9375 : JumpEnd); (7.92333333333333 : 16.9375 : JumpStart); (7.60416666666667 : 16.9375 : JumpEnd); (7.4375 : 16.9375); (7.4375 : 17.475); (7.47916666666667 : 17.475 : JumpStart); (7.98093333333333 : 17.475 : JumpEnd); (8 : 17.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_FunctionalGroupTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="1298b964-f114-40a9-9869-dd3ee624a06a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 6.4852197265625); (8.751875 : 6.4852197265625); (8.751875 : 17.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/CommTable/CommTable_FunctionalGroupTable" />
+      <nodes>
+        <classShapeMoniker Id="e7aa2495-16c9-4dba-811b-4b68df706450" />
+        <classShapeMoniker Id="1298b964-f114-40a9-9869-dd3ee624a06a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.187499 : 10.45); (3.187499 : 11.5); (3.0625 : 11.5); (3.0625 : 16.6875); (3.91666666666667 : 16.6875 : JumpStart); (4.08333333333333 : 16.6875 : JumpEnd); (4.72916666666667 : 16.6875 : JumpStart); (5.14583333333333 : 16.6875 : JumpEnd); (5.25 : 16.6875); (5.25 : 17.4843725); (5.60416666666667 : 17.4843725 : JumpStart); (5.77083333333333 : 17.4843725 : JumpEnd); (6.35416666666667 : 17.4843725 : JumpStart); (6.52083333333333 : 17.4843725 : JumpEnd); (6.79166666666667 : 17.4843725 : JumpStart); (6.95833333333333 : 17.4843725 : JumpEnd); (7.41666666666667 : 17.4843725 : JumpStart); (7.98093333333333 : 17.4843725 : JumpEnd); (8 : 17.4843725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembersGroup/MembersGroup_FunctionalGroupTable" />
+      <nodes>
+        <classShapeMoniker Id="fb608129-8974-4557-8281-f37d786cee90" />
+        <classShapeMoniker Id="1298b964-f114-40a9-9869-dd3ee624a06a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="29e35d27-91b1-4bbf-bef6-c5204b6568d0" isExpanded="false" absoluteBounds="10.25, 7.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/ChildrenTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75e4627f-884c-436f-a005-ee0d6650b155" absoluteBounds="10.265, 7.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 10.225); (3.66666666666667 : 10.225 : JumpStart); (3.83333333333333 : 10.225 : JumpEnd); (4.41666666666667 : 10.225 : JumpStart); (4.58333333333333 : 10.225 : JumpEnd); (4.75 : 10.225); (4.75 : 8.75); (6.26041666666667 : 8.75 : JumpStart); (6.42708333333333 : 8.75 : JumpEnd); (7.66666716666667 : 8.75 : JumpStart); (7.83333383333333 : 8.75 : JumpEnd); (8.60791666666667 : 8.75 : JumpStart); (9.08333333333333 : 8.75 : JumpEnd); (9.10416666666667 : 8.75 : JumpStart); (9.27083333333333 : 8.75 : JumpEnd); (9.68111701822917 : 8.75 : JumpStart); (9.84778368489583 : 8.75 : JumpEnd); (10.0085402291667 : 8.75 : JumpStart); (10.1752068958333 : 8.75 : JumpEnd); (10.617188 : 8.75); (10.617188 : 7.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembersGroup/MembersGroup_ChildrenTable" />
+      <nodes>
+        <classShapeMoniker Id="fb608129-8974-4557-8281-f37d786cee90" />
+        <classShapeMoniker Id="29e35d27-91b1-4bbf-bef6-c5204b6568d0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="59e36408-d4d6-436e-a779-153708ec7913" isExpanded="false" absoluteBounds="6.625, 9.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/OrderServiceTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce9b436d-246d-4760-a332-4621090dbee5" absoluteBounds="6.64, 9.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 13.253126); (3.125 : 13.253126); (3.125 : 10.7); (3.66666666666667 : 10.7 : JumpStart); (3.83333333333333 : 10.7 : JumpEnd); (4.5 : 10.7); (4.5 : 8.825); (6.26041666666667 : 8.825 : JumpStart); (6.42708333333333 : 8.825 : JumpEnd); (8.18749975 : 8.825); (8.18749975 : 9.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_OrderServiceTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="59e36408-d4d6-436e-a779-153708ec7913" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="db4c7476-f25b-4608-9b73-7319ee658786" isExpanded="false" absoluteBounds="4.875, 31.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PastorsTitheAcountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="081ec34d-9cbe-49fa-bda3-3acef5690bad" absoluteBounds="4.89, 31.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.55000175); (9.08333333333333 : 2.55000175 : JumpStart); (8.91666666666667 : 2.55000175 : JumpEnd); (8.8976 : 2.55000175); (8.8976 : 17.1476); (8.83520833333333 : 17.1476 : JumpStart); (8.66854166666667 : 17.1476 : JumpEnd); (7.8976 : 17.1476); (7.8976 : 19.6476); (7.39583333333333 : 19.6476 : JumpStart); (7.22916666666667 : 19.6476 : JumpEnd); (6.6024 : 19.6476); (6.6024 : 19.6774); (6.1476 : 19.6774); (6.1476 : 21.7726); (6.3524 : 21.7726); (6.3524 : 25.0226); (6.1476 : 25.0226); (6.1476 : 27.1476); (8.5851 : 27.1476); (8.5851 : 32.1036); (7.20833333333333 : 32.1036 : JumpStart); (7.04166666666667 : 32.1036 : JumpEnd); (5.875 : 32.1036); (5.875 : 31.95)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_PastorsTitheAcountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="db4c7476-f25b-4608-9b73-7319ee658786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 20.4185384615385); (8.95833333333333 : 20.4185384615385 : JumpStart); (8.22916666666667 : 20.4185384615385 : JumpEnd); (6.5 : 20.4185384615385); (6.5 : 23.25); (6.43573333333333 : 23.25 : JumpStart); (6.26906666666667 : 23.25 : JumpEnd); (5.84375 : 23.25); (5.84375 : 31.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PastorsTitheAcountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="db4c7476-f25b-4608-9b73-7319ee658786" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="84a0475a-c677-4a32-903a-572281c5dbe1" isExpanded="false" absoluteBounds="3.625, 28.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/pastorsTitheBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="345d4b38-f928-442f-a72f-64fbd89fb57a" absoluteBounds="3.6399999999999997, 29.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.92187275 : 4.45); (15.92187275 : 5.625); (14.7083333333333 : 5.625 : JumpStart); (14.5416666666667 : 5.625 : JumpEnd); (14.3125 : 5.625); (14.3125 : 29.1); (14.1458333333333 : 29.1 : JumpStart); (13.9791666666667 : 29.1 : JumpEnd); (13.4583333333333 : 29.1 : JumpStart); (13.2916666666667 : 29.1 : JumpEnd); (11.8567723958333 : 29.1 : JumpStart); (11.0807260416667 : 29.1 : JumpEnd); (10.9854232251602 : 29.1 : JumpStart); (10.8187565584936 : 29.1 : JumpEnd); (10.1752068958333 : 29.1 : JumpStart); (10.0085402291667 : 29.1 : JumpEnd); (9.84778368489583 : 29.1 : JumpStart); (9.68111701822917 : 29.1 : JumpEnd); (9.02083333333333 : 29.1 : JumpStart); (8.50176666666667 : 29.1 : JumpEnd); (6.08333333333333 : 29.1 : JumpStart); (5.76041666666667 : 29.1 : JumpEnd); (5.625 : 29.1)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_pastorsTitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="84a0475a-c677-4a32-903a-572281c5dbe1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.84375 : 9.7); (14.84375 : 29.1); (14.3333333333333 : 29.1 : JumpStart); (14.1666666666667 : 29.1 : JumpEnd); (14.1458333333333 : 29.1 : JumpStart); (13.9791666666667 : 29.1 : JumpEnd); (13.4583333333333 : 29.1 : JumpStart); (13.2916666666667 : 29.1 : JumpEnd); (11.8567723958333 : 29.1 : JumpStart); (11.0807260416667 : 29.1 : JumpEnd); (10.9854232251602 : 29.1 : JumpStart); (10.8187565584936 : 29.1 : JumpEnd); (10.1752068958333 : 29.1 : JumpStart); (10.0085402291667 : 29.1 : JumpEnd); (9.84778368489583 : 29.1 : JumpStart); (9.68111701822917 : 29.1 : JumpEnd); (9.02083333333333 : 29.1 : JumpStart); (8.50176666666667 : 29.1 : JumpEnd); (6.08333333333333 : 29.1 : JumpStart); (5.76041666666667 : 29.1 : JumpEnd); (5.625 : 29.1)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_pastorsTitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="84a0475a-c677-4a32-903a-572281c5dbe1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="54902a24-5db6-4997-b599-f9458f4e1110" isExpanded="false" absoluteBounds="4.25, 32.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PastorsTithePaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8c9d9b8-bcf7-4f52-a88d-ff8a7de9abbf" absoluteBounds="4.265, 32.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.925785 : 20.575); (9.925785 : 22.625); (9.84778368489583 : 22.625 : JumpStart); (9.68111701822917 : 22.625 : JumpEnd); (9.67122583333333 : 22.625 : JumpStart); (9.50455916666667 : 22.625 : JumpEnd); (8.86458333333333 : 22.625 : JumpStart); (8.69791666666667 : 22.625 : JumpEnd); (8.6875 : 22.625); (8.6875 : 32.475); (7.20833333333333 : 32.475 : JumpStart); (7.04166666666667 : 32.475 : JumpEnd); (6.25 : 32.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PastorsTithePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="54902a24-5db6-4997-b599-f9458f4e1110" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.65039025 : 9.7); (15.65039025 : 15.625); (14.9895845833333 : 15.625 : JumpStart); (14.6979154166667 : 15.625 : JumpEnd); (14.6875 : 15.625); (14.6875 : 21.75); (14.3958333333333 : 21.75 : JumpStart); (14.1666666666667 : 21.75 : JumpEnd); (14.1458333333333 : 21.75 : JumpStart); (13.9791666666667 : 21.75 : JumpEnd); (13.375 : 21.75); (13.375 : 32.331248); (11.8567723958333 : 32.331248 : JumpStart); (11.0807260416667 : 32.331248 : JumpEnd); (10.9854232251602 : 32.331248 : JumpStart); (10.8187565584936 : 32.331248 : JumpEnd); (10.1752068958333 : 32.331248 : JumpStart); (10.0085402291667 : 32.331248 : JumpEnd); (9.02083333333333 : 32.331248 : JumpStart); (8.57291666666667 : 32.331248 : JumpEnd); (7.20833333333333 : 32.331248 : JumpStart); (7.04166666666667 : 32.331248 : JumpEnd); (6.25 : 32.331248)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_PastorsTithePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="54902a24-5db6-4997-b599-f9458f4e1110" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="053c15fd-b752-4be2-adbf-846aaefde39e" isExpanded="false" absoluteBounds="1.75, 30.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PastorsTitheTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a52be7a3-b07d-440b-8ba2-87c6d48e89a8" absoluteBounds="1.7650000000000001, 30.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.6875 : 30.125); (3.6875 : 29.325)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PastorsTitheTable/PastorsTitheTable_pastorsTitheBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="053c15fd-b752-4be2-adbf-846aaefde39e" />
+        <classShapeMoniker Id="84a0475a-c677-4a32-903a-572281c5dbe1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 30.575); (2.75 : 32.475); (3.72916666666667 : 32.475 : JumpStart); (4.14583333333333 : 32.475 : JumpEnd); (4.25 : 32.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PastorsTitheTable/PastorsTitheTable_PastorsTithePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="053c15fd-b752-4be2-adbf-846aaefde39e" />
+        <classShapeMoniker Id="54902a24-5db6-4997-b599-f9458f4e1110" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 20.575); (8.875 : 20.95); (8.86458333333333 : 20.95 : JumpStart); (8.22916666666667 : 20.95 : JumpEnd); (7.48958383333333 : 20.95 : JumpStart); (7.32291716666667 : 20.95 : JumpEnd); (6.58333333333333 : 20.95 : JumpStart); (6.41666666666667 : 20.95 : JumpEnd); (6.23093333333333 : 20.95 : JumpStart); (6.04166666666667 : 20.95 : JumpEnd); (5.13802033333333 : 20.95 : JumpStart); (4.82291666666667 : 20.95 : JumpEnd); (4.31770833333333 : 20.95 : JumpStart); (4.15104166666667 : 20.95 : JumpEnd); (3.69270833333333 : 20.95 : JumpStart); (2.97916666666667 : 20.95 : JumpEnd); (2.2812505 : 20.95); (2.2812505 : 30.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PastorsTitheTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="053c15fd-b752-4be2-adbf-846aaefde39e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="62d7f9d6-77e4-40f8-8d61-225e2343e574" isExpanded="false" absoluteBounds="6.5, 34.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PastorsAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b971a4d-9dc3-423d-b448-b58f45c17537" absoluteBounds="6.515, 34.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.65530928125 : 2.575); (9.65530928125 : 7.25); (9.1875 : 7.25); (9.1875 : 14.375); (9.04895833333333 : 14.375 : JumpStart); (8.66854166666667 : 14.375 : JumpEnd); (8.625 : 14.375); (8.625 : 17.03125); (8.39583333333333 : 17.03125 : JumpStart); (8.22916666666667 : 17.03125 : JumpEnd); (7.92333333333333 : 17.03125 : JumpStart); (7.54166666666667 : 17.03125 : JumpEnd); (7.5 : 17.03125); (7.5 : 19.125); (7.81426666666667 : 19.125 : JumpStart); (7.98093333333333 : 19.125 : JumpEnd); (8.32291666666667 : 19.125 : JumpStart); (8.64583333333333 : 19.125 : JumpEnd); (8.65625 : 19.125); (8.65625 : 34.475); (8.5 : 34.475)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_PastorsAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="62d7f9d6-77e4-40f8-8d61-225e2343e574" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.054687 : 20.325); (5.054687 : 21.875); (5.51781016666667 : 21.875 : JumpStart); (5.68447683333333 : 21.875 : JumpEnd); (6.26906666666667 : 21.875 : JumpStart); (6.43573333333333 : 21.875 : JumpEnd); (6.5 : 21.875); (6.5 : 23.5); (6.43573333333333 : 23.5 : JumpStart); (6.26906666666667 : 23.5 : JumpEnd); (6 : 23.5); (6 : 31.375); (7.125 : 31.375); (7.125 : 33.75); (6.25 : 33.75); (6.25 : 34.475); (6.5 : 34.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MinisterTable/MinisterTable_PastorsAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="394b1bd6-2f05-4892-b2d8-fadca0c0a81e" />
+        <classShapeMoniker Id="62d7f9d6-77e4-40f8-8d61-225e2343e574" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" isExpanded="false" absoluteBounds="4.25, 35.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HierarchyTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d970d09-2bbe-40a1-ba1c-b025b2bd3185" absoluteBounds="4.265, 35.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.625 : 18.075); (5.625 : 18.109375); (4.98958333333333 : 18.109375 : JumpStart); (4.82291666666667 : 18.109375 : JumpEnd); (3.484375 : 18.109375); (3.484375 : 30.109375); (3.72916666666667 : 30.109375 : JumpStart); (4.14583333333333 : 30.109375 : JumpEnd); (4.234375 : 30.109375); (4.234375 : 35.725); (4.25 : 35.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDesignationTable/ChurchDesignationTable_HierarchyTable" />
+      <nodes>
+        <classShapeMoniker Id="16627704-5742-4a1c-aece-dcff4a5559c7" />
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.60546978125 : 13.575); (4.60546978125 : 15.375); (4.53645870833333 : 15.375 : JumpStart); (4.36979204166667 : 15.375 : JumpEnd); (4.28255136458333 : 15.375 : JumpStart); (3.91666666666667 : 15.375 : JumpEnd); (3.875 : 15.375); (3.875 : 16.75); (4.72916666666667 : 16.75 : JumpStart); (5.14583333333333 : 16.75 : JumpEnd); (5.375 : 16.75); (5.375 : 17.375); (5.33333333333333 : 17.375 : JumpStart); (5.16666666666667 : 17.375 : JumpEnd); (5.02083333333333 : 17.375 : JumpStart); (4.72916666666667 : 17.375 : JumpEnd); (4.375 : 17.375); (4.375 : 17.75); (3.64583333333333 : 17.75 : JumpStart); (3.47916666666667 : 17.75 : JumpEnd); (3.1875 : 17.75); (3.1875 : 29.875); (3.40104166666667 : 29.875 : JumpStart); (3.77083333333333 : 29.875 : JumpEnd); (3.79166666666667 : 29.875 : JumpStart); (3.95833333333333 : 29.875 : JumpEnd); (4.0625 : 29.875); (4.0625 : 35.725); (4.25 : 35.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_HierarchyTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5878925 : 20.575); (9.5878925 : 22.875); (8.875 : 22.875); (8.875 : 35.79687575); (8.80208333333333 : 35.79687575 : JumpStart); (8.63541666666667 : 35.79687575 : JumpEnd); (6.25 : 35.79687575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_HierarchyTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e703a0ad-c397-42fc-b4fa-d6b36e0a75b9" isExpanded="false" absoluteBounds="1, 34.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HierarcyBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1ca1e63-7ad5-468d-9830-c1dc00c83219" absoluteBounds="1.0150000000000001, 34.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.429684375 : 4.45); (15.429684375 : 5.375); (14.7083333333333 : 5.375 : JumpStart); (14.5416666666667 : 5.375 : JumpEnd); (14.25 : 5.375); (14.25 : 35.2); (14.1458333333333 : 35.2 : JumpStart); (13.9791666666667 : 35.2 : JumpEnd); (11.8567723958333 : 35.2 : JumpStart); (11.3932288541667 : 35.2 : JumpEnd); (11.2473927083333 : 35.2 : JumpStart); (11.0807260416667 : 35.2 : JumpEnd); (10.9854232251602 : 35.2 : JumpStart); (10.8187565584936 : 35.2 : JumpEnd); (10.1752068958333 : 35.2 : JumpStart); (10.0085402291667 : 35.2 : JumpEnd); (9.02083333333333 : 35.2 : JumpStart); (8.63541666666667 : 35.2 : JumpEnd); (4.31770833333333 : 35.2 : JumpStart); (4.15104166666667 : 35.2 : JumpEnd); (4.14583333333333 : 35.2 : JumpStart); (3.72916666666667 : 35.2 : JumpEnd); (3.58333333333333 : 35.2 : JumpStart); (3.41666666666667 : 35.2 : JumpEnd); (3.375 : 35.2); (3.375 : 34.6); (3.33333333333333 : 34.6 : JumpStart); (3.16666666666667 : 34.6 : JumpEnd); (3 : 34.6)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_HierarcyBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="e703a0ad-c397-42fc-b4fa-d6b36e0a75b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.25 : 35.725); (4.08333333333333 : 35.725 : JumpStart); (3.72916666666667 : 35.725 : JumpEnd); (3.58333333333333 : 35.725 : JumpStart); (3.41666666666667 : 35.725 : JumpEnd); (3.33333333333333 : 35.725 : JumpStart); (3.16666666666667 : 35.725 : JumpEnd); (2 : 35.725); (2 : 34.825)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/HierarchyTable/HierarchyTable_HierarcyBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+        <classShapeMoniker Id="e703a0ad-c397-42fc-b4fa-d6b36e0a75b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.8124975 : 9.7); (14.8124975 : 34.7937495); (14.3333333333333 : 34.7937495 : JumpStart); (14.1666666666667 : 34.7937495 : JumpEnd); (14.1458333333333 : 34.7937495 : JumpStart); (13.9791666666667 : 34.7937495 : JumpEnd); (11.8567723958333 : 34.7937495 : JumpStart); (11.3932288541667 : 34.7937495 : JumpEnd); (11.2473927083333 : 34.7937495 : JumpStart); (11.0807260416667 : 34.7937495 : JumpEnd); (10.9854232251602 : 34.7937495 : JumpStart); (10.8187565584936 : 34.7937495 : JumpEnd); (10.1752068958333 : 34.7937495 : JumpStart); (10.0085402291667 : 34.7937495 : JumpEnd); (9.02083333333333 : 34.7937495 : JumpStart); (8.63541666666667 : 34.7937495 : JumpEnd); (4.31770833333333 : 34.7937495 : JumpStart); (4.15104166666667 : 34.7937495 : JumpEnd); (4.14583333333333 : 34.7937495 : JumpStart); (3.72916666666667 : 34.7937495 : JumpEnd); (3.58333333333333 : 34.7937495 : JumpStart); (3.16666666666667 : 34.7937495 : JumpEnd); (3 : 34.7937495)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_HierarcyBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="e703a0ad-c397-42fc-b4fa-d6b36e0a75b9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" isExpanded="false" absoluteBounds="4.625, 37.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HierarcyAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeb737a6-8d1b-413a-bc43-50fe2cf1e319" absoluteBounds="4.64, 37.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.9020898918269 : 2.575); (10.9020898918269 : 37.8687525); (10.1752068958333 : 37.8687525 : JumpStart); (10.0085402291667 : 37.8687525 : JumpEnd); (9.70833333333333 : 37.8687525 : JumpStart); (9.54166666666667 : 37.8687525 : JumpEnd); (6.625 : 37.8687525)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_HierarcyAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.156252 : 18.075); (6.156252 : 18.09375); (4.98958333333333 : 18.09375 : JumpStart); (4.82291666666667 : 18.09375 : JumpEnd); (3.609375 : 18.09375); (3.609375 : 26.109375); (5.515625 : 26.109375); (5.515625 : 28.859375); (3.609375 : 28.859375); (3.609375 : 30); (3.72916666666667 : 30 : JumpStart); (3.95833333333333 : 30 : JumpEnd); (4 : 30); (4 : 37.725); (4.625 : 37.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDesignationTable/ChurchDesignationTable_HierarcyAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="16627704-5742-4a1c-aece-dcff4a5559c7" />
+        <classShapeMoniker Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.326171703125 : 13.575); (4.326171703125 : 15.125); (4.28255136458333 : 15.125 : JumpStart); (4.01432451041667 : 15.125 : JumpEnd); (4 : 15.125); (4 : 16.8125); (4.72916666666667 : 16.8125 : JumpStart); (4.98958333333333 : 16.8125 : JumpEnd); (5 : 16.8125); (5 : 17.4375); (4.98958333333333 : 17.4375 : JumpStart); (4.82291666666667 : 17.4375 : JumpEnd); (4.69270833333333 : 17.4375 : JumpStart); (4.52604166666667 : 17.4375 : JumpEnd); (4.375 : 17.4375); (4.375 : 17.875); (3.64583333333333 : 17.875 : JumpStart); (3.47916666666667 : 17.875 : JumpEnd); (3.125 : 17.875); (3.125 : 29.5); (3.22916666666667 : 29.5 : JumpStart); (3.39583333333333 : 29.5 : JumpEnd); (3.40104166666667 : 29.5 : JumpStart); (3.77083333333333 : 29.5 : JumpEnd); (4 : 29.5); (4 : 37.725); (4.625 : 37.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_HierarcyAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.2636775 : 20.575); (10.2636775 : 22.75); (10.1752068958333 : 22.75 : JumpStart); (10.0085402291667 : 22.75 : JumpEnd); (9.84778368489583 : 22.75 : JumpStart); (9.68111701822917 : 22.75 : JumpEnd); (9.67122583333333 : 22.75 : JumpStart); (9.50455916666667 : 22.75 : JumpEnd); (8.9375 : 22.75); (8.9375 : 36.125); (8.80208333333333 : 36.125 : JumpStart); (8.63541666666667 : 36.125 : JumpEnd); (8.17083383333333 : 36.125 : JumpStart); (8.00416716666667 : 36.125 : JumpEnd); (7.125 : 36.125); (7.125 : 37.725); (6.625 : 37.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_HierarcyAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="971cf36b-de7f-471d-b787-ae006679ebfd" isExpanded="false" absoluteBounds="6.25, 41.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PensionTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32b5adf9-850a-439b-a739-5b24855696bf" absoluteBounds="6.265, 42.085, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.78515825 : 20.575); (10.78515825 : 22.5); (10.6077512083333 : 22.5 : JumpStart); (10.1803441666667 : 22.5 : JumpEnd); (10.1752068958333 : 22.5 : JumpStart); (9.68111701822917 : 22.5 : JumpEnd); (9.67122583333333 : 22.5 : JumpStart); (9.50455916666667 : 22.5 : JumpEnd); (8.71875 : 22.5); (8.71875 : 36.25); (9.625 : 36.25); (9.625 : 41.92187575); (8.25 : 41.92187575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PensionTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="971cf36b-de7f-471d-b787-ae006679ebfd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="425434d6-7c50-4f4a-98ee-77e89ddb7c5c" isExpanded="false" absoluteBounds="3.125, 43.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PensionPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e0ffbfa-19d6-470b-880f-b45814b0532a" absoluteBounds="3.1399999999999997, 43.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 20.35625); (8.95833333333333 : 20.35625 : JumpStart); (8.22916666666667 : 20.35625 : JumpEnd); (6.125 : 20.35625); (6.125 : 21.5); (5.13802033333333 : 21.5 : JumpStart); (4.82291666666667 : 21.5 : JumpEnd); (4.31770833333333 : 21.5 : JumpStart); (4.15104166666667 : 21.5 : JumpEnd); (3.69270833333333 : 21.5 : JumpStart); (3.04166666666667 : 21.5 : JumpEnd); (3 : 21.5); (3 : 29.8125); (3.40104166666667 : 29.8125 : JumpStart); (3.77083333333333 : 29.8125 : JumpEnd); (3.8125 : 29.8125); (3.8125 : 42.75); (4.125 : 42.75); (4.125 : 43.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PensionPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="425434d6-7c50-4f4a-98ee-77e89ddb7c5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.8750025 : 9.7); (14.8750025 : 43.2062475); (7.33333333333333 : 43.2062475 : JumpStart); (7.16666666666667 : 43.2062475 : JumpEnd); (5.125 : 43.2062475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_PensionPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="425434d6-7c50-4f4a-98ee-77e89ddb7c5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 42.075); (7.25 : 43.35); (5.125 : 43.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PensionTable/PensionTable_PensionPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="971cf36b-de7f-471d-b787-ae006679ebfd" />
+        <classShapeMoniker Id="425434d6-7c50-4f4a-98ee-77e89ddb7c5c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="754cdabe-89b0-4f4c-a3dd-861146c2c0d5" isExpanded="false" absoluteBounds="4.625, 39.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PensionBankPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d15e90a-da93-49c2-bca3-273e46bbaff4" absoluteBounds="4.64, 40.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.414061125 : 4.45); (16.414061125 : 5.75); (14.7083333333333 : 5.75 : JumpStart); (14.5416666666667 : 5.75 : JumpEnd); (14.3958333333333 : 5.75 : JumpStart); (14.1041666666667 : 5.75 : JumpEnd); (14.0625 : 5.75); (14.0625 : 39.8414061875); (11.8567723958333 : 39.8414061875 : JumpStart); (11.6901057291667 : 39.8414061875 : JumpEnd); (11.5598955208333 : 39.8414061875 : JumpStart); (11.3932288541667 : 39.8414061875 : JumpEnd); (10.1752068958333 : 39.8414061875 : JumpStart); (10.0085402291667 : 39.8414061875 : JumpEnd); (9.70833333333333 : 39.8414061875 : JumpStart); (9.54166666666667 : 39.8414061875 : JumpEnd); (6.625 : 39.8414061875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/BankTable/BankTable_PensionBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="61db7024-121a-4205-96c9-e90aaf6e7952" />
+        <classShapeMoniker Id="754cdabe-89b0-4f4c-a3dd-861146c2c0d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.78124875 : 9.7); (14.78124875 : 39.8414061875); (11.8567723958333 : 39.8414061875 : JumpStart); (11.6901057291667 : 39.8414061875 : JumpEnd); (11.5598955208333 : 39.8414061875 : JumpStart); (11.3932288541667 : 39.8414061875 : JumpEnd); (10.1752068958333 : 39.8414061875 : JumpStart); (10.0085402291667 : 39.8414061875 : JumpEnd); (9.70833333333333 : 39.8414061875 : JumpStart); (9.54166666666667 : 39.8414061875 : JumpEnd); (6.625 : 39.8414061875)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_PensionBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="754cdabe-89b0-4f4c-a3dd-861146c2c0d5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.4375 : 41.625); (6.4375 : 40.075)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PensionTable/PensionTable_PensionBankPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="971cf36b-de7f-471d-b787-ae006679ebfd" />
+        <classShapeMoniker Id="754cdabe-89b0-4f4c-a3dd-861146c2c0d5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6029d8ea-9be5-443f-9a19-b08577dee614" isExpanded="false" absoluteBounds="1.25, 40, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/PensionAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8fc685a-c602-4d50-b110-63d67b7d82f5" absoluteBounds="1.2650000000000001, 40.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.0918735625 : 2.575); (10.0918735625 : 40.057811375); (9.70833333333333 : 40.057811375 : JumpStart); (9.54166666666667 : 40.057811375 : JumpEnd); (3.89583333333333 : 40.057811375 : JumpStart); (3.72916666666667 : 40.057811375 : JumpEnd); (3.25 : 40.057811375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 17.9375); (3.64583333333333 : 17.9375 : JumpStart); (3.47916666666667 : 17.9375 : JumpEnd); (3.33333333333333 : 17.9375 : JumpStart); (3.10416666666667 : 17.9375 : JumpEnd); (3.0625 : 17.9375); (3.0625 : 29.125); (2.36458383333333 : 29.125 : JumpStart); (2.19791716666667 : 29.125 : JumpEnd); (2.06770608333333 : 29.125 : JumpStart); (1.90103941666667 : 29.125 : JumpEnd); (1.58333333333333 : 29.125 : JumpStart); (1.41666666666667 : 29.125 : JumpEnd); (1.25 : 29.125); (1.25 : 33.625); (1.41666666666667 : 33.625 : JumpStart); (1.58333333333333 : 33.625 : JumpEnd); (3.5 : 33.625); (3.5 : 39.625); (2.781252 : 39.625); (2.781252 : 40)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDesignationTable/ChurchDesignationTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="16627704-5742-4a1c-aece-dcff4a5559c7" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.19921803125 : 13.575); (4.19921803125 : 14.875); (4.18099117708333 : 14.875 : JumpStart); (4.01432451041667 : 14.875 : JumpEnd); (3.89778750520833 : 14.875 : JumpStart); (3.48111633854167 : 14.875 : JumpEnd); (3.45833333333333 : 14.875 : JumpStart); (2.79166666666667 : 14.875 : JumpEnd); (2 : 14.875); (2 : 18.875); (2.16666666666667 : 18.875 : JumpStart); (2.33333333333333 : 18.875 : JumpEnd); (2.41666666666667 : 18.875 : JumpStart); (2.58333333333333 : 18.875 : JumpEnd); (2.97916666666667 : 18.875 : JumpStart); (3.27083333333333 : 18.875 : JumpEnd); (3.3125 : 18.875); (3.3125 : 29.6875); (3.40104166666667 : 29.6875 : JumpStart); (3.77083333333333 : 29.6875 : JumpEnd); (3.875 : 29.6875); (3.875 : 40.11562275); (3.25 : 40.11562275)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 20.3875025); (8.95833333333333 : 20.3875025 : JumpStart); (8.22916666666667 : 20.3875025 : JumpEnd); (6.23093333333333 : 20.3875025 : JumpStart); (6.06426666666667 : 20.3875025 : JumpEnd); (6 : 20.3875025); (6 : 20.825); (5.13802033333333 : 20.825 : JumpStart); (4.82291666666667 : 20.825 : JumpEnd); (4.31770833333333 : 20.825 : JumpStart); (4.15104166666667 : 20.825 : JumpEnd); (3.69270833333333 : 20.825 : JumpStart); (2.97916666666667 : 20.825 : JumpEnd); (1.5 : 20.825); (1.5 : 33.875); (3.25 : 33.875); (3.25 : 39.375); (2.25 : 39.375); (2.25 : 40)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.46875 : 41.625); (7.46875 : 40.2937495); (3.89583333333333 : 40.2937495 : JumpStart); (3.72916666666667 : 40.2937495 : JumpEnd); (3.25 : 40.2937495)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PensionTable/PensionTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="971cf36b-de7f-471d-b787-ae006679ebfd" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ce403253-0cd0-414a-a56e-d4c351abe458" isExpanded="false" absoluteBounds="7.375, 36.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HierarchyPaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20c75e20-c90e-44fd-83a8-98c67598dd0e" absoluteBounds="7.39, 36.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.25 : 35.79687575); (8.0875005 : 35.79687575); (8.0875005 : 36.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/HierarchyTable/HierarchyTable_HierarchyPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+        <classShapeMoniker Id="ce403253-0cd0-414a-a56e-d4c351abe458" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.90625125 : 9.7); (14.90625125 : 36.6); (14.8645820833333 : 36.6 : JumpStart); (14.6979154166667 : 36.6 : JumpEnd); (14.1458333333333 : 36.6 : JumpStart); (13.9791666666667 : 36.6 : JumpEnd); (11.8567723958333 : 36.6 : JumpStart); (11.3932288541667 : 36.6 : JumpEnd); (10.9854232251602 : 36.6 : JumpStart); (10.8187565584936 : 36.6 : JumpEnd); (10.1752068958333 : 36.6 : JumpStart); (10.0085402291667 : 36.6 : JumpEnd); (9.70833333333333 : 36.6 : JumpStart); (9.54166666666667 : 36.6 : JumpEnd); (9.375 : 36.6)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_HierarchyPaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="ce403253-0cd0-414a-a56e-d4c351abe458" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8aa1405a-307c-45ea-a0f9-ddf9e8808261" isExpanded="false" absoluteBounds="22.125, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/WelfareAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85248a95-5650-43c9-91f5-962c0b8a0a51" absoluteBounds="22.14, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 2.34517007692308); (11.5416666666667 : 2.34517007692308 : JumpStart); (11.8333333333333 : 2.34517007692308 : JumpEnd); (11.875 : 2.34517007692308); (11.875 : 1.95); (16.9791666666667 : 1.95 : JumpStart); (17.1458333333333 : 1.95 : JumpEnd); (17.1666666666667 : 1.95 : JumpStart); (17.3333333333333 : 1.95 : JumpEnd); (18.6317795512821 : 1.95 : JumpStart); (18.7984462179487 : 1.95 : JumpEnd); (19.9093974358974 : 1.95 : JumpStart); (20.1054881794872 : 1.95 : JumpEnd); (23.125 : 1.95); (23.125 : 1.575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_WelfareAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="8aa1405a-307c-45ea-a0f9-ddf9e8808261" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a411d6fc-8675-4e3c-8d0e-3a562759e676" isExpanded="false" absoluteBounds="11, 12.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HomeCellZonesTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="443077fc-e55a-4547-9eb1-70e4b443a3c2" absoluteBounds="11.015, 12.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9befec15-5b78-4a86-98da-dd60a0c0a552" isExpanded="false" absoluteBounds="11.125, 13.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HomeCellZonesPastorsTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21e4275e-cb6e-496d-af61-085df9344034" absoluteBounds="11.14, 13.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.53125 : 12.7); (11.53125 : 13.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/HomeCellZonesTable/HomeCellZonesTable_HomeCellZonesPastorsTable" />
+      <nodes>
+        <classShapeMoniker Id="a411d6fc-8675-4e3c-8d0e-3a562759e676" />
+        <classShapeMoniker Id="9befec15-5b78-4a86-98da-dd60a0c0a552" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e5ab9446-d879-4292-aab9-72a882157b5c" isExpanded="false" absoluteBounds="9.875, 11, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/HomecellTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c959b39-17ee-4640-bfff-80ba81e182e4" absoluteBounds="9.89, 11.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.5 : 8.2781235); (8.60791666666667 : 8.2781235 : JumpStart); (9.08333333333333 : 8.2781235 : JumpEnd); (9.10416666666667 : 8.2781235 : JumpStart); (9.27083333333333 : 8.2781235 : JumpEnd); (9.68111701822917 : 8.2781235 : JumpStart); (9.84778368489583 : 8.2781235 : JumpEnd); (10.0085402291667 : 8.2781235 : JumpStart); (10.1752068958333 : 8.2781235 : JumpEnd); (10.5338546666667 : 8.2781235 : JumpStart); (10.9854232251602 : 8.2781235 : JumpEnd); (11.4609375 : 8.2781235); (11.4609375 : 11)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/AreaTable/AreaTable_HomecellTable" />
+      <nodes>
+        <classShapeMoniker Id="43ec0c77-2b41-48f0-a575-54c9bb68f4e4" />
+        <classShapeMoniker Id="e5ab9446-d879-4292-aab9-72a882157b5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 8.493752); (8.60791666666667 : 8.493752 : JumpStart); (9.08333333333333 : 8.493752 : JumpEnd); (9.10416666666667 : 8.493752 : JumpStart); (9.27083333333333 : 8.493752 : JumpEnd); (9.68111701822917 : 8.493752 : JumpStart); (9.84778368489583 : 8.493752 : JumpEnd); (10.0085402291667 : 8.493752 : JumpStart); (10.1752068958333 : 8.493752 : JumpEnd); (10.5338546666667 : 8.493752 : JumpStart); (10.9854232251602 : 8.493752 : JumpEnd); (11.3776041666667 : 8.493752 : JumpStart); (11.5442708333333 : 8.493752 : JumpEnd); (11.75 : 8.493752); (11.75 : 11)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/AreaTable/AreaTable_HomecellTable1" />
+      <nodes>
+        <classShapeMoniker Id="43ec0c77-2b41-48f0-a575-54c9bb68f4e4" />
+        <classShapeMoniker Id="e5ab9446-d879-4292-aab9-72a882157b5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 13.445315); (3.44 : 13.445315); (3.44 : 10.94); (3.66666666666667 : 10.94 : JumpStart); (3.83333333333333 : 10.94 : JumpEnd); (4.96 : 10.94); (4.96 : 8.96); (7.66666716666667 : 8.96 : JumpStart); (7.83333383333333 : 8.96 : JumpEnd); (8.10416641666667 : 8.96 : JumpStart); (8.27083308333333 : 8.96 : JumpEnd); (8.60791666666667 : 8.96 : JumpStart); (9.08333333333333 : 8.96 : JumpEnd); (9.10416666666667 : 8.96 : JumpStart); (9.27083333333333 : 8.96 : JumpEnd); (9.68111701822917 : 8.96 : JumpStart); (9.84778368489583 : 8.96 : JumpEnd); (10.0085402291667 : 8.96 : JumpStart); (10.1752068958333 : 8.96 : JumpEnd); (10.6763056125801 : 8.96 : JumpStart); (10.9854232251602 : 8.96 : JumpEnd); (11.3776041666667 : 8.96 : JumpStart); (11.5442708333333 : 8.96 : JumpEnd); (11.6666666666667 : 8.96 : JumpStart); (11.8333333333333 : 8.96 : JumpEnd); (11.935 : 8.96); (11.935 : 11.225); (11.875 : 11.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_HomecellTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="e5ab9446-d879-4292-aab9-72a882157b5c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.4375 : 12.25); (11.4375 : 11.45)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/HomeCellZonesTable/HomeCellZonesTable_HomecellTable" />
+      <nodes>
+        <classShapeMoniker Id="a411d6fc-8675-4e3c-8d0e-3a562759e676" />
+        <classShapeMoniker Id="e5ab9446-d879-4292-aab9-72a882157b5c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fecc0dcd-7014-4870-8d85-1f8dc09ea236" isExpanded="false" absoluteBounds="4.875, 12.5, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/FamilyTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="665c8849-7679-4ce4-9db1-daaec50a8d48" absoluteBounds="4.89, 12.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6373d9ad-059e-4e5b-adc4-f2a89e88e1ec" isExpanded="false" absoluteBounds="3.625, 18.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/SermonTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f191e19e-c094-4acd-af77-8afabbdd442d" absoluteBounds="3.64, 18.585, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b7a9c2d-0915-4caa-afe6-62dbd5013361" isExpanded="false" absoluteBounds="4.25, 22, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abcdabb2-718a-404d-aba6-ef5abee8e9c0" absoluteBounds="4.265, 22.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.6011435 : 22); (5.6011435 : 21.635); (6.06426666666667 : 21.635 : JumpStart); (6.23093333333333 : 21.635 : JumpEnd); (6.41666666666667 : 21.635 : JumpStart); (6.58333333333333 : 21.635 : JumpEnd); (7.32291716666667 : 21.635 : JumpStart); (7.48958383333333 : 21.635 : JumpEnd); (8.22916666666667 : 21.635 : JumpStart); (8.73958333333333 : 21.635 : JumpEnd); (8.74 : 21.635); (8.74 : 17.9225); (7.84 : 17.9225); (7.84 : 16.64125); (8.22916666666667 : 16.64125 : JumpStart); (8.64583333333333 : 16.64125 : JumpEnd); (8.69125 : 16.64125); (8.69125 : 7.885); (7.5 : 7.885); (7.5 : 8.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Location/Location_AreaTable" />
+      <nodes>
+        <classShapeMoniker Id="8b7a9c2d-0915-4caa-afe6-62dbd5013361" />
+        <classShapeMoniker Id="43ec0c77-2b41-48f0-a575-54c9bb68f4e4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.25 : 22.225); (3.5625 : 22.225); (3.5625 : 17.5125); (4.8125 : 17.5125); (4.8125 : 16.325); (4.1875 : 16.325); (4.1875 : 13.66875); (3.9453106875 : 13.66875); (3.9453106875 : 13.575)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Location/Location_ChurchDetailTable" />
+      <nodes>
+        <classShapeMoniker Id="8b7a9c2d-0915-4caa-afe6-62dbd5013361" />
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 22.081248); (6.26906666666667 : 22.081248 : JumpStart); (6.58333333333333 : 22.081248 : JumpEnd); (7.32291716666667 : 22.081248 : JumpStart); (7.48958383333333 : 22.081248 : JumpEnd); (8.22916666666667 : 22.081248 : JumpStart); (8.86458333333333 : 22.081248 : JumpEnd); (9.50455916666667 : 22.081248 : JumpStart); (9.67122583333333 : 22.081248 : JumpEnd); (9.68111701822917 : 22.081248 : JumpStart); (10.1752068958333 : 22.081248 : JumpEnd); (10.1803441666667 : 22.081248 : JumpStart); (10.6077512083333 : 22.081248 : JumpEnd); (10.7018249166667 : 22.081248 : JumpStart); (10.9854232251602 : 22.081248 : JumpEnd); (11.0239616125801 : 22.081248 : JumpStart); (11.1906282792468 : 22.081248 : JumpEnd); (11.3125 : 22.081248); (11.3125 : 17.1375); (10.9854232251602 : 17.1375 : JumpStart); (10.8187565584936 : 17.1375 : JumpEnd); (10.1752068958333 : 17.1375 : JumpStart); (10.0085402291667 : 17.1375 : JumpEnd); (9.9375 : 17.1375); (9.9375 : 15.45); (10.0085402291667 : 15.45 : JumpStart); (10.1752068958333 : 15.45 : JumpEnd); (10.6763056125801 : 15.45 : JumpStart); (10.9854232251602 : 15.45 : JumpEnd); (11.0625 : 15.45); (11.0625 : 13.075); (10.9854232251602 : 13.075 : JumpStart); (10.6763056125801 : 13.075 : JumpEnd); (10.4062505 : 13.075); (10.4062505 : 11.45)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/Location/Location_HomecellTable" />
+      <nodes>
+        <classShapeMoniker Id="8b7a9c2d-0915-4caa-afe6-62dbd5013361" />
+        <classShapeMoniker Id="e5ab9446-d879-4292-aab9-72a882157b5c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2a2742fc-150b-4431-bba9-a39da4bff2fe" isExpanded="false" absoluteBounds="4.5, 19.125, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/DedicationTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f9e6ea0-e826-41de-bc10-e1e6c2ad4d41" absoluteBounds="4.515, 19.585, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 19.3375); (7.22916666666667 : 19.3375 : JumpStart); (7.39583333333333 : 19.3375 : JumpEnd); (7.47916666666667 : 19.3375 : JumpStart); (7.64583333333333 : 19.3375 : JumpEnd); (7.81426666666667 : 19.3375 : JumpStart); (7.98093333333333 : 19.3375 : JumpEnd); (8.32291666666667 : 19.3375 : JumpStart); (8.95833333333333 : 19.3375 : JumpEnd); (9.23484034615385 : 19.3375); (9.23484034615385 : 18.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/DedicationTable/DedicationTable_DedicationImageTable" />
+      <nodes>
+        <classShapeMoniker Id="2a2742fc-150b-4431-bba9-a39da4bff2fe" />
+        <classShapeMoniker Id="992e08e1-aa8c-44e2-89b0-905991b1af51" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.564449671875 : 13.575); (3.564449671875 : 15.4375); (3.73112083854167 : 15.4375 : JumpStart); (3.89778750520833 : 15.4375 : JumpEnd); (3.9375 : 15.4375); (3.9375 : 16.65625); (4.72916666666667 : 16.65625 : JumpStart); (4.89583333333333 : 16.65625 : JumpEnd); (4.9375 : 16.65625); (4.9375 : 17.46875); (4.375 : 17.46875); (4.375 : 17.8125); (3.64583333333333 : 17.8125 : JumpStart); (3.47916666666667 : 17.8125 : JumpEnd); (3.25 : 17.8125); (3.25 : 19.3125005); (3.47916666666667 : 19.3125005 : JumpStart); (3.69270833333333 : 19.3125005 : JumpEnd); (4.5 : 19.3125005)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_DedicationTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="2a2742fc-150b-4431-bba9-a39da4bff2fe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="02ff885c-f597-4055-9800-0cd0afdd2498" isExpanded="false" absoluteBounds="2.625, 6.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MonthTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c1df629-8043-447b-91de-34b0ec70fbc9" absoluteBounds="2.64, 6.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cb29f47-4b88-43ec-bdfb-299fc080306a" isExpanded="false" absoluteBounds="0.5, 6, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/ChildrenImageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bbd4e9c-25fc-484c-b8f2-6743d9d17171" absoluteBounds="0.51499999999999968, 6.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.25 : 7.6925005); (10.1752068958333 : 7.6925005 : JumpStart); (10.0085402291667 : 7.6925005 : JumpEnd); (9.84778368489583 : 7.6925005 : JumpStart); (9.68111701822917 : 7.6925005 : JumpEnd); (9.27083333333333 : 7.6925005 : JumpStart); (9.10416666666667 : 7.6925005 : JumpEnd); (9.08333333333333 : 7.6925005 : JumpStart); (8.66854166666666 : 7.6925005 : JumpEnd); (8.5 : 7.6925005); (8.5 : 7.075); (5.02083333333333 : 7.075 : JumpStart); (4.85416666666667 : 7.075 : JumpEnd); (4.27083133333333 : 7.075 : JumpStart); (4.10416466666667 : 7.075 : JumpEnd); (3 : 7.075); (3 : 6.875); (1.5 : 6.875); (1.5 : 6.45)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChildrenTable/ChildrenTable_ChildrenImageTable" />
+      <nodes>
+        <classShapeMoniker Id="29e35d27-91b1-4bbf-bef6-c5204b6568d0" />
+        <classShapeMoniker Id="3cb29f47-4b88-43ec-bdfb-299fc080306a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="075ac0d1-6451-4866-9f32-9bf6fcaf0e14" isExpanded="false" absoluteBounds="12.75, 4.375, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/FamilyImageTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc1f3b94-7ec2-4743-b9ba-004a82005050" absoluteBounds="12.765, 4.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.875 : 12.8496153846154); (7.51041666666667 : 12.8496153846154 : JumpStart); (7.67708333333333 : 12.8496153846154 : JumpEnd); (8.35416666666667 : 12.8496153846154 : JumpStart); (8.58333333333333 : 12.8496153846154 : JumpEnd); (8.60416666666667 : 12.8496153846154 : JumpStart); (9.04895833333333 : 12.8496153846154 : JumpEnd); (9.10416666666667 : 12.8496153846154 : JumpStart); (9.27083333333333 : 12.8496153846154 : JumpEnd); (9.3809358974359 : 12.8496153846154 : JumpStart); (9.54760256410256 : 12.8496153846154 : JumpEnd); (9.68111701822917 : 12.8496153846154 : JumpStart); (9.84778368489583 : 12.8496153846154 : JumpEnd); (10.0085402291667 : 12.8496153846154 : JumpStart); (10.1752068958333 : 12.8496153846154 : JumpEnd); (10.3229171666667 : 12.8496153846154 : JumpStart); (10.4895838333333 : 12.8496153846154 : JumpEnd); (10.625 : 12.8496153846154); (10.625 : 11.825); (10.6763056125801 : 11.825 : JumpStart); (11.0677083333333 : 11.825 : JumpEnd); (11.3541666666667 : 11.825 : JumpStart); (11.5208333333333 : 11.825 : JumpEnd); (13.9791666666667 : 11.825 : JumpStart); (14.1458333333333 : 11.825 : JumpEnd); (14.1875 : 11.825); (14.1875 : 5.2); (13.6875005 : 5.2); (13.6875005 : 4.825)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/FamilyTable/FamilyTable_FamilyImageTable" />
+      <nodes>
+        <classShapeMoniker Id="fecc0dcd-7014-4870-8d85-1f8dc09ea236" />
+        <classShapeMoniker Id="075ac0d1-6451-4866-9f32-9bf6fcaf0e14" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" isExpanded="false" absoluteBounds="10.125, 22.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/MembershipTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfaebf95-cb9e-47de-a3d2-9763a70eab94" absoluteBounds="10.14, 23.335, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.95312675 : 22.875); (11.95312675 : 20.825); (12.1666666666667 : 20.825 : JumpStart); (12.3333333333333 : 20.825 : JumpEnd); (14.125 : 20.825); (14.125 : 13.35); (14 : 13.35)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_UserTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="aa6ab2ee-03a9-4243-a49c-79b279f096b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.7187495 : 22.875); (11.7187495 : 21.325); (11.8697934166667 : 21.325 : JumpStart); (12.0364600833333 : 21.325 : JumpEnd); (12.1666666666667 : 21.325 : JumpStart); (12.3333333333333 : 21.325 : JumpEnd); (13.9791666666667 : 21.325 : JumpStart); (14.1458333333333 : 21.325 : JumpEnd); (14.1666666666667 : 21.325 : JumpStart); (14.3958333333333 : 21.325 : JumpEnd); (14.4375 : 21.325); (14.4375 : 11.35); (14.3958333333333 : 11.35 : JumpStart); (14.1041666666667 : 11.35 : JumpEnd); (14 : 11.35)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_AccountRecivableTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="a26a35b1-4180-426d-9373-3f28f6b8f8e9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.1072949459135 : 22.875); (11.1072949459135 : 20.95); (11.2291666666667 : 20.95 : JumpStart); (11.3958333333333 : 20.95 : JumpEnd); (11.8697934166667 : 20.95 : JumpStart); (12.0364600833333 : 20.95 : JumpEnd); (12.1666666666667 : 20.95 : JumpStart); (12.3333333333333 : 20.95 : JumpEnd); (13.9791666666667 : 20.95 : JumpStart); (14.1458333333333 : 20.95 : JumpEnd); (14.1875 : 20.95); (14.1875 : 15.35); (14 : 15.35)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_Other_incomeAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="917b2fb9-e93b-4af5-b921-a438747fe70d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.524417875 : 22.875); (10.524417875 : 20.7); (10.3470108333333 : 20.7 : JumpStart); (10.1803441666667 : 20.7 : JumpEnd); (10.1752068958333 : 20.7 : JumpStart); (9.68111701822917 : 20.7 : JumpEnd); (9.67122583333333 : 20.7 : JumpStart); (9.50455916666667 : 20.7 : JumpEnd); (9.20833333333333 : 20.7 : JumpStart); (9.04166666666667 : 20.7 : JumpEnd); (8.95833333333333 : 20.7 : JumpStart); (8.69791666666667 : 20.7 : JumpEnd); (8.6875 : 20.7); (8.6875 : 17.825); (7.98093333333333 : 17.825 : JumpStart); (7.75666666666667 : 17.825 : JumpEnd); (7.6875 : 17.825); (7.6875 : 16.825); (7.75666666666667 : 16.825 : JumpStart); (7.92333333333333 : 16.825 : JumpEnd); (8.22916666666667 : 16.825 : JumpStart); (8.45833333333333 : 16.825 : JumpEnd); (8.47916666666667 : 16.825 : JumpStart); (8.77083333333333 : 16.825 : JumpEnd); (8.8125 : 16.825); (8.8125 : 15.1); (8.81426666666667 : 15.1 : JumpStart); (8.98093333333333 : 15.1 : JumpEnd); (9 : 15.1)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_MemberImageTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="057e393d-09c1-4fd8-b33b-684ed7aff632" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.125 : 23.1); (12.25 : 23.1); (12.25 : 20.575); (11.625 : 20.575); (11.625 : 17.45); (11.3958333333333 : 17.45 : JumpStart); (11.2291666666667 : 17.45 : JumpEnd); (11.1458333333333 : 17.45 : JumpStart); (10.8187565584936 : 17.45 : JumpEnd); (10.570313 : 17.45); (10.570313 : 17.075)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_AuthenticalTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="059e476f-c9f2-41dc-95ad-bb72d2caf2eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.125 : 22.956248); (9.84778368489583 : 22.956248 : JumpStart); (9.68111701822917 : 22.956248 : JumpEnd); (9.02083333333333 : 22.956248 : JumpStart); (8.32291666666667 : 22.956248 : JumpEnd); (7.48958383333333 : 22.956248 : JumpStart); (7.32291716666667 : 22.956248 : JumpEnd); (6.58333333333333 : 22.956248 : JumpStart); (6.26906666666667 : 22.956248 : JumpEnd); (4.98958333333333 : 22.956248 : JumpStart); (4.82291666666667 : 22.956248 : JumpEnd); (4.234375 : 22.956248); (4.234375 : 20.340625); (4.82291666666667 : 20.340625 : JumpStart); (4.98958333333333 : 20.340625 : JumpEnd); (5.890625 : 20.340625); (5.890625 : 19.590625); (4.98958333333333 : 19.590625 : JumpStart); (4.82291666666667 : 19.590625 : JumpEnd); (4.484375 : 19.590625); (4.484375 : 18.590625); (4.82291666666667 : 18.590625 : JumpStart); (4.98958333333333 : 18.590625 : JumpEnd); (5.640625 : 18.590625); (5.640625 : 18.0828125); (4.98958333333333 : 18.0828125 : JumpStart); (4.82291666666667 : 18.0828125 : JumpEnd); (4.609375 : 18.0828125); (4.609375 : 17.340625); (4.72916666666667 : 17.340625 : JumpStart); (5.08333333333333 : 17.340625 : JumpEnd); (5.16666666666667 : 17.340625 : JumpStart); (5.33333333333333 : 17.340625 : JumpEnd); (5.60416666666667 : 17.340625 : JumpStart); (5.77083333333333 : 17.340625 : JumpEnd); (5.9374975 : 17.340625); (5.9374975 : 16.2)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_MembersUnit" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="8c4c5f02-be78-4076-9a98-6069ee5b637f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.125 : 23.1); (9.84778368489583 : 23.1 : JumpStart); (9.68111701822917 : 23.1 : JumpEnd); (9.02083333333333 : 23.1 : JumpStart); (8.57291666666667 : 23.1 : JumpEnd); (7.48958383333333 : 23.1 : JumpStart); (7.32291716666667 : 23.1 : JumpEnd); (6.58333333333333 : 23.1 : JumpStart); (6.26906666666667 : 23.1 : JumpEnd); (4.98958333333333 : 23.1 : JumpStart); (4.82291666666667 : 23.1 : JumpEnd); (3.69270833333333 : 23.1 : JumpStart); (2.91666666666667 : 23.1 : JumpEnd); (2.36458383333333 : 23.1 : JumpStart); (2.19791716666667 : 23.1 : JumpEnd); (1.98437275 : 23.1); (1.98437275 : 30.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_PastorsTitheTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="053c15fd-b752-4be2-adbf-846aaefde39e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.32812375 : 23.325); (11.32812375 : 34.475); (11.2473927083333 : 34.475 : JumpStart); (11.0807260416667 : 34.475 : JumpEnd); (10.9854232251602 : 34.475 : JumpStart); (10.8187565584936 : 34.475 : JumpEnd); (10.1752068958333 : 34.475 : JumpStart); (10.0085402291667 : 34.475 : JumpEnd); (9.02083333333333 : 34.475 : JumpStart); (8.63541666666667 : 34.475 : JumpEnd); (8.5 : 34.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_PastorsAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="62d7f9d6-77e4-40f8-8d61-225e2343e574" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.164059375 : 23.325); (11.164059375 : 35.617185375); (10.9854232251602 : 35.617185375 : JumpStart); (10.8187565584936 : 35.617185375 : JumpEnd); (10.1752068958333 : 35.617185375 : JumpStart); (10.0085402291667 : 35.617185375 : JumpEnd); (9.02083333333333 : 35.617185375 : JumpStart); (8.63541666666667 : 35.617185375 : JumpEnd); (6.25 : 35.617185375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_HierarchyTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="cec22bc6-1657-4e09-8632-102cdf2cd54c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.625000625 : 23.325); (11.625000625 : 37.581248); (11.5598955208333 : 37.581248 : JumpStart); (11.3932288541667 : 37.581248 : JumpEnd); (10.9854232251602 : 37.581248 : JumpStart); (10.8187565584936 : 37.581248 : JumpEnd); (10.1752068958333 : 37.581248 : JumpStart); (10.0085402291667 : 37.581248 : JumpEnd); (9.70833333333333 : 37.581248 : JumpStart); (9.54166666666667 : 37.581248 : JumpEnd); (7.20833333333333 : 37.581248 : JumpStart); (7.04166666666667 : 37.581248 : JumpEnd); (6.625 : 37.581248)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_HierarcyAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="144c4a40-5cb5-47b8-aedf-504655ef0fff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.4765621875 : 23.325); (11.4765621875 : 41.742185375); (9.70833333333333 : 41.742185375 : JumpStart); (9.54166666666667 : 41.742185375 : JumpEnd); (8.25 : 41.742185375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_PensionTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="971cf36b-de7f-471d-b787-ae006679ebfd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.7734390625 : 23.325); (11.7734390625 : 40.40312725); (11.5598955208333 : 40.40312725 : JumpStart); (11.3932288541667 : 40.40312725 : JumpEnd); (9.70833333333333 : 40.40312725 : JumpStart); (9.54166666666667 : 40.40312725 : JumpEnd); (7.55208333333333 : 40.40312725 : JumpStart); (7.38541666666667 : 40.40312725 : JumpEnd); (6.52083333333333 : 40.40312725 : JumpStart); (6.35416666666667 : 40.40312725 : JumpEnd); (3.89583333333333 : 40.40312725 : JumpStart); (3.72916666666667 : 40.40312725 : JumpEnd); (3.25 : 40.40312725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_PensionAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="6029d8ea-9be5-443f-9a19-b08577dee614" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.7500005 : 8.575); (7.7500005 : 9.3125); (8.6875 : 9.3125); (8.6875 : 17.1875); (9.68111701822917 : 17.1875 : JumpStart); (9.84778368489583 : 17.1875 : JumpEnd); (10.0085402291667 : 17.1875 : JumpStart); (10.1752068958333 : 17.1875 : JumpEnd); (10.4869796666667 : 17.1875 : JumpStart); (10.6536463333333 : 17.1875 : JumpEnd); (10.8187565584936 : 17.1875 : JumpStart); (10.9854232251602 : 17.1875 : JumpEnd); (11.0625 : 17.1875); (11.0625 : 19.6875); (10.9854232251602 : 19.6875 : JumpStart); (10.7364714503205 : 19.6875 : JumpEnd); (10.410438900641 : 19.6875 : JumpStart); (10.2437722339744 : 19.6875 : JumpEnd); (10.1752068958333 : 19.6875 : JumpStart); (10.0085402291667 : 19.6875 : JumpEnd); (9.84778368489583 : 19.6875 : JumpStart); (9.68111701822917 : 19.6875 : JumpEnd); (9.55301402564102 : 19.6875 : JumpStart); (9.38634735897436 : 19.6875 : JumpEnd); (8.95833333333333 : 19.6875 : JumpStart); (8.32291666666667 : 19.6875 : JumpEnd); (8.3125 : 19.6875); (8.3125 : 22.956248); (8.32291666666667 : 22.956248 : JumpStart); (9.02083333333333 : 22.956248 : JumpEnd); (9.68111701822917 : 22.956248 : JumpStart); (9.84778368489583 : 22.956248 : JumpEnd); (10.125 : 22.956248)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/AreaTable/AreaTable_MembershipTable" />
+      <nodes>
+        <classShapeMoniker Id="43ec0c77-2b41-48f0-a575-54c9bb68f4e4" />
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.814454171875 : 13.575); (3.814454171875 : 15.6875); (3.85416666666667 : 15.6875 : JumpStart); (4.08333333333333 : 15.6875 : JumpEnd); (4.10416666666667 : 15.6875 : JumpStart); (4.27083333333333 : 15.6875 : JumpEnd); (4.82291666666667 : 15.6875 : JumpStart); (4.98958333333333 : 15.6875 : JumpEnd); (8.3125 : 15.6875); (8.3125 : 17.21875); (9.68111701822917 : 17.21875 : JumpStart); (9.84778368489583 : 17.21875 : JumpEnd); (10.0085402291667 : 17.21875 : JumpStart); (10.1752068958333 : 17.21875 : JumpEnd); (10.4869796666667 : 17.21875 : JumpStart); (10.6536463333333 : 17.21875 : JumpEnd); (10.8187565584936 : 17.21875 : JumpStart); (10.9854232251602 : 17.21875 : JumpEnd); (11.0625 : 17.21875); (11.0625 : 19.5625); (10.9854232251602 : 19.5625 : JumpStart); (10.7364714503205 : 19.5625 : JumpEnd); (10.410438900641 : 19.5625 : JumpStart); (10.2437722339744 : 19.5625 : JumpEnd); (10.1752068958333 : 19.5625 : JumpStart); (10.0085402291667 : 19.5625 : JumpEnd); (9.84778368489583 : 19.5625 : JumpStart); (9.68111701822917 : 19.5625 : JumpEnd); (9.55301402564102 : 19.5625 : JumpStart); (9.38634735897436 : 19.5625 : JumpEnd); (8.95833333333333 : 19.5625 : JumpStart); (8.57291666666667 : 19.5625 : JumpEnd); (8.5 : 19.5625); (8.5 : 23.1); (8.57291666666667 : 23.1 : JumpStart); (9.02083333333333 : 23.1 : JumpEnd); (9.68111701822917 : 23.1 : JumpStart); (9.84778368489583 : 23.1 : JumpEnd); (10.125 : 23.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/ChurchDetailTable/ChurchDetailTable_MembershipTable" />
+      <nodes>
+        <classShapeMoniker Id="92ebab78-133a-4cfa-a9e5-8f3fbde0d132" />
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.90625 : 12.95); (4.90625 : 23.2062525); (6.26906666666667 : 23.2062525 : JumpStart); (6.58333333333333 : 23.2062525 : JumpEnd); (7.32291716666667 : 23.2062525 : JumpStart); (7.48958383333333 : 23.2062525 : JumpEnd); (8.57291666666667 : 23.2062525 : JumpStart); (9.02083333333333 : 23.2062525 : JumpEnd); (9.68111701822917 : 23.2062525 : JumpStart); (9.84778368489583 : 23.2062525 : JumpEnd); (10.125 : 23.2062525)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/FamilyTable/FamilyTable_MembershipTable" />
+      <nodes>
+        <classShapeMoniker Id="fecc0dcd-7014-4870-8d85-1f8dc09ea236" />
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 22.225); (6.26906666666667 : 22.225 : JumpStart); (6.58333333333333 : 22.225 : JumpEnd); (7.32291716666667 : 22.225 : JumpStart); (7.48958383333333 : 22.225 : JumpEnd); (8.22916666666667 : 22.225 : JumpStart); (8.86458333333333 : 22.225 : JumpEnd); (9.50455916666667 : 22.225 : JumpStart); (9.67122583333333 : 22.225 : JumpEnd); (9.68111701822917 : 22.225 : JumpStart); (10.1752068958333 : 22.225 : JumpEnd); (10.1803441666667 : 22.225 : JumpStart); (10.6077512083333 : 22.225 : JumpEnd); (10.7018249166667 : 22.225 : JumpStart); (10.9854232251602 : 22.225 : JumpEnd); (11.0239616125801 : 22.225 : JumpStart); (11.1906282792468 : 22.225 : JumpEnd); (11.4130222229567 : 22.225); (11.4130222229567 : 22.875)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/Location/Location_MembershipTable" />
+      <nodes>
+        <classShapeMoniker Id="8b7a9c2d-0915-4caa-afe6-62dbd5013361" />
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.1875005 : 10.45); (2.1875005 : 11.375); (2.9375 : 11.375); (2.9375 : 16.53125); (2.97916666666667 : 16.53125 : JumpStart); (3.14583333333333 : 16.53125 : JumpEnd); (3.16666666666667 : 16.53125 : JumpStart); (3.33333333333333 : 16.53125 : JumpEnd); (3.79166666666667 : 16.53125 : JumpStart); (4.08333333333333 : 16.53125 : JumpEnd); (4.72916666666667 : 16.53125 : JumpStart); (4.98958333333333 : 16.53125 : JumpEnd); (5.0625 : 16.53125); (5.0625 : 17.125); (5.16666666666667 : 17.125 : JumpStart); (5.45833333333333 : 17.125 : JumpEnd); (5.60416666666667 : 17.125 : JumpStart); (5.77083333333333 : 17.125 : JumpEnd); (5.85416416666667 : 17.125 : JumpStart); (6.02083083333333 : 17.125 : JumpEnd); (6.35416666666667 : 17.125 : JumpStart); (6.52083333333333 : 17.125 : JumpEnd); (6.875 : 17.125); (6.875 : 18.875); (7.22916666666667 : 18.875 : JumpStart); (7.39583333333333 : 18.875 : JumpEnd); (7.41666666666667 : 18.875 : JumpStart); (7.64583333333333 : 18.875 : JumpEnd); (7.81426666666667 : 18.875 : JumpStart); (7.98093333333333 : 18.875 : JumpEnd); (8.40625 : 18.875); (8.40625 : 23.1); (8.57291666666667 : 23.1 : JumpStart); (9.02083333333333 : 23.1 : JumpEnd); (9.68111701822917 : 23.1 : JumpStart); (9.84778368489583 : 23.1 : JumpEnd); (10.125 : 23.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/MembersGroup/MembersGroup_MembershipTable" />
+      <nodes>
+        <classShapeMoniker Id="fb608129-8974-4557-8281-f37d786cee90" />
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="72f51fcd-d4c8-44e6-9ce7-8164c2c7aea2" isExpanded="false" absoluteBounds="17.75, 12.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/IncomePaymentTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22c03244-87f9-4485-8348-0ca41a042a38" absoluteBounds="17.765, 13.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.25 : 20.278124); (11.5416666666667 : 20.278124 : JumpStart); (11.7083333333333 : 20.278124 : JumpEnd); (13.9791666666667 : 20.278124 : JumpStart); (14.5833333333333 : 20.278124 : JumpEnd); (14.6041666666667 : 20.278124 : JumpStart); (14.9895845833333 : 20.278124 : JumpEnd); (17.375 : 20.278124); (17.375 : 15.7); (17.5104166666667 : 15.7 : JumpStart); (17.6770833333333 : 15.7 : JumpEnd); (19.5104166666667 : 15.7 : JumpStart); (19.6770833333333 : 15.7 : JumpEnd); (19.75 : 15.7); (19.75 : 13.7); (19.6770833333333 : 13.7 : JumpStart); (19.5104166666667 : 13.7 : JumpEnd); (18.75 : 13.7); (18.75 : 13.325)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeTable/IncomeTable_IncomePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="68db3b12-d92f-4fb2-8850-6f36ab676129" />
+        <classShapeMoniker Id="72f51fcd-d4c8-44e6-9ce7-8164c2c7aea2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.59375 : 16.25); (19.59375 : 13.325)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/IncomeOffTable/IncomeOffTable_IncomePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="f0e689ed-3b89-4f33-8c4f-a135a3d1838d" />
+        <classShapeMoniker Id="72f51fcd-d4c8-44e6-9ce7-8164c2c7aea2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.115236 : 9.7); (16.115236 : 13.1); (16.2643256666667 : 13.1 : JumpStart); (16.4309923333333 : 13.1 : JumpEnd); (16.4967486666667 : 13.1 : JumpStart); (16.6634153333333 : 13.1 : JumpEnd); (16.9791666666667 : 13.1 : JumpStart); (17.1458333333333 : 13.1 : JumpEnd); (17.75 : 13.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/PaymentMethodTable/PaymentMethodTable_IncomePaymentTable" />
+      <nodes>
+        <classShapeMoniker Id="90ba0f07-56d9-44a8-a4ad-68725567b095" />
+        <classShapeMoniker Id="72f51fcd-d4c8-44e6-9ce7-8164c2c7aea2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3fb6a0b9-21ae-4dea-8c9f-c6e5cf561f6b" isExpanded="false" absoluteBounds="6.25, 7.25, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/AttendanceTotalTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc0e1159-4543-4530-96b6-32fb3335045a" absoluteBounds="6.265, 7.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad2e3725-0504-4087-ba76-7215ec732f94" absoluteBounds="5, 9, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/churchmanDataContext/AttendanceTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92c0b514-7882-4595-9afd-e7bdfbcc5b3b" absoluteBounds="5.015, 9.46, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.34375 : 9); (6.34375 : 7.7)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/churchmanDataContext/AttendanceTable/AttendanceTable_AttendanceTotalTable" />
+      <nodes>
+        <classShapeMoniker Id="ad2e3725-0504-4087-ba76-7215ec732f94" />
+        <classShapeMoniker Id="3fb6a0b9-21ae-4dea-8c9f-c6e5cf561f6b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0f1171ca-536c-4b44-b677-9bc6acc133b2" isExpanded="false" absoluteBounds="5, 3, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/LoanAccountTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c2ad9db-2cf2-46a9-b4f7-6a01e5d8ce50" absoluteBounds="5.015, 3.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 2.43750225); (9.08333333333333 : 2.43750225 : JumpStart); (8.72916666666667 : 2.43750225 : JumpEnd); (8.67708333333333 : 2.43750225 : JumpStart); (8.51041666666667 : 2.43750225 : JumpEnd); (8.44270833333333 : 2.43750225 : JumpStart); (8.27604166666667 : 2.43750225 : JumpEnd); (8.17708333333333 : 2.43750225 : JumpStart); (8.01041666666667 : 2.43750225 : JumpEnd); (5.28125 : 2.43750225); (5.28125 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/ChartAccountTable/ChartAccountTable_LoanAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="60c7d956-eb28-49c3-b2e7-806ae26c54e3" />
+        <classShapeMoniker Id="0f1171ca-536c-4b44-b677-9bc6acc133b2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1c6e94cf-c965-4c55-8a41-51e8ae31d8fb" isExpanded="false" absoluteBounds="11.875, 5.875, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/LoanPVTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96e2985e-b4de-4294-9785-ecd7cc3b991c" absoluteBounds="11.89, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31e23f1d-d4a9-45cb-9b7e-bbf423372479" isExpanded="false" absoluteBounds="6.625, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/churchmanDataContext/LoanHeadTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb87231f-7aa1-4fca-b22b-4202376d3a29" absoluteBounds="6.64, 2.085, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.359375 : 2.075); (8.359375 : 3.41875); (7 : 3.41875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/LoanHeadTable/LoanHeadTable_LoanAccountTable" />
+      <nodes>
+        <classShapeMoniker Id="31e23f1d-d4a9-45cb-9b7e-bbf423372479" />
+        <classShapeMoniker Id="0f1171ca-536c-4b44-b677-9bc6acc133b2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.59375 : 2.075); (8.59375 : 5.96875); (8.72916666666667 : 5.96875 : JumpStart); (9.08333333333333 : 5.96875 : JumpEnd); (9.57197594791667 : 5.96875 : JumpStart); (9.95692475520833 : 5.96875 : JumpEnd); (10.0085402291667 : 5.96875 : JumpStart); (10.1752068958333 : 5.96875 : JumpEnd); (10.4015336396234 : 5.96875 : JumpStart); (10.5682003062901 : 5.96875 : JumpEnd); (10.6763056125801 : 5.96875 : JumpStart); (10.9854232251602 : 5.96875 : JumpEnd); (11.875 : 5.96875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/LoanHeadTable/LoanHeadTable_LoanPVTable" />
+      <nodes>
+        <classShapeMoniker Id="31e23f1d-d4a9-45cb-9b7e-bbf423372479" />
+        <classShapeMoniker Id="1c6e94cf-c965-4c55-8a41-51e8ae31d8fb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.3627951875 : 22.875); (10.3627951875 : 20.825); (10.3470108333333 : 20.825 : JumpStart); (10.1803441666667 : 20.825 : JumpEnd); (10.1752068958333 : 20.825 : JumpStart); (9.68111701822917 : 20.825 : JumpEnd); (9.67122583333333 : 20.825 : JumpStart); (9.50455916666667 : 20.825 : JumpEnd); (9.08333333333334 : 20.825 : JumpStart); (8.91666666666667 : 20.825 : JumpEnd); (8.875 : 20.825); (8.875 : 18.075); (8.82333333333333 : 18.075 : JumpStart); (8.60416666666667 : 18.075 : JumpEnd); (7.98093333333333 : 18.075 : JumpStart); (7.66666666666667 : 18.075 : JumpEnd); (7.625 : 18.075); (7.625 : 16.85625); (7.66666666666667 : 16.85625 : JumpStart); (7.92333333333333 : 16.85625 : JumpEnd); (8.22916666666667 : 16.85625 : JumpStart); (8.39583333333333 : 16.85625 : JumpEnd); (8.4375 : 16.85625); (8.4375 : 10.325); (8.60416666666667 : 10.325 : JumpStart); (8.77458333333333 : 10.325 : JumpEnd); (8.8125 : 10.325); (8.8125 : 1.85); (8.625 : 1.85)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/churchmanDataContext/MembershipTable/MembershipTable_LoanHeadTable" />
+      <nodes>
+        <classShapeMoniker Id="6fe99238-092e-4f7b-9afe-2a586bd0985f" />
+        <classShapeMoniker Id="31e23f1d-d4a9-45cb-9b7e-bbf423372479" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

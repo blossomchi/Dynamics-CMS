@@ -1,0 +1,313 @@
+*{ margin-left: 6px;
+    margin-right: 0;
+    margin-bottom: 3px;
+} 
+.wrapper{
+     width: 1200px;
+     margin: 0 auto;
+ }
+.header{
+    margin-top: 10px;
+    border-radius: 20px 20px 0 0 ;
+    background-color: #eee;
+}
+.bg-header{
+    height: 40px; 
+    background-color:#062800; 
+    border-radius:20px 20px 0 0;
+}
+ .header .church-watch{
+     color: #3e6911;
+     font-size: 25px;
+     font-weight: bold;
+     font-style : initial;
+    height: 43px;
+}
+ .header .church-mgt{
+     margin-top: 1px;
+     font-weight: bold;
+     font-size: 15px;
+ }
+ .headerImg{
+     float: right;
+     
+     }
+ .header-text{
+      margin-top: 0px;
+     float: left;
+     width: 470px;
+     padding-left: 20px;
+ }
+
+ .print2{
+      float: left;
+       padding-right: 500px;
+ }
+ /**login Page***/
+
+
+  /**Printing Page***/
+.headers{
+    margin-top: 10px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+ .headers .church-watch{
+      margin-top: 1px;
+     color: #3e6911;
+     font-size: 50px;
+     font-weight: bold;
+     font-style : initial;
+      height: 43px;
+        padding-left: 0px;
+}
+
+
+ .headers .church-mgt{
+     margin-top: 1px;
+     font-weight: bold;
+     font-size: 30px;
+     padding-left: 150px;
+ }
+  .headers .church-mgts{
+     margin-top: 10px;
+     font-weight: bold;
+     font-size: 30px;
+     padding-left: 200px;
+ }
+
+  .headers .church-mgtt{
+     margin-top: 10px;
+     font-size: 2px;
+     padding-left: 180px;
+ }
+ .picimg{
+     float: left;
+      padding-left: 5px;
+     }
+
+  .headers-text{
+      margin-top: 0px;
+     float: left;
+     width: 900px;
+     padding-left: 10px;
+ }
+
+
+
+   /**Printing Page***/
+
+
+
+
+
+ .loginform{
+    float: left;
+     width: 60%;
+
+ }
+ .loginform img{
+     width: 100%;
+ }
+ .loginpage{
+       float: right;
+       width: 35%;
+       margin-top: 100px;
+       margin-right: 45px;
+       padding: 50px 0;
+ }
+
+
+
+    .loginpage .text1 {
+        margin-left: 10px;
+         float: left;
+         width: 30%;
+         text-align: right;
+         font-size:18px;
+         margin-top :15px;
+
+    }
+
+    
+    .loginpage .textbox {
+        margin-left: 45px;
+         float: left;
+         width: 50%;
+         text-align: left;
+         font-size:18px; 
+         margin-top :15px;
+
+    }
+     .loginpage .button {
+      
+         float: right;
+         width: 20%;
+         margin-top :15px;
+         background-color :#e67114;
+
+    }
+
+    /**login Page***/
+
+
+   .linknav{
+    float: right;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    top: 0px;
+    left: 0px;
+    height: 19px;
+}
+
+ .main{
+     clear:both;
+     margin-top :20px;
+     font-size:x-large;
+     padding: 10px 20px;
+     min-height: 300px;
+ }
+
+  .mainh{
+     clear:both;
+     margin-top :20px;
+     font-size:x-large;
+     padding: 10px 20px;
+     min-height: 300px;
+ }
+
+  .formbox{
+    float: left;
+    width: 85%;
+ }
+  .picturebox{
+
+    float: right;
+    width: 24%;
+  }
+  .formframe{
+    clear: both;
+    background-color:#dbd8d8;
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size :14px;
+    padding: 10px 0;
+  }
+
+  .center{
+      clear: both;
+      float: none;
+      text-align: center;
+      font-size :15px;
+      margin-left : 100px;
+      margin-top: 0;
+  }
+  .center .formframe{
+      clear: none;
+      margin-left : 40px;
+      margin-top: 0;
+        
+  }
+
+  .item-right{
+        display: inline-block;
+      margin-left: 10px;
+      width : 45%;
+    font-size: small;
+}
+ .main h2{
+     font-size: 20px;
+     color: #3e6911;
+      text-shadow: 1px 1px 1px #666;
+    
+ }
+ .form-group{
+     margin-bottom: 10px;
+ }
+ .form-group .label{
+     float: left;
+     width: 30%;
+     text-align: right;
+ }
+ .form-group .input{
+     width: 54%;
+}
+
+ .form-group .msg{
+     width: 54%;
+}
+ .form-group .drop-down{
+     width: 55%;
+    }
+ .no-bg{
+     background-color:white;
+ }
+
+ .clear-fix{
+     clear: both;
+ }
+
+ /**Dashboard***/
+
+   .mainbox{
+    float: left;
+    width: 60%;
+ }
+
+   .mainframe{
+    clear: both;
+    background-color:#ffffff;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size :14px;
+    padding: 10px 0;
+    display:inline-block
+  }
+
+
+     .mainframe .BoardImg{
+     width: 70%;
+     margin-left: 10px;
+     
+     }
+
+    .mainframe h2{
+     font-size: 15px;
+     text-align:left;
+     color: black;
+  
+ }
+
+ /**Dashboard***/
+
+
+
+
+
+ .footer{
+     background-color: #062800;
+     padding: 20px;
+     color: white;
+     border-radius: 0 0 20px 20px;
+     box-shadow: 2px 2px 2px #808080;
+ }
+ .footer p{
+    
+      color: white;
+     font-size: 14px;
+     font-style: italic;
+     text-align: center;
+     
+ }
+ .footer a{
+     text-decoration:none;
+      color: white;
+ }
